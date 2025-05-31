@@ -1,0 +1,22 @@
+{
+  "walls": [
+    {
+      "bbox": [
+        48.0,
+        48.0,
+        753.0,
+        553.0
+      ],
+      "confidence": 0.7,
+      "dimensions": {
+        "width": 35250,
+        "height": 25250
+      },
+      "class_name": "traditional_detection"
+    }
+  ],
+  "columns": [],
+  "beams": [],
+  "slabs": [],
+  "foundations": []
+}

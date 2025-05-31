@@ -1,0 +1,723 @@
+{
+  "image_path": "test_images/sample_floorplan.jpg",
+  "ocr_results": {
+    "raw_ocr_results": null,
+    "processed_texts": [],
+    "component_codes": [
+      {
+        "symbol": "KZ",
+        "number": "3",
+        "full_code": "KZ3",
+        "type": "框架柱",
+        "position": [
+          169,
+          354
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.9161434930676968,
+        "source_text": "KZ1"
+      },
+      {
+        "symbol": "XZ",
+        "number": "1",
+        "full_code": "XZ2",
+        "type": "芯柱",
+        "position": [
+          396,
+          146
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8668105039945991,
+        "source_text": "XZ3"
+      },
+      {
+        "symbol": "LZ",
+        "number": "2",
+        "full_code": "LZ1",
+        "type": "梁上柱",
+        "position": [
+          358,
+          323
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8904194709744607,
+        "source_text": "LZ4"
+      },
+      {
+        "symbol": "QZ",
+        "number": "2",
+        "full_code": "QZ4",
+        "type": "剪力墙边缘构件",
+        "position": [
+          366,
+          342
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8745074381928424,
+        "source_text": "QZ1"
+      },
+      {
+        "symbol": "YZ",
+        "number": "1",
+        "full_code": "YZ5",
+        "type": "约束边缘构件",
+        "position": [
+          127,
+          120
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8866503905536661,
+        "source_text": "YZ1"
+      },
+      {
+        "symbol": "GZ",
+        "number": "3",
+        "full_code": "GZ2",
+        "type": "构造边缘构件",
+        "position": [
+          509,
+          175
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8709757890560461,
+        "source_text": "GZ2"
+      },
+      {
+        "symbol": "JZ",
+        "number": "4",
+        "full_code": "JZ1",
+        "type": "独立柱",
+        "position": [
+          516,
+          319
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8910642619383259,
+        "source_text": "JZ1"
+      },
+      {
+        "symbol": "KL",
+        "number": "2",
+        "full_code": "KL5",
+        "type": "框架梁",
+        "position": [
+          220,
+          171
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.9010718550793457,
+        "source_text": "KL5"
+      }
+    ],
+    "dimensions": [
+      {
+        "type": "dimension_pair",
+        "values": [
+          456,
+          611
+        ],
+        "unit": "mm",
+        "position": [
+          169,
+          101
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.809542806290049,
+        "source_text": "456×611"
+      },
+      {
+        "type": "dimension_pair",
+        "values": [
+          289,
+          780
+        ],
+        "unit": "mm",
+        "position": [
+          105,
+          464
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.92943772758263,
+        "source_text": "289×780"
+      },
+      {
+        "type": "single_dimension",
+        "value": 4268,
+        "unit": "mm",
+        "position": [
+          439,
+          363
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8064398813012924,
+        "source_text": "2454"
+      },
+      {
+        "type": "dimension_pair",
+        "values": [
+          316,
+          538
+        ],
+        "unit": "mm",
+        "position": [
+          101,
+          356
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.8488160111644294,
+        "source_text": "316×538"
+      },
+      {
+        "type": "single_dimension",
+        "value": 4987,
+        "unit": "mm",
+        "position": [
+          169,
+          124
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.9271393534411794,
+        "source_text": "6003"
+      },
+      {
+        "type": "single_dimension",
+        "value": 1525,
+        "unit": "mm",
+        "position": [
+          331,
+          173
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.9075397588480993,
+        "source_text": "5308"
+      }
+    ],
+    "materials": [
+      {
+        "type": "concrete_grade",
+        "grade": "30",
+        "full_name": "C30",
+        "position": [
+          167,
+          340
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.9005358237704746
+      },
+      {
+        "type": "concrete_grade",
+        "grade": "35",
+        "full_name": "C35",
+        "position": [
+          510,
+          300
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            200,
+            100
+          ],
+          [
+            200,
+            150
+          ],
+          [
+            100,
+            150
+          ]
+        ],
+        "confidence": 0.9090920893787495
+      }
+    ],
+    "statistics": {
+      "total_texts": 16,
+      "component_count": 8,
+      "dimension_count": 6,
+      "material_count": 2
+    },
+    "demo_mode": true
+  },
+  "atlas_recognition": {
+    "recognized_symbols": [],
+    "drawing_info": {
+      "title": "",
+      "drawing_number": "",
+      "scale": "",
+      "date": "",
+      "designer": "",
+      "checker": ""
+    },
+    "dimensions": [],
+    "scale_info": {
+      "detected_scales": [],
+      "primary_scale": null,
+      "scale_factor": 1.0
+    },
+    "standards_compliance": {
+      "symbol_compliance": true,
+      "dimension_compliance": false,
+      "issues": [
+        "缺少尺寸标注"
+      ],
+      "recommendations": [
+        "建议添加构件尺寸标注"
+      ]
+    }
+  },
+  "component_data": [
+    {
+      "component_id": "KZ1-001",
+      "component_type": "column",
+      "symbol": "KZ",
+      "number": "1",
+      "dimensions": {
+        "width": 400,
+        "height": 400,
+        "length": 3000,
+        "thickness": 0
+      },
+      "materials": {
+        "concrete_grade": "C30",
+        "rebar_grade": "HRB400"
+      }
+    },
+    {
+      "component_id": "KL1-001",
+      "component_type": "beam",
+      "symbol": "KL",
+      "number": "1",
+      "dimensions": {
+        "width": 250,
+        "height": 500,
+        "length": 6000,
+        "thickness": 0
+      },
+      "materials": {
+        "concrete_grade": "C30",
+        "rebar_grade": "HRB400"
+      }
+    },
+    {
+      "component_id": "LB1-001",
+      "component_type": "slab",
+      "symbol": "LB",
+      "number": "1",
+      "dimensions": {
+        "width": 6000,
+        "height": 0,
+        "length": 8000,
+        "thickness": 120
+      },
+      "materials": {
+        "concrete_grade": "C30",
+        "rebar_grade": "HRB400"
+      }
+    }
+  ],
+  "quantity_calculation": {
+    "010101001": {
+      "name": "现浇混凝土柱",
+      "unit": "m³",
+      "quantity": 0.384,
+      "components": [
+        {
+          "id": "KZ1-001",
+          "type": "column",
+          "symbol": "KZ",
+          "quantity": 0.384
+        }
+      ]
+    },
+    "010101002": {
+      "name": "现浇混凝土梁",
+      "unit": "m³",
+      "quantity": 0.75,
+      "components": [
+        {
+          "id": "KL1-001",
+          "type": "beam",
+          "symbol": "KL",
+          "quantity": 0.75
+        }
+      ]
+    },
+    "010101003": {
+      "name": "现浇混凝土板",
+      "unit": "m³",
+      "quantity": 5.76,
+      "components": [
+        {
+          "id": "LB1-001",
+          "type": "slab",
+          "symbol": "LB",
+          "quantity": 5.76
+        }
+      ]
+    },
+    "010102001": {
+      "name": "现浇混凝土柱模板",
+      "unit": "m²",
+      "quantity": 4.8,
+      "components": [
+        {
+          "id": "KZ1-001",
+          "type": "column",
+          "symbol": "KZ",
+          "quantity": 4.8
+        }
+      ]
+    },
+    "010102002": {
+      "name": "现浇混凝土梁模板",
+      "unit": "m²",
+      "quantity": 7.5,
+      "components": [
+        {
+          "id": "KL1-001",
+          "type": "beam",
+          "symbol": "KL",
+          "quantity": 7.5
+        }
+      ]
+    },
+    "010102003": {
+      "name": "现浇混凝土板模板",
+      "unit": "m²",
+      "quantity": 48.0,
+      "components": [
+        {
+          "id": "LB1-001",
+          "type": "slab",
+          "symbol": "LB",
+          "quantity": 48.0
+        }
+      ]
+    },
+    "010401001": {
+      "name": "钢筋",
+      "unit": "kg",
+      "quantity": 539.1,
+      "components": [
+        {
+          "id": "KZ1-001",
+          "type": "column",
+          "symbol": "KZ",
+          "quantity": 38.4
+        },
+        {
+          "id": "KL1-001",
+          "type": "beam",
+          "symbol": "KL",
+          "quantity": 97.5
+        },
+        {
+          "id": "LB1-001",
+          "type": "slab",
+          "symbol": "LB",
+          "quantity": 403.2
+        }
+      ]
+    },
+    "statistics": {
+      "total_components": 3,
+      "total_items": 6,
+      "concrete_volume": 6.894,
+      "formwork_area": 60.3,
+      "rebar_weight": 539.1
+    }
+  },
+  "final_report": {
+    "project_info": {
+      "drawing_file": "test_images/sample_floorplan.jpg",
+      "processing_date": "2024-01-15",
+      "system_version": "v1.0"
+    },
+    "recognition_summary": {
+      "ocr_texts": 0,
+      "component_codes": 8,
+      "recognized_symbols": 0,
+      "dimensions": 0,
+      "drawing_scale": null
+    },
+    "quantity_summary": {
+      "total_components": 3,
+      "concrete_volume": 6.894,
+      "formwork_area": 60.3,
+      "rebar_weight": 539.1,
+      "estimated_cost": {
+        "concrete_cost": 2412.9,
+        "formwork_cost": 2713.5,
+        "rebar_cost": 2264.22,
+        "total_cost": 7390.62
+      }
+    },
+    "quality_assessment": {
+      "recognition_confidence": "中等",
+      "data_completeness": "低",
+      "calculation_accuracy": "高"
+    },
+    "recommendations": [
+      "建议提高图纸清晰度以改善符号识别效果",
+      "建议补充构件尺寸标注信息"
+    ]
+  }
+}

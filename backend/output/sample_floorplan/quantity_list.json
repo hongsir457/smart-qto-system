@@ -1,0 +1,112 @@
+{
+  "010101001": {
+    "name": "现浇混凝土柱",
+    "unit": "m³",
+    "quantity": 0.384,
+    "components": [
+      {
+        "id": "KZ1-001",
+        "type": "column",
+        "symbol": "KZ",
+        "quantity": 0.384
+      }
+    ]
+  },
+  "010101002": {
+    "name": "现浇混凝土梁",
+    "unit": "m³",
+    "quantity": 0.75,
+    "components": [
+      {
+        "id": "KL1-001",
+        "type": "beam",
+        "symbol": "KL",
+        "quantity": 0.75
+      }
+    ]
+  },
+  "010101003": {
+    "name": "现浇混凝土板",
+    "unit": "m³",
+    "quantity": 5.76,
+    "components": [
+      {
+        "id": "LB1-001",
+        "type": "slab",
+        "symbol": "LB",
+        "quantity": 5.76
+      }
+    ]
+  },
+  "010102001": {
+    "name": "现浇混凝土柱模板",
+    "unit": "m²",
+    "quantity": 4.8,
+    "components": [
+      {
+        "id": "KZ1-001",
+        "type": "column",
+        "symbol": "KZ",
+        "quantity": 4.8
+      }
+    ]
+  },
+  "010102002": {
+    "name": "现浇混凝土梁模板",
+    "unit": "m²",
+    "quantity": 7.5,
+    "components": [
+      {
+        "id": "KL1-001",
+        "type": "beam",
+        "symbol": "KL",
+        "quantity": 7.5
+      }
+    ]
+  },
+  "010102003": {
+    "name": "现浇混凝土板模板",
+    "unit": "m²",
+    "quantity": 48.0,
+    "components": [
+      {
+        "id": "LB1-001",
+        "type": "slab",
+        "symbol": "LB",
+        "quantity": 48.0
+      }
+    ]
+  },
+  "010401001": {
+    "name": "钢筋",
+    "unit": "kg",
+    "quantity": 539.1,
+    "components": [
+      {
+        "id": "KZ1-001",
+        "type": "column",
+        "symbol": "KZ",
+        "quantity": 38.4
+      },
+      {
+        "id": "KL1-001",
+        "type": "beam",
+        "symbol": "KL",
+        "quantity": 97.5
+      },
+      {
+        "id": "LB1-001",
+        "type": "slab",
+        "symbol": "LB",
+        "quantity": 403.2
+      }
+    ]
+  },
+  "statistics": {
+    "total_components": 3,
+    "total_items": 6,
+    "concrete_volume": 6.894,
+    "formwork_area": 60.3,
+    "rebar_weight": 539.1
+  }
+}

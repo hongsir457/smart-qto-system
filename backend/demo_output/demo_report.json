@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_name": "智能工程量计算系统演示",
+    "drawing_file": "demo_drawing.jpg",
+    "processing_date": "2025-05-26 12:58:05",
+    "system_version": "v1.0.0"
+  },
+  "recognition_summary": {
+    "ocr_texts": 6,
+    "component_codes": 3,
+    "recognized_symbols": 3,
+    "dimensions": 3
+  },
+  "quantity_summary": {
+    "total_components": 3,
+    "concrete_volume": 6.894,
+    "formwork_area": 60.3,
+    "rebar_weight": 539.1
+  },
+  "quality_assessment": {
+    "recognition_confidence": "高",
+    "data_completeness": "良好",
+    "calculation_accuracy": "精确"
+  },
+  "recommendations": [
+    "图纸识别效果良好，建议继续使用",
+    "构件信息完整，计算结果可靠",
+    "建议定期更新模型以提高识别精度"
+  ]
+}

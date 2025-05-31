@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "drawing_file": "test_images/sample_floorplan.jpg",
+    "processing_date": "2024-01-15",
+    "system_version": "v1.0"
+  },
+  "recognition_summary": {
+    "ocr_texts": 0,
+    "component_codes": 8,
+    "recognized_symbols": 0,
+    "dimensions": 0,
+    "drawing_scale": null
+  },
+  "quantity_summary": {
+    "total_components": 3,
+    "concrete_volume": 6.894,
+    "formwork_area": 60.3,
+    "rebar_weight": 539.1,
+    "estimated_cost": {
+      "concrete_cost": 2412.9,
+      "formwork_cost": 2713.5,
+      "rebar_cost": 2264.22,
+      "total_cost": 7390.62
+    }
+  },
+  "quality_assessment": {
+    "recognition_confidence": "中等",
+    "data_completeness": "低",
+    "calculation_accuracy": "高"
+  },
+  "recommendations": [
+    "建议提高图纸清晰度以改善符号识别效果",
+    "建议补充构件尺寸标注信息"
+  ]
+}
