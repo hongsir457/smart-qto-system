@@ -172,9 +172,6 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -249,4 +246,20 @@ Thumbs.db
 
 # Uploads
 uploads/
-temp/ 
+temp/
+
+# AI Models (Large files)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pb
+*.tflite
+*.bin
+models/
+checkpoints/
+
+# YOLO Models
+yolo*.pt
+best.pt
+last.pt 
