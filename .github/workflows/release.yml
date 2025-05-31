@@ -1,0 +1,125 @@
+name: 🚀 创建Release版本
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'  # 匹配 v1.0.0, v2.1.3 等版本标签
+
+jobs:
+  create-release:
+    name: 创建GitHub Release
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # 获取完整历史记录
+
+    - name: 📋 获取版本信息
+      id: version
+      run: |
+        VERSION=${GITHUB_REF#refs/tags/}
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+        echo "version_without_v=${VERSION#v}" >> $GITHUB_OUTPUT
+
+    - name: 📝 提取变更日志
+      id: changelog
+      run: |
+        # 从CHANGELOG.md提取当前版本的变更内容
+        awk '/^## \['"${GITHUB_REF#refs/tags/v}"'\]/{flag=1; next} /^## \[/{flag=0} flag' CHANGELOG.md > current_changelog.md
+        
+        # 如果没有找到特定版本的日志，使用默认内容
+        if [ ! -s current_changelog.md ]; then
+          echo "### 🎉 版本发布" > current_changelog.md
+          echo "智能工程量计算系统 ${{ steps.version.outputs.version }} 正式发布！" >> current_changelog.md
+          echo "" >> current_changelog.md
+          echo "#### 主要特性" >> current_changelog.md
+          echo "- 🎯 智能图纸识别与AI分析" >> current_changelog.md
+          echo "- 📊 精确工程量自动计算" >> current_changelog.md
+          echo "- 🏗️ 完整项目管理功能" >> current_changelog.md
+          echo "- 📱 现代化响应式界面" >> current_changelog.md
+          echo "" >> current_changelog.md
+          echo "#### 技术架构" >> current_changelog.md
+          echo "- **后端**: FastAPI + SQLAlchemy + PostgreSQL" >> current_changelog.md
+          echo "- **前端**: React + TypeScript + Ant Design" >> current_changelog.md
+          echo "- **AI**: OpenAI GPT + 自定义识别模型" >> current_changelog.md
+          echo "" >> current_changelog.md
+          echo "更多详细信息请参阅 [CHANGELOG.md](https://github.com/hongsir457/smart-qto-system/blob/master/CHANGELOG.md)" >> current_changelog.md
+        fi
+
+    - name: 🏷️ 创建Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.version.outputs.version }}
+        release_name: 智能工程量计算系统 ${{ steps.version.outputs.version }}
+        body_path: current_changelog.md
+        draft: false
+        prerelease: false
+
+    - name: 📦 生成项目归档
+      run: |
+        # 创建源码归档
+        git archive --format=zip --output=smart-qto-system-${{ steps.version.outputs.version_without_v }}-source.zip HEAD
+        
+        # 创建发布说明文件
+        cat > release-info.md << EOF
+        # 智能工程量计算系统 ${{ steps.version.outputs.version }}
+        
+        ## 📥 下载说明
+        
+        ### 源码包
+        - **smart-qto-system-${{ steps.version.outputs.version_without_v }}-source.zip**: 完整源码包
+        
+        ### 快速开始
+        1. 下载源码包并解压
+        2. 参照 README.md 配置开发环境
+        3. 按照快速开始指南启动项目
+        
+        ### 系统要求
+        - Python 3.8+
+        - Node.js 16+
+        - PostgreSQL 12+
+        - Redis 6+
+        
+        ### 技术支持
+        - 📖 [项目文档](https://github.com/hongsir457/smart-qto-system)
+        - 🐛 [问题反馈](https://github.com/hongsir457/smart-qto-system/issues)
+        - 💬 [讨论社区](https://github.com/hongsir457/smart-qto-system/discussions)
+        
+        ---
+        
+        **发布时间**: $(date '+%Y-%m-%d %H:%M:%S UTC')  
+        **发布分支**: master  
+        **提交哈希**: $GITHUB_SHA
+        EOF
+
+    - name: 📊 生成发布统计
+      run: |
+        echo "## 📊 项目统计" >> release-info.md
+        echo "" >> release-info.md
+        echo "- **代码行数**: $(find . -name '*.py' -o -name '*.ts' -o -name '*.tsx' -o -name '*.js' -o -name '*.jsx' | xargs wc -l | tail -1 | awk '{print $1}')" >> release-info.md
+        echo "- **提交次数**: $(git rev-list --count HEAD)" >> release-info.md
+        echo "- **文件总数**: $(find . -type f | wc -l)" >> release-info.md
+        echo "- **最后更新**: $(git log -1 --format='%cd' --date=short)" >> release-info.md
+
+  notify-release:
+    name: 📢 发布通知
+    needs: create-release
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+
+    - name: 📧 发送邮件通知 (可选)
+      run: |
+        echo "Release ${{ github.ref }} has been created successfully!"
+        echo "您可以在项目的Actions中配置邮件通知服务"
+        
+    - name: 💬 创建发布讨论 (可选)
+      run: |
+        echo "可以使用GitHub CLI或API自动创建Discussions"
+        echo "让社区用户了解新版本发布" 
