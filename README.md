@@ -2,10 +2,13 @@
 
 一个基于AI的工程量清单智能识别和分析系统，支持OCR识别、结构化数据提取和智能分析。
 
-##作者信息
+##  作者信息
 开发者：hongsir
+
 邮箱：oin1914@gmail.com
-Github:hongsir457
+
+Github：hongsir457
+
 ## ✨ 核心功能
 
 - 🔍 **智能OCR识别**: 支持多种文档格式的OCR文字识别
