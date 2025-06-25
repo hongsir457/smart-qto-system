@@ -1,0 +1,654 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+切片Vision分析适配器
+专门处理切片后的五步连续会话，针对局部切片重新设置连续会话内容
+"""
+
+import logging
+import time
+import json
+from typing import Dict, Any, List, Optional, Tuple
+from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class SliceContextConfig:
+    """切片上下文配置"""
+    slice_index: int
+    slice_id: str
+    slice_bounds: Tuple[int, int, int, int]  # (x, y, width, height)
+    slice_type: str  # 'detail', 'overview', 'section', etc.
+    focus_areas: List[str]  # ['components', 'dimensions', 'annotations']
+    original_image_size: Tuple[int, int]  # (width, height)
+
+class SliceVisionAdapter:
+    """切片Vision分析适配器"""
+    
+    def __init__(self):
+        self.ai_analyzer = None
+        try:
+            from app.services.ai_analyzer import AIAnalyzerService
+            self.ai_analyzer = AIAnalyzerService()
+        except Exception as e:
+            logger.warning(f"⚠️ AI分析器初始化失败: {e}")
+
+    def adapt_multi_turn_analysis_for_slices(self, 
+                                            slice_configs: List[SliceContextConfig],
+                                            encoded_images: List[Dict],
+                                            task_id: str,
+                                            drawing_id: int = None) -> Dict[str, Any]:
+        """
+        针对切片适配五步连续会话分析
+        
+        Args:
+            slice_configs: 切片配置列表
+            encoded_images: 编码的图像数据
+            task_id: 任务ID
+            drawing_id: 图纸ID
+            
+        Returns:
+            适配后的分析结果
+        """
+        logger.info(f"🔄 开始切片适配的五步连续会话分析: {len(slice_configs)} 个切片")
+        
+        if not self.ai_analyzer or not self.ai_analyzer.is_available():
+            return {
+                "error": "AI Analyzer Service is not available",
+                "success": False
+            }
+        
+        slice_results = []
+        
+        for i, (slice_config, slice_image) in enumerate(zip(slice_configs, encoded_images)):
+            logger.info(f"🔍 处理切片 {i+1}/{len(slice_configs)}: {slice_config.slice_id}")
+            
+            # 为每个切片定制五步会话
+            adapted_result = self._execute_adapted_five_step_analysis(
+                slice_config=slice_config,
+                slice_image=slice_image,
+                task_id=f"{task_id}_slice_{i}",
+                drawing_id=drawing_id
+            )
+            
+            slice_results.append({
+                'slice_config': slice_config,
+                'slice_index': i,
+                'analysis_result': adapted_result
+            })
+        
+        # 合并所有切片结果
+        merged_result = self._merge_slice_analysis_results(slice_results, task_id)
+        
+        logger.info(f"✅ 切片适配的五步分析完成: {len(slice_results)} 个切片")
+        return merged_result
+
+    def _execute_adapted_five_step_analysis(self, 
+                                          slice_config: SliceContextConfig,
+                                          slice_image: Dict,
+                                          task_id: str,
+                                          drawing_id: int = None) -> Dict[str, Any]:
+        """
+        执行针对切片的适配五步分析
+        
+        Args:
+            slice_config: 切片配置
+            slice_image: 切片图像数据
+            task_id: 任务ID
+            drawing_id: 图纸ID
+            
+        Returns:
+            分析结果
+        """
+        logger.info(f"🔄 开始针对切片的五步分析: {slice_config.slice_id}")
+        
+        # 存储分析结果
+        analysis_results = {
+            "drawing_info": {},
+            "component_ids": {},
+            "component_counts": {},
+            "component_positions": {},
+            "component_attributes": {},
+            "slice_metadata": {
+                "slice_config": slice_config,
+                "analysis_timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                "adaptation_method": "slice_focused"
+            }
+        }
+        
+        try:
+            # Step 1: 适配的图纸信息提取（针对切片）
+            step1_result = self._adapted_step1_drawing_info(slice_config, slice_image, task_id, drawing_id)
+            if step1_result.get("success"):
+                analysis_results["drawing_info"] = step1_result["data"]
+                analysis_results["slice_metadata"]["steps_completed"] = ["step1_drawing_info"]
+            
+            # Step 2: 适配的构件ID提取（针对局部区域）
+            step2_result = self._adapted_step2_component_ids(
+                slice_config, slice_image, analysis_results["drawing_info"], task_id, drawing_id
+            )
+            if step2_result.get("success"):
+                analysis_results["component_ids"] = step2_result["data"]
+                analysis_results["slice_metadata"]["steps_completed"].append("step2_component_ids")
+            
+            # Step 3: 适配的构件计数（针对切片内容）
+            step3_result = self._adapted_step3_component_counts(
+                slice_config, slice_image, analysis_results["component_ids"], task_id, drawing_id
+            )
+            if step3_result.get("success"):
+                analysis_results["component_counts"] = step3_result["data"]
+                analysis_results["slice_metadata"]["steps_completed"].append("step3_component_counts")
+            
+            # Step 4: 适配的位置信息提取（相对切片坐标）
+            step4_result = self._adapted_step4_positions(
+                slice_config, slice_image, analysis_results, task_id, drawing_id
+            )
+            if step4_result.get("success"):
+                analysis_results["component_positions"] = step4_result["data"]
+                analysis_results["slice_metadata"]["steps_completed"].append("step4_positions")
+            
+            # Step 5: 适配的属性提取（详细信息）
+            step5_result = self._adapted_step5_attributes(
+                slice_config, slice_image, analysis_results, task_id, drawing_id
+            )
+            if step5_result.get("success"):
+                analysis_results["component_attributes"] = step5_result["data"]
+                analysis_results["slice_metadata"]["steps_completed"].append("step5_attributes")
+            
+            # 合成QTO数据
+            qto_data = self._synthesize_slice_qto_data(analysis_results, slice_config)
+            
+            return {
+                "success": True,
+                "qto_data": qto_data,
+                "analysis_results": analysis_results,
+                "slice_config": slice_config
+            }
+            
+        except Exception as e:
+            logger.error(f"❌ 切片五步分析失败: {e}")
+            return {
+                "success": False,
+                "error": str(e),
+                "slice_config": slice_config
+            }
+
+    def _adapted_step1_drawing_info(self, 
+                                   slice_config: SliceContextConfig,
+                                   slice_image: Dict,
+                                   task_id: str,
+                                   drawing_id: int) -> Dict[str, Any]:
+        """适配的步骤1：图纸信息提取（针对切片）"""
+        
+        # 根据切片类型调整提示词
+        if slice_config.slice_type == 'title_area':
+            system_prompt = self._build_title_area_prompt()
+        elif slice_config.slice_type == 'detail':
+            system_prompt = self._build_detail_area_prompt()
+        else:
+            system_prompt = self._build_general_slice_prompt(slice_config)
+        
+        user_content = [
+            {
+                "type": "text",
+                "text": f"""这是建筑图纸的第{slice_config.slice_index + 1}个切片区域。
+切片位置: ({slice_config.slice_bounds[0]}, {slice_config.slice_bounds[1]})
+切片尺寸: {slice_config.slice_bounds[2]}x{slice_config.slice_bounds[3]}
+原图尺寸: {slice_config.original_image_size[0]}x{slice_config.original_image_size[1]}
+切片类型: {slice_config.slice_type}
+关注区域: {', '.join(slice_config.focus_areas)}
+
+请分析这个切片区域中的图纸信息。"""
+            },
+            slice_image
+        ]
+        
+        return self.ai_analyzer._execute_vision_step(
+            step_name="adapted_step1_drawing_info",
+            system_prompt=system_prompt,
+            user_content=user_content,
+            task_id=task_id,
+            drawing_id=drawing_id
+        )
+
+    def _adapted_step2_component_ids(self, 
+                                    slice_config: SliceContextConfig,
+                                    slice_image: Dict,
+                                    drawing_info: Dict,
+                                    task_id: str,
+                                    drawing_id: int) -> Dict[str, Any]:
+        """适配的步骤2：构件ID提取（针对局部区域）"""
+        
+        system_prompt = f"""你是专业的建筑图纸分析专家。现在分析的是图纸的一个局部切片区域。
+
+切片信息：
+- 切片类型: {slice_config.slice_type}
+- 切片位置: 原图的 ({slice_config.slice_bounds[0]}, {slice_config.slice_bounds[1]}) 区域
+- 切片尺寸: {slice_config.slice_bounds[2]}x{slice_config.slice_bounds[3]} 像素
+- 关注内容: {', '.join(slice_config.focus_areas)}
+
+前置信息：
+{json.dumps(drawing_info, ensure_ascii=False, indent=2)}
+
+请识别这个切片区域内的所有构件编号和标识。由于这是局部区域，可能只包含部分构件。
+
+返回JSON格式：
+{{
+    "component_ids": [
+        {{
+            "id": "构件编号",
+            "type": "构件类型",
+            "location_in_slice": "在切片中的位置描述",
+            "visibility": "complete/partial/annotation_only"
+        }}
+    ],
+    "slice_summary": "这个切片区域的构件概述"
+}}"""
+        
+        user_content = [
+            {
+                "type": "text", 
+                "text": f"请分析这个切片区域（{slice_config.slice_type}）中的构件编号和标识。"
+            },
+            slice_image
+        ]
+        
+        return self.ai_analyzer._execute_vision_step(
+            step_name="adapted_step2_component_ids",
+            system_prompt=system_prompt,
+            user_content=user_content,
+            task_id=task_id,
+            drawing_id=drawing_id
+        )
+
+    def _adapted_step3_component_counts(self, 
+                                       slice_config: SliceContextConfig,
+                                       slice_image: Dict,
+                                       component_ids: Dict,
+                                       task_id: str,
+                                       drawing_id: int) -> Dict[str, Any]:
+        """适配的步骤3：构件计数（针对切片内容）"""
+        
+        system_prompt = f"""基于前面识别的构件ID，统计这个切片区域内的构件数量。
+
+切片信息：
+- 切片类型: {slice_config.slice_type}
+- 关注内容: {', '.join(slice_config.focus_areas)}
+
+已识别构件：
+{json.dumps(component_ids, ensure_ascii=False, indent=2)}
+
+请统计每种构件在这个切片区域内的数量。注意：
+1. 只统计在此切片内完整可见的构件
+2. 部分可见的构件需要标注
+3. 如果是注释区域，统计标注的数量
+
+返回JSON格式：
+{{
+    "component_counts": {{
+        "构件类型": {{
+            "complete_count": "完整可见数量",
+            "partial_count": "部分可见数量", 
+            "annotation_count": "标注数量",
+            "total_in_slice": "切片内总数"
+        }}
+    }},
+    "slice_coverage": "这个切片的覆盖范围说明"
+}}"""
+        
+        user_content = [
+            {
+                "type": "text",
+                "text": "请统计这个切片区域内各类构件的数量。"
+            },
+            slice_image
+        ]
+        
+        return self.ai_analyzer._execute_vision_step(
+            step_name="adapted_step3_component_counts",
+            system_prompt=system_prompt,
+            user_content=user_content,
+            task_id=task_id,
+            drawing_id=drawing_id
+        )
+
+    def _adapted_step4_positions(self, 
+                                slice_config: SliceContextConfig,
+                                slice_image: Dict,
+                                previous_results: Dict,
+                                task_id: str,
+                                drawing_id: int) -> Dict[str, Any]:
+        """适配的步骤4：位置信息提取（相对切片坐标）"""
+        
+        system_prompt = f"""提取这个切片区域内构件的位置信息。
+
+切片信息：
+- 切片在原图中的位置: ({slice_config.slice_bounds[0]}, {slice_config.slice_bounds[1]})
+- 切片尺寸: {slice_config.slice_bounds[2]}x{slice_config.slice_bounds[3]}
+- 原图尺寸: {slice_config.original_image_size[0]}x{slice_config.original_image_size[1]}
+
+前面的分析结果：
+{json.dumps(previous_results, ensure_ascii=False, indent=2)}
+
+请提供构件在切片内的相对坐标（以切片左上角为原点）。
+
+返回JSON格式：
+{{
+    "component_positions": {{
+        "构件ID": {{
+            "slice_coordinates": {{
+                "x": "切片内X坐标",
+                "y": "切片内Y坐标",
+                "bbox": [x1, y1, x2, y2]
+            }},
+            "global_coordinates": {{
+                "x": "原图X坐标（切片坐标+偏移）",
+                "y": "原图Y坐标（切片坐标+偏移）",
+                "bbox": [x1, y1, x2, y2]
+            }},
+            "position_quality": "precise/approximate/estimated"
+        }}
+    }},
+    "coordinate_system": "relative_to_slice"
+}}"""
+        
+        user_content = [
+            {
+                "type": "text",
+                "text": "请提取构件在这个切片内的精确位置信息。"
+            },
+            slice_image
+        ]
+        
+        return self.ai_analyzer._execute_vision_step(
+            step_name="adapted_step4_positions",
+            system_prompt=system_prompt,
+            user_content=user_content,
+            task_id=task_id,
+            drawing_id=drawing_id
+        )
+
+    def _adapted_step5_attributes(self, 
+                                 slice_config: SliceContextConfig,
+                                 slice_image: Dict,
+                                 previous_results: Dict,
+                                 task_id: str,
+                                 drawing_id: int) -> Dict[str, Any]:
+        """适配的步骤5：属性提取（详细信息）"""
+        
+        # 根据切片类型和关注区域调整属性提取重点
+        focus_attributes = []
+        if 'dimensions' in slice_config.focus_areas:
+            focus_attributes.append("尺寸信息（长、宽、高、厚度等）")
+        if 'annotations' in slice_config.focus_areas:
+            focus_attributes.append("标注信息（文字说明、规格标注等）")
+        if 'materials' in slice_config.focus_areas:
+            focus_attributes.append("材料信息（混凝土等级、钢筋规格等）")
+        if 'components' in slice_config.focus_areas:
+            focus_attributes.append("构件详细信息（类型、编号、连接方式等）")
+        
+        system_prompt = f"""提取这个切片区域内构件的详细属性信息。
+
+切片分析重点：
+{chr(10).join(f'- {attr}' for attr in focus_attributes)}
+
+前面的分析结果：
+{json.dumps(previous_results, ensure_ascii=False, indent=2)}
+
+请重点关注这个切片类型（{slice_config.slice_type}）应该包含的属性信息。
+
+返回JSON格式：
+{{
+    "component_attributes": {{
+        "构件ID": {{
+            "dimensions": {{
+                "raw_text": "原始尺寸文本",
+                "length_m": "长度（米）",
+                "width_m": "宽度（米）",
+                "height_m": "高度（米）"
+            }},
+            "material": {{
+                "concrete_grade": "混凝土等级",
+                "steel_grade": "钢筋等级",
+                "other_materials": "其他材料"
+            }},
+            "annotations": {{
+                "visible_texts": ["可见文字列表"],
+                "dimension_markings": ["尺寸标注"],
+                "notes": "备注信息"
+            }},
+            "quality_indicators": {{
+                "dimension_clarity": "尺寸清晰度",
+                "annotation_completeness": "标注完整度",
+                "slice_coverage": "切片覆盖程度"
+            }}
+        }}
+    }},
+    "slice_analysis_summary": "这个切片的属性提取总结"
+}}"""
+        
+        user_content = [
+            {
+                "type": "text",
+                "text": f"请详细提取这个{slice_config.slice_type}切片中的构件属性信息。"
+            },
+            slice_image
+        ]
+        
+        return self.ai_analyzer._execute_vision_step(
+            step_name="adapted_step5_attributes",
+            system_prompt=system_prompt,
+            user_content=user_content,
+            task_id=task_id,
+            drawing_id=drawing_id
+        )
+
+    def _build_title_area_prompt(self) -> str:
+        """构建标题区域专用提示词"""
+        return """你是专业的建筑图纸分析专家。这是图纸的标题栏区域切片。
+
+请重点识别：
+1. 图纸标题和工程名称
+2. 图纸编号和版本
+3. 比例尺信息
+4. 设计单位和设计师
+5. 日期信息
+6. 图纸类型（平面图、立面图、剖面图等）
+
+返回JSON格式：
+{
+    "drawing_info": {
+        "title": "图纸标题",
+        "project_name": "工程名称", 
+        "drawing_number": "图纸编号",
+        "scale": "比例尺",
+        "design_unit": "设计单位",
+        "designer": "设计师",
+        "date": "日期",
+        "drawing_type": "图纸类型"
+    }
+}"""
+
+    def _build_detail_area_prompt(self) -> str:
+        """构建详图区域专用提示词"""
+        return """你是专业的建筑图纸分析专家。这是图纸的详图区域切片。
+
+请重点识别：
+1. 详图中的构件信息
+2. 详细尺寸标注
+3. 材料规格说明
+4. 施工工艺要求
+5. 连接节点信息
+
+返回JSON格式：
+{
+    "drawing_info": {
+        "detail_type": "详图类型",
+        "scale": "详图比例",
+        "focus_component": "主要构件"
+    }
+}"""
+
+    def _build_general_slice_prompt(self, slice_config: SliceContextConfig) -> str:
+        """构建通用切片提示词"""
+        return f"""你是专业的建筑图纸分析专家。这是图纸的第{slice_config.slice_index + 1}个切片区域。
+
+切片信息：
+- 类型: {slice_config.slice_type}
+- 关注内容: {', '.join(slice_config.focus_areas)}
+- 位置: 原图的 ({slice_config.slice_bounds[0]}, {slice_config.slice_bounds[1]}) 区域
+
+请根据切片内容识别相关的图纸信息。
+
+返回JSON格式：
+{{
+    "drawing_info": {{
+        "slice_type": "{slice_config.slice_type}",
+        "identified_elements": "识别到的元素列表",
+        "partial_info": "从此切片获得的信息"
+    }}
+}}"""
+
+    def _synthesize_slice_qto_data(self, 
+                                  analysis_results: Dict[str, Any], 
+                                  slice_config: SliceContextConfig) -> Dict[str, Any]:
+        """合成切片的QTO数据"""
+        
+        components = []
+        
+        # 从各步骤结果中提取构件信息
+        component_ids = analysis_results.get("component_ids", {})
+        component_counts = analysis_results.get("component_counts", {})
+        component_positions = analysis_results.get("component_positions", {})
+        component_attributes = analysis_results.get("component_attributes", {})
+        
+        # 合并构件信息
+        all_component_ids = component_ids.get("component_ids", [])
+        
+        for comp_id_info in all_component_ids:
+            comp_id = comp_id_info.get("id", "")
+            comp_type = comp_id_info.get("type", "")
+            
+            # 构建完整的构件信息
+            component = {
+                "component_id": comp_id,
+                "component_type": comp_type,
+                "slice_metadata": {
+                    "slice_index": slice_config.slice_index,
+                    "slice_id": slice_config.slice_id,
+                    "slice_type": slice_config.slice_type,
+                    "visibility": comp_id_info.get("visibility", "unknown"),
+                    "location_in_slice": comp_id_info.get("location_in_slice", "")
+                }
+            }
+            
+            # 添加计数信息
+            counts = component_counts.get("component_counts", {}).get(comp_type, {})
+            if counts:
+                component["quantity"] = counts.get("total_in_slice", 1)
+                component["count_details"] = counts
+            
+            # 添加位置信息
+            positions = component_positions.get("component_positions", {}).get(comp_id, {})
+            if positions:
+                component["position"] = positions.get("global_coordinates", {})
+                component["slice_position"] = positions.get("slice_coordinates", {})
+                component["position_quality"] = positions.get("position_quality", "estimated")
+            
+            # 添加属性信息
+            attributes = component_attributes.get("component_attributes", {}).get(comp_id, {})
+            if attributes:
+                component["dimensions"] = attributes.get("dimensions", {})
+                component["material"] = attributes.get("material", {})
+                component["annotations"] = attributes.get("annotations", {})
+                component["quality_indicators"] = attributes.get("quality_indicators", {})
+            
+            components.append(component)
+        
+        # 生成QTO数据
+        qto_data = {
+            "drawing_info": analysis_results.get("drawing_info", {}),
+            "components": components,
+            "quantity_summary": {
+                "切片构件总数": len(components),
+                "切片类型": slice_config.slice_type
+            },
+            "analysis_metadata": {
+                "slice_config": {
+                    "slice_index": slice_config.slice_index,
+                    "slice_id": slice_config.slice_id,
+                    "slice_type": slice_config.slice_type,
+                    "slice_bounds": slice_config.slice_bounds,
+                    "focus_areas": slice_config.focus_areas
+                },
+                "steps_completed": analysis_results.get("slice_metadata", {}).get("steps_completed", []),
+                "analysis_method": "slice_adapted_five_step",
+                "coordinate_system": "slice_relative_with_global_mapping"
+            }
+        }
+        
+        return qto_data
+
+    def _merge_slice_analysis_results(self, 
+                                    slice_results: List[Dict[str, Any]], 
+                                    task_id: str) -> Dict[str, Any]:
+        """合并所有切片的分析结果"""
+        
+        logger.info(f"🔄 开始合并 {len(slice_results)} 个切片的分析结果")
+        
+        # 收集所有成功的结果
+        successful_results = [r for r in slice_results if r['analysis_result'].get('success')]
+        
+        if not successful_results:
+            return {
+                "success": False,
+                "error": "No successful slice analysis results",
+                "total_slices": len(slice_results)
+            }
+        
+        # 合并图纸信息
+        merged_drawing_info = {}
+        for result in successful_results:
+            qto_data = result['analysis_result'].get('qto_data', {})
+            drawing_info = qto_data.get('drawing_info', {})
+            
+            # 优先保留非空值
+            for key, value in drawing_info.items():
+                if value and (key not in merged_drawing_info or not merged_drawing_info[key]):
+                    merged_drawing_info[key] = value
+        
+        # 合并构件信息
+        all_components = []
+        for result in successful_results:
+            qto_data = result['analysis_result'].get('qto_data', {})
+            components = qto_data.get('components', [])
+            all_components.extend(components)
+        
+        # 生成最终结果
+        merged_result = {
+            "success": True,
+            "qto_data": {
+                "drawing_info": merged_drawing_info,
+                "components": all_components,
+                "quantity_summary": {
+                    "总构件数": len(all_components),
+                    "切片数量": len(successful_results),
+                    "成功率": f"{len(successful_results)}/{len(slice_results)}"
+                },
+                "analysis_metadata": {
+                    "merge_method": "slice_adapted_multi_turn",
+                    "total_slices": len(slice_results),
+                    "successful_slices": len(successful_results),
+                    "analysis_timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "task_id": task_id
+                }
+            },
+            "slice_results": slice_results
+        }
+        
+        logger.info(f"✅ 切片分析结果合并完成: {len(all_components)} 个构件")
+        return merged_result
+
+# 全局实例
+slice_vision_adapter = SliceVisionAdapter()
