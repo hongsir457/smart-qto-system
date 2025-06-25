@@ -1,0 +1,28 @@
+{
+  "verification_time": "2025-06-12T11:09:56.612870",
+  "status": "success",
+  "fixes_validated": [
+    "UnifiedAnalysisEngine调用OCR时自动保存",
+    "Celery任务保存时包含OCR存储信息",
+    "完整数据链路OCR信息传递"
+  ],
+  "ocr_storage_summary": [
+    {
+      "image_index": 0,
+      "image_path": "fix_verification_test.png",
+      "s3_key": "ocr_results/3e1146c5-e068-4fc0-ae76-362c7fa14d59.json",
+      "s3_url": "https://objectstorageapi.hzh.sealos.run/gkg9z6uk-smaryqto/ocr_results/3e1146c5-e068-4fc0-ae76-362c7fa14d59.json",
+      "saved_at": null
+    }
+  ],
+  "analysis_result_keys": [
+    "analysis_engine",
+    "source_type",
+    "total_components",
+    "components",
+    "analysis_summary",
+    "analysis_details",
+    "ocr_storage_summary",
+    "processing_time"
+  ]
+}

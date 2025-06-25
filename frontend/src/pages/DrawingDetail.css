@@ -1,0 +1,437 @@
+/* NVIDIA GeForce风格样式 - 图纸详情页 */
+.drawing-detail-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #000000 100%);
+  color: #ffffff;
+  font-family: 'NVIDIA Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* 顶部标题栏 */
+.drawing-detail-header {
+  background: linear-gradient(90deg, #76b900 0%, #00d4aa 100%);
+  padding: 24px 32px;
+  box-shadow: 0 8px 32px rgba(118, 185, 0, 0.3);
+}
+
+.drawing-detail-header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawing-detail-title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drawing-detail-brand {
+  font-size: 32px;
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.drawing-detail-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.8;
+}
+
+/* 功能按钮栏 */
+.drawing-detail-actions {
+  padding: 24px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawing-detail-actions-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.drawing-detail-actions-center {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.drawing-detail-actions-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nvidia-detail-btn {
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+}
+
+.nvidia-detail-btn-back {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nvidia-detail-btn-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nvidia-detail-btn-primary {
+  background: linear-gradient(45deg, #76b900, #00d4aa);
+  color: #000000;
+  font-weight: 700;
+}
+
+.nvidia-detail-btn-primary:hover {
+  background: linear-gradient(45deg, #8bc34a, #26a69a);
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(118, 185, 0, 0.4);
+}
+
+.nvidia-detail-btn-secondary {
+  background: rgba(118, 185, 0, 0.1);
+  color: #76b900;
+  border: 1px solid rgba(118, 185, 0, 0.3);
+}
+
+.nvidia-detail-btn-secondary:hover {
+  background: rgba(118, 185, 0, 0.2);
+  color: #76b900;
+  border-color: #76b900;
+}
+
+.nvidia-detail-btn-danger {
+  background: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+  border: 1px solid rgba(255, 77, 79, 0.3);
+}
+
+.nvidia-detail-btn-danger:hover {
+  background: rgba(255, 77, 79, 0.2);
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 77, 79, 0.3);
+}
+
+/* 主要内容区域 */
+.drawing-detail-content {
+  padding: 0 32px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 信息块通用样式 */
+.nvidia-info-block {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(118, 185, 0, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.nvidia-block-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(118, 185, 0, 0.2);
+}
+
+.nvidia-block-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nvidia-block-icon {
+  color: #76b900;
+  font-size: 24px;
+}
+
+/* 图纸信息块 */
+.drawing-info-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.drawing-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drawing-info-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.drawing-info-value {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* OCR识别块 */
+.ocr-recognition-content {
+  min-height: 200px;
+}
+
+.ocr-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  gap: 16px;
+}
+
+.ocr-empty-icon {
+  font-size: 48px;
+  color: rgba(118, 185, 0, 0.4);
+}
+
+.ocr-empty-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.ocr-empty-hint {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+.ocr-loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 16px;
+}
+
+.ocr-loading-text {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* 工程量清单块 */
+.quantity-list-content {
+  min-height: 300px;
+}
+
+.quantity-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+  gap: 16px;
+}
+
+.quantity-empty-icon {
+  font-size: 56px;
+  color: rgba(118, 185, 0, 0.4);
+}
+
+.quantity-empty-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.quantity-empty-hint {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+/* 工程量汇总 */
+.quantity-summary {
+  background: rgba(118, 185, 0, 0.1);
+  border: 1px solid rgba(118, 185, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quantity-summary-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #76b900;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quantity-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.quantity-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.quantity-summary-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quantity-summary-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* 工程量表格 */
+.nvidia-quantity-table {
+  margin-top: 20px;
+}
+
+.nvidia-quantity-table .ant-table {
+  background: transparent !important;
+}
+
+.nvidia-quantity-table .ant-table-thead > tr > th {
+  background: rgba(118, 185, 0, 0.15) !important;
+  border-bottom: 1px solid rgba(118, 185, 0, 0.3) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 12px !important;
+}
+
+.nvidia-quantity-table .ant-table-tbody > tr {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.nvidia-quantity-table .ant-table-tbody > tr:hover {
+  background: rgba(118, 185, 0, 0.05) !important;
+}
+
+.nvidia-quantity-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .drawing-detail-content {
+    padding: 0 24px 24px;
+  }
+  
+  .drawing-detail-actions {
+    padding: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .drawing-detail-header-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .drawing-detail-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .drawing-detail-actions-left,
+  .drawing-detail-actions-center,
+  .drawing-detail-actions-right {
+    justify-content: center;
+  }
+  
+  .nvidia-detail-btn {
+    justify-content: center;
+  }
+  
+  .drawing-info-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .quantity-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ant Design组件覆盖 */
+.drawing-detail-container .ant-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(118, 185, 0, 0.2) !important;
+  border-radius: 12px !important;
+}
+
+.drawing-detail-container .ant-card-head {
+  background: rgba(118, 185, 0, 0.1) !important;
+  border-bottom: 1px solid rgba(118, 185, 0, 0.2) !important;
+}
+
+.drawing-detail-container .ant-card-head-title {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.drawing-detail-container .ant-card-body {
+  color: #ffffff !important;
+}
+
+.drawing-detail-container .ant-spin-dot-item {
+  background-color: #76b900 !important;
+}
+
+.drawing-detail-container .ant-spin-text {
+  color: #ffffff !important;
+} 

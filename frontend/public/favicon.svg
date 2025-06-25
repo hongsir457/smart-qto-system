@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- 背景圆形 -->
+  <circle cx="16" cy="16" r="16" fill="#1890ff"/>
+  
+  <!-- 建筑图标 -->
+  <g fill="white">
+    <!-- 主建筑 -->
+    <rect x="8" y="12" width="16" height="12" fill="white" opacity="0.9"/>
+    
+    <!-- 屋顶 -->
+    <polygon points="6,12 16,6 26,12" fill="white"/>
+    
+    <!-- 窗户 -->
+    <rect x="10" y="15" width="3" height="3" fill="#1890ff"/>
+    <rect x="19" y="15" width="3" height="3" fill="#1890ff"/>
+    <rect x="10" y="20" width="3" height="2" fill="#1890ff"/>
+    <rect x="19" y="20" width="3" height="2" fill="#1890ff"/>
+    
+    <!-- 门 -->
+    <rect x="14.5" y="18" width="3" height="6" fill="#1890ff"/>
+  </g>
+  
+  <!-- 计算器元素 -->
+  <g fill="white" opacity="0.8">
+    <rect x="26" y="8" width="4" height="1" fill="white"/>
+    <rect x="26" y="10" width="4" height="1" fill="white"/>
+    <rect x="26" y="12" width="4" height="1" fill="white"/>
+  </g>
+</svg> 

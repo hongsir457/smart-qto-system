@@ -1,0 +1,120 @@
+{
+  "task_id": "test_task_001",
+  "total_slices": 6,
+  "slice_info": [
+    {
+      "slice_id": "test_task_001_slice_00_00",
+      "position": [
+        0,
+        0
+      ],
+      "size": [
+        1602,
+        1469
+      ],
+      "overlap": [
+        0,
+        0,
+        204,
+        204
+      ],
+      "file_size_kb": 22.109375,
+      "url": null
+    },
+    {
+      "slice_id": "test_task_001_slice_00_01",
+      "position": [
+        1398,
+        0
+      ],
+      "size": [
+        1602,
+        1469
+      ],
+      "overlap": [
+        204,
+        0,
+        0,
+        204
+      ],
+      "file_size_kb": 13.87890625,
+      "url": null
+    },
+    {
+      "slice_id": "test_task_001_slice_01_00",
+      "position": [
+        0,
+        1265
+      ],
+      "size": [
+        1602,
+        1469
+      ],
+      "overlap": [
+        0,
+        204,
+        204,
+        204
+      ],
+      "file_size_kb": 17.58203125,
+      "url": null
+    },
+    {
+      "slice_id": "test_task_001_slice_01_01",
+      "position": [
+        1398,
+        1265
+      ],
+      "size": [
+        1602,
+        1469
+      ],
+      "overlap": [
+        204,
+        204,
+        0,
+        204
+      ],
+      "file_size_kb": 13.84375,
+      "url": null
+    },
+    {
+      "slice_id": "test_task_001_slice_02_00",
+      "position": [
+        0,
+        2530
+      ],
+      "size": [
+        1602,
+        1469
+      ],
+      "overlap": [
+        0,
+        204,
+        204,
+        0
+      ],
+      "file_size_kb": 13.8671875,
+      "url": null
+    },
+    {
+      "slice_id": "test_task_001_slice_02_01",
+      "position": [
+        1398,
+        2530
+      ],
+      "size": [
+        1602,
+        1469
+      ],
+      "overlap": [
+        204,
+        204,
+        0,
+        0
+      ],
+      "file_size_kb": 13.87890625,
+      "url": null
+    }
+  ]
+}

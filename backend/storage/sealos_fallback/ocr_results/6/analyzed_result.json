@@ -1,0 +1,15 @@
+{
+  "drawing_basic_info": {},
+  "component_list": [],
+  "global_notes": [],
+  "text_regions_analyzed": [],
+  "analysis_summary": {
+    "message": "No OCR text regions found for analysis."
+  },
+  "metadata": {
+    "task_id": "840a9e43-35d6-4662-a801-929abd5ec1fe",
+    "processed_at": 1750759080.272025,
+    "processing_method": "gpt_analysis_only",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,7424 @@
+{
+  "meta": {
+    "ocr_id": "ef2083cc-83a8-476f-80d2-e378a52cbbd5",
+    "drawing_id": 4,
+    "processing_time": 0,
+    "total_images": 1,
+    "successful_images": 1,
+    "processing_method": "shared_slice_coordinate_restored"
+  },
+  "merged_ocr_result": {
+    "total_text_regions": 434,
+    "text_regions": [
+      {
+        "id": 0,
+        "text": "1",
+        "confidence": 0.9983586668968201,
+        "bbox_xyxy": {
+          "x_min": 1821.0,
+          "y_min": 358.0,
+          "x_max": 1885.0,
+          "y_max": 466.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "日期 DATE",
+        "confidence": 0.9440146088600159,
+        "bbox_xyxy": {
+          "x_min": 456.0,
+          "y_min": 577.0,
+          "x_max": 537.0,
+          "y_max": 933.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "姓名 NAME",
+        "confidence": 0.9539514780044556,
+        "bbox_xyxy": {
+          "x_min": 450.0,
+          "y_min": 999.0,
+          "x_max": 540.0,
+          "y_max": 1395.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "专业 SPECI.",
+        "confidence": 0.9701313376426697,
+        "bbox_xyxy": {
+          "x_min": 458.0,
+          "y_min": 1441.0,
+          "x_max": 537.0,
+          "y_max": 1851.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "2",
+        "confidence": 0.9999532699584961,
+        "bbox_xyxy": {
+          "x_min": 1818.0,
+          "y_min": 344.0,
+          "x_max": 1913.0,
+          "y_max": 476.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "1",
+        "confidence": 0.992254376411438,
+        "bbox_xyxy": {
+          "x_min": 31.0,
+          "y_min": 354.0,
+          "x_max": 104.0,
+          "y_max": 483.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "2",
+        "confidence": 0.9999352693557739,
+        "bbox_xyxy": {
+          "x_min": 35.0,
+          "y_min": 348.0,
+          "x_max": 127.0,
+          "y_max": 477.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3",
+        "confidence": 0.9999499320983887,
+        "bbox_xyxy": {
+          "x_min": 1852.0,
+          "y_min": 346.0,
+          "x_max": 1937.0,
+          "y_max": 471.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "3",
+        "confidence": 0.9999145269393921,
+        "bbox_xyxy": {
+          "x_min": 64.0,
+          "y_min": 346.0,
+          "x_max": 149.0,
+          "y_max": 471.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "4",
+        "confidence": 0.9999063014984131,
+        "bbox_xyxy": {
+          "x_min": 1883.0,
+          "y_min": 358.0,
+          "x_max": 1968.0,
+          "y_max": 477.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "4",
+        "confidence": 0.9998377561569214,
+        "bbox_xyxy": {
+          "x_min": 91.0,
+          "y_min": 354.0,
+          "x_max": 185.0,
+          "y_max": 481.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "5",
+        "confidence": 0.9938223361968994,
+        "bbox_xyxy": {
+          "x_min": 1931.0,
+          "y_min": 350.0,
+          "x_max": 1990.0,
+          "y_max": 462.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "5",
+        "confidence": 0.999772846698761,
+        "bbox_xyxy": {
+          "x_min": 139.0,
+          "y_min": 346.0,
+          "x_max": 230.0,
+          "y_max": 475.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "6",
+        "confidence": 0.5351609587669373,
+        "bbox_xyxy": {
+          "x_min": 1950.0,
+          "y_min": 362.0,
+          "x_max": 1990.0,
+          "y_max": 433.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "10",
+        "confidence": 0.999817967414856,
+        "bbox_xyxy": {
+          "x_min": 305.0,
+          "y_min": 348.0,
+          "x_max": 462.0,
+          "y_max": 471.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "A",
+        "confidence": 0.998399555683136,
+        "bbox_xyxy": {
+          "x_min": 1421.0,
+          "y_min": 1516.0,
+          "x_max": 1510.0,
+          "y_max": 1622.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "专",
+        "confidence": 0.9753860831260681,
+        "bbox_xyxy": {
+          "x_min": 462.0,
+          "y_min": 25.0,
+          "x_max": 529.0,
+          "y_max": 125.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "日期 DATE",
+        "confidence": 0.9342777132987976,
+        "bbox_xyxy": {
+          "x_min": 458.0,
+          "y_min": 200.0,
+          "x_max": 537.0,
+          "y_max": 556.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "姓名 NAME",
+        "confidence": 0.9867590665817261,
+        "bbox_xyxy": {
+          "x_min": 460.0,
+          "y_min": 637.0,
+          "x_max": 533.0,
+          "y_max": 1020.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "专业 SPECI.",
+        "confidence": 0.9922882914543152,
+        "bbox_xyxy": {
+          "x_min": 454.0,
+          "y_min": 1064.0,
+          "x_max": 539.0,
+          "y_max": 1478.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "D",
+        "confidence": 0.9929261803627014,
+        "bbox_xyxy": {
+          "x_min": 1595.0,
+          "y_min": 1041.0,
+          "x_max": 1680.0,
+          "y_max": 1164.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "600",
+        "confidence": 0.9985687136650085,
+        "bbox_xyxy": {
+          "x_min": 1904.0,
+          "y_min": 1195.0,
+          "x_max": 1990.0,
+          "y_max": 1332.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "C",
+        "confidence": 0.953936755657196,
+        "bbox_xyxy": {
+          "x_min": 1582.0,
+          "y_min": 1347.0,
+          "x_max": 1696.0,
+          "y_max": 1489.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "000",
+        "confidence": 0.6919339299201965,
+        "bbox_xyxy": {
+          "x_min": 1910.0,
+          "y_min": 1817.0,
+          "x_max": 1987.0,
+          "y_max": 1926.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "2",
+        "confidence": 0.9948114156723022,
+        "bbox_xyxy": {
+          "x_min": 1624.0,
+          "y_min": 204.0,
+          "x_max": 1703.0,
+          "y_max": 323.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "1",
+        "confidence": 0.6737064123153687,
+        "bbox_xyxy": {
+          "x_min": 767.0,
+          "y_min": 227.0,
+          "x_max": 782.0,
+          "y_max": 252.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3900",
+        "confidence": 0.9995975494384766,
+        "bbox_xyxy": {
+          "x_min": 1147.0,
+          "y_min": 535.0,
+          "x_max": 1298.0,
+          "y_max": 612.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "K-JKL1 (1) 250x350",
+        "confidence": 0.9902545213699341,
+        "bbox_xyxy": {
+          "x_min": 985.0,
+          "y_min": 760.0,
+          "x_max": 1473.0,
+          "y_max": 824.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "500x500 (0/250-0/150)",
+        "confidence": 0.9878097772598267,
+        "bbox_xyxy": {
+          "x_min": 991.0,
+          "y_min": 841.0,
+          "x_max": 1612.0,
+          "y_max": 927.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "0",
+        "confidence": 0.5122211575508118,
+        "bbox_xyxy": {
+          "x_min": 122.0,
+          "y_min": 1195.0,
+          "x_max": 214.0,
+          "y_max": 1324.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "000",
+        "confidence": 0.9918717741966248,
+        "bbox_xyxy": {
+          "x_min": 127.0,
+          "y_min": 1815.0,
+          "x_max": 203.0,
+          "y_max": 1930.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "3",
+        "confidence": 0.9655750393867493,
+        "bbox_xyxy": {
+          "x_min": 715.0,
+          "y_min": 199.0,
+          "x_max": 802.0,
+          "y_max": 328.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "4",
+        "confidence": 0.9989181756973267,
+        "bbox_xyxy": {
+          "x_min": 1609.0,
+          "y_min": 206.0,
+          "x_max": 1684.0,
+          "y_max": 321.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3900",
+        "confidence": 0.999700665473938,
+        "bbox_xyxy": {
+          "x_min": 239.0,
+          "y_min": 533.0,
+          "x_max": 398.0,
+          "y_max": 618.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3900",
+        "confidence": 0.9997032880783081,
+        "bbox_xyxy": {
+          "x_min": 1124.0,
+          "y_min": 533.0,
+          "x_max": 1282.0,
+          "y_max": 618.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "5",
+        "confidence": 0.9556593894958496,
+        "bbox_xyxy": {
+          "x_min": 701.0,
+          "y_min": 202.0,
+          "x_max": 782.0,
+          "y_max": 327.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "6",
+        "confidence": 0.9946221113204956,
+        "bbox_xyxy": {
+          "x_min": 1591.0,
+          "y_min": 204.0,
+          "x_max": 1663.0,
+          "y_max": 323.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3900",
+        "confidence": 0.9997665882110596,
+        "bbox_xyxy": {
+          "x_min": 222.0,
+          "y_min": 533.0,
+          "x_max": 380.0,
+          "y_max": 618.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3900",
+        "confidence": 0.9997171759605408,
+        "bbox_xyxy": {
+          "x_min": 1103.0,
+          "y_min": 533.0,
+          "x_max": 1263.0,
+          "y_max": 618.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "M7",
+        "confidence": 0.6876512765884399,
+        "bbox_xyxy": {
+          "x_min": 684.0,
+          "y_min": 199.0,
+          "x_max": 764.0,
+          "y_max": 311.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "0",
+        "confidence": 0.5435556769371033,
+        "bbox_xyxy": {
+          "x_min": 1570.0,
+          "y_min": 206.0,
+          "x_max": 1643.0,
+          "y_max": 321.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "46800",
+        "confidence": 0.9947470426559448,
+        "bbox_xyxy": {
+          "x_min": 630.0,
+          "y_min": 356.0,
+          "x_max": 815.0,
+          "y_max": 433.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3900",
+        "confidence": 0.9997380375862122,
+        "bbox_xyxy": {
+          "x_min": 201.0,
+          "y_min": 533.0,
+          "x_max": 359.0,
+          "y_max": 618.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "3900",
+        "confidence": 0.9996904134750366,
+        "bbox_xyxy": {
+          "x_min": 1085.0,
+          "y_min": 533.0,
+          "x_max": 1244.0,
+          "y_max": 618.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "9",
+        "confidence": 0.9992788434028625,
+        "bbox_xyxy": {
+          "x_min": 666.0,
+          "y_min": 206.0,
+          "x_max": 738.0,
+          "y_max": 323.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "10",
+        "confidence": 0.9988695383071899,
+        "bbox_xyxy": {
+          "x_min": 1524.0,
+          "y_min": 202.0,
+          "x_max": 1653.0,
+          "y_max": 327.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3900",
+        "confidence": 0.999730110168457,
+        "bbox_xyxy": {
+          "x_min": 187.0,
+          "y_min": 535.0,
+          "x_max": 338.0,
+          "y_max": 616.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3900",
+        "confidence": 0.9997466802597046,
+        "bbox_xyxy": {
+          "x_min": 1068.0,
+          "y_min": 535.0,
+          "x_max": 1222.0,
+          "y_max": 614.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "11",
+        "confidence": 0.999712347984314,
+        "bbox_xyxy": {
+          "x_min": 624.0,
+          "y_min": 194.0,
+          "x_max": 740.0,
+          "y_max": 333.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "12",
+        "confidence": 0.998447060585022,
+        "bbox_xyxy": {
+          "x_min": 1504.0,
+          "y_min": 200.0,
+          "x_max": 1634.0,
+          "y_max": 331.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3900",
+        "confidence": 0.9996788501739502,
+        "bbox_xyxy": {
+          "x_min": 166.0,
+          "y_min": 535.0,
+          "x_max": 317.0,
+          "y_max": 614.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3900",
+        "confidence": 0.9997842907905579,
+        "bbox_xyxy": {
+          "x_min": 1051.0,
+          "y_min": 535.0,
+          "x_max": 1205.0,
+          "y_max": 614.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "39",
+        "confidence": 0.9906069040298462,
+        "bbox_xyxy": {
+          "x_min": 1931.0,
+          "y_min": 537.0,
+          "x_max": 1990.0,
+          "y_max": 616.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "13",
+        "confidence": 0.9997187256813049,
+        "bbox_xyxy": {
+          "x_min": 601.0,
+          "y_min": 200.0,
+          "x_max": 726.0,
+          "y_max": 327.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3900",
+        "confidence": 0.9997212886810303,
+        "bbox_xyxy": {
+          "x_min": 147.0,
+          "y_min": 535.0,
+          "x_max": 301.0,
+          "y_max": 614.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "D",
+        "confidence": 0.9879810214042664,
+        "bbox_xyxy": {
+          "x_min": 1551.0,
+          "y_min": 1041.0,
+          "x_max": 1634.0,
+          "y_max": 1166.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "100.",
+        "confidence": 0.572163999080658,
+        "bbox_xyxy": {
+          "x_min": 1143.0,
+          "y_min": 1197.0,
+          "x_max": 1228.0,
+          "y_max": 1322.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "250/0-0/0)",
+        "confidence": 0.9981209635734558,
+        "bbox_xyxy": {
+          "x_min": 848.0,
+          "y_min": 1594.0,
+          "x_max": 940.0,
+          "y_max": 1920.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "250x500",
+        "confidence": 0.9552274942398071,
+        "bbox_xyxy": {
+          "x_min": 758.0,
+          "y_min": 1671.0,
+          "x_max": 843.0,
+          "y_max": 1908.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "00",
+        "confidence": 0.48579829931259155,
+        "bbox_xyxy": {
+          "x_min": 1137.0,
+          "y_min": 1822.0,
+          "x_max": 1228.0,
+          "y_max": 1926.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "5000",
+        "confidence": 0.9997035264968872,
+        "bbox_xyxy": {
+          "x_min": 1904.0,
+          "y_min": 85.0,
+          "x_max": 1990.0,
+          "y_max": 254.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "B",
+        "confidence": 0.9998420476913452,
+        "bbox_xyxy": {
+          "x_min": 1597.0,
+          "y_min": 672.0,
+          "x_max": 1682.0,
+          "y_max": 793.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "12600",
+        "confidence": 0.9992561340332031,
+        "bbox_xyxy": {
+          "x_min": 1730.0,
+          "y_min": 799.0,
+          "x_max": 1808.0,
+          "y_max": 970.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "5000",
+        "confidence": 0.9995866417884827,
+        "bbox_xyxy": {
+          "x_min": 122.0,
+          "y_min": 87.0,
+          "x_max": 201.0,
+          "y_max": 246.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "500x600 (0/250-0/0)",
+        "confidence": 0.9873194694519043,
+        "bbox_xyxy": {
+          "x_min": 336.0,
+          "y_min": 1363.0,
+          "x_max": 425.0,
+          "y_max": 1926.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "<-JKL2 (1)250x600",
+        "confidence": 0.9967280030250549,
+        "bbox_xyxy": {
+          "x_min": 244.0,
+          "y_min": 1434.0,
+          "x_max": 328.0,
+          "y_max": 1920.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "QO00",
+        "confidence": 0.5225180983543396,
+        "bbox_xyxy": {
+          "x_min": 124.0,
+          "y_min": 1459.0,
+          "x_max": 197.0,
+          "y_max": 1584.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "320;3?20",
+        "confidence": 0.9777679443359375,
+        "bbox_xyxy": {
+          "x_min": 521.0,
+          "y_min": 1657.0,
+          "x_max": 601.0,
+          "y_max": 1917.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "10@100",
+        "confidence": 0.9910387992858887,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 1695.0,
+          "x_max": 506.0,
+          "y_max": 1920.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "2Φ12",
+        "confidence": 0.9232422113418579,
+        "bbox_xyxy": {
+          "x_min": 616.0,
+          "y_min": 1745.0,
+          "x_max": 684.0,
+          "y_max": 1884.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "N-L2(",
+        "confidence": 0.9098008275032043,
+        "bbox_xyxy": {
+          "x_min": 1811.0,
+          "y_min": 860.0,
+          "x_max": 1983.0,
+          "y_max": 937.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "80",
+        "confidence": 0.7465623617172241,
+        "bbox_xyxy": {
+          "x_min": 1334.0,
+          "y_min": 912.0,
+          "x_max": 1398.0,
+          "y_max": 991.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "18@15",
+        "confidence": 0.898550808429718,
+        "bbox_xyxy": {
+          "x_min": 1821.0,
+          "y_min": 956.0,
+          "x_max": 1989.0,
+          "y_max": 1024.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "2",
+        "confidence": 0.8581750392913818,
+        "bbox_xyxy": {
+          "x_min": 1336.0,
+          "y_min": 993.0,
+          "x_max": 1400.0,
+          "y_max": 1047.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "218; 2",
+        "confidence": 0.9787792563438416,
+        "bbox_xyxy": {
+          "x_min": 1818.0,
+          "y_min": 1042.0,
+          "x_max": 1990.0,
+          "y_max": 1125.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "2875",
+        "confidence": 0.9999198913574219,
+        "bbox_xyxy": {
+          "x_min": 1817.0,
+          "y_min": 1420.0,
+          "x_max": 1974.0,
+          "y_max": 1497.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "N-L1 (1",
+        "confidence": 0.9601158499717712,
+        "bbox_xyxy": {
+          "x_min": 1800.0,
+          "y_min": 1595.0,
+          "x_max": 1989.0,
+          "y_max": 1670.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "18@150",
+        "confidence": 0.9671761393547058,
+        "bbox_xyxy": {
+          "x_min": 1804.0,
+          "y_min": 1688.0,
+          "x_max": 1989.0,
+          "y_max": 1757.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "2020; 3",
+        "confidence": 0.8627350926399231,
+        "bbox_xyxy": {
+          "x_min": 1791.0,
+          "y_min": 1773.0,
+          "x_max": 1990.0,
+          "y_max": 1856.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "K-JKL3(1)250x5",
+        "confidence": 0.9869998693466187,
+        "bbox_xyxy": {
+          "x_min": 759.0,
+          "y_min": 12.0,
+          "x_max": 844.0,
+          "y_max": 435.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "500x500 250/0-",
+        "confidence": 0.9554645419120789,
+        "bbox_xyxy": {
+          "x_min": 850.0,
+          "y_min": 19.0,
+          "x_max": 937.0,
+          "y_max": 437.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "5000",
+        "confidence": 0.9996548295021057,
+        "bbox_xyxy": {
+          "x_min": 1145.0,
+          "y_min": 90.0,
+          "x_max": 1222.0,
+          "y_max": 246.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3Φ20; 3?20",
+        "confidence": 0.8999499082565308,
+        "bbox_xyxy": {
+          "x_min": 1026.0,
+          "y_min": 160.0,
+          "x_max": 1123.0,
+          "y_max": 446.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "0000000",
+        "confidence": 0.46525388956069946,
+        "bbox_xyxy": {
+          "x_min": 939.0,
+          "y_min": 214.0,
+          "x_max": 1021.0,
+          "y_max": 436.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "B",
+        "confidence": 0.9956770539283752,
+        "bbox_xyxy": {
+          "x_min": 1558.0,
+          "y_min": 675.0,
+          "x_max": 1632.0,
+          "y_max": 789.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "12600",
+        "confidence": 0.9998486638069153,
+        "bbox_xyxy": {
+          "x_min": 1321.0,
+          "y_min": 797.0,
+          "x_max": 1406.0,
+          "y_max": 981.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "N-L2 (1)200x300",
+        "confidence": 0.9813651442527771,
+        "bbox_xyxy": {
+          "x_min": 25.0,
+          "y_min": 862.0,
+          "x_max": 469.0,
+          "y_max": 933.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "18@150 (2)",
+        "confidence": 0.9108022451400757,
+        "bbox_xyxy": {
+          "x_min": 33.0,
+          "y_min": 958.0,
+          "x_max": 309.0,
+          "y_max": 1024.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 9,
+        "text": "218; 2?18",
+        "confidence": 0.9827710390090942,
+        "bbox_xyxy": {
+          "x_min": 33.0,
+          "y_min": 1047.0,
+          "x_max": 299.0,
+          "y_max": 1120.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 10,
+        "text": "500x600 (250/0-0/0)",
+        "confidence": 0.9979254007339478,
+        "bbox_xyxy": {
+          "x_min": 850.0,
+          "y_min": 1362.0,
+          "x_max": 935.0,
+          "y_max": 1930.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 11,
+        "text": "2875",
+        "confidence": 0.9998452663421631,
+        "bbox_xyxy": {
+          "x_min": 25.0,
+          "y_min": 1420.0,
+          "x_max": 185.0,
+          "y_max": 1497.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "）(",
+        "confidence": 0.3671450614929199,
+        "bbox_xyxy": {
+          "x_min": 481.0,
+          "y_min": 1443.0,
+          "x_max": 545.0,
+          "y_max": 1476.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 13,
+        "text": "(-JKL2 (1)250x600",
+        "confidence": 0.9513716101646423,
+        "bbox_xyxy": {
+          "x_min": 765.0,
+          "y_min": 1439.0,
+          "x_max": 838.0,
+          "y_max": 1915.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 14,
+        "text": "7000",
+        "confidence": 0.9996835589408875,
+        "bbox_xyxy": {
+          "x_min": 1138.0,
+          "y_min": 1442.0,
+          "x_max": 1222.0,
+          "y_max": 1604.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 15,
+        "text": "N-L1 (1) 250x400",
+        "confidence": 0.9809888005256653,
+        "bbox_xyxy": {
+          "x_min": 23.0,
+          "y_min": 1603.0,
+          "x_max": 442.0,
+          "y_max": 1661.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 16,
+        "text": "18@150 (2)",
+        "confidence": 0.9718027114868164,
+        "bbox_xyxy": {
+          "x_min": 19.0,
+          "y_min": 1690.0,
+          "x_max": 295.0,
+          "y_max": 1757.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 17,
+        "text": "220; 3?20",
+        "confidence": 0.9924070835113525,
+        "bbox_xyxy": {
+          "x_min": 19.0,
+          "y_min": 1782.0,
+          "x_max": 292.0,
+          "y_max": 1849.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "UKL",
+        "confidence": 0.8280369639396667,
+        "bbox_xyxy": {
+          "x_min": 259.0,
+          "y_min": 31.0,
+          "x_max": 315.0,
+          "y_max": 117.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "210@1",
+        "confidence": 0.9095723032951355,
+        "bbox_xyxy": {
+          "x_min": 433.0,
+          "y_min": 62.0,
+          "x_max": 504.0,
+          "y_max": 183.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "0",
+        "confidence": 0.4692990481853485,
+        "bbox_xyxy": {
+          "x_min": 336.0,
+          "y_min": 86.0,
+          "x_max": 419.0,
+          "y_max": 187.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "K-JKL1 (1) 250x350",
+        "confidence": 0.9776380062103271,
+        "bbox_xyxy": {
+          "x_min": 993.0,
+          "y_min": 685.0,
+          "x_max": 1470.0,
+          "y_max": 747.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "500x500 (250/0-0/150)",
+        "confidence": 0.9905381202697754,
+        "bbox_xyxy": {
+          "x_min": 991.0,
+          "y_min": 770.0,
+          "x_max": 1611.0,
+          "y_max": 847.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "10@100",
+        "confidence": 0.9989118576049805,
+        "bbox_xyxy": {
+          "x_min": 989.0,
+          "y_min": 864.0,
+          "x_max": 1211.0,
+          "y_max": 937.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "3Φ20; 320",
+        "confidence": 0.9032054543495178,
+        "bbox_xyxy": {
+          "x_min": 981.0,
+          "y_min": 956.0,
+          "x_max": 1269.0,
+          "y_max": 1028.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "3900",
+        "confidence": 0.9969368577003479,
+        "bbox_xyxy": {
+          "x_min": 1153.0,
+          "y_min": 1070.0,
+          "x_max": 1296.0,
+          "y_max": 1133.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "?",
+        "confidence": 0.5297573208808899,
+        "bbox_xyxy": {
+          "x_min": 1623.0,
+          "y_min": 1458.0,
+          "x_max": 1700.0,
+          "y_max": 1579.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "3900",
+        "confidence": 0.9998020529747009,
+        "bbox_xyxy": {
+          "x_min": 241.0,
+          "y_min": 1068.0,
+          "x_max": 396.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3900",
+        "confidence": 0.999533474445343,
+        "bbox_xyxy": {
+          "x_min": 1126.0,
+          "y_min": 1066.0,
+          "x_max": 1278.0,
+          "y_max": 1145.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3",
+        "confidence": 0.9843419194221497,
+        "bbox_xyxy": {
+          "x_min": 718.0,
+          "y_min": 1459.0,
+          "x_max": 798.0,
+          "y_max": 1584.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "4",
+        "confidence": 0.9996393918991089,
+        "bbox_xyxy": {
+          "x_min": 1609.0,
+          "y_min": 1468.0,
+          "x_max": 1682.0,
+          "y_max": 1580.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "3900",
+        "confidence": 0.9996234178543091,
+        "bbox_xyxy": {
+          "x_min": 224.0,
+          "y_min": 1066.0,
+          "x_max": 377.0,
+          "y_max": 1145.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3900",
+        "confidence": 0.9998108148574829,
+        "bbox_xyxy": {
+          "x_min": 1105.0,
+          "y_min": 1068.0,
+          "x_max": 1263.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "5",
+        "confidence": 0.9957125186920166,
+        "bbox_xyxy": {
+          "x_min": 703.0,
+          "y_min": 1461.0,
+          "x_max": 778.0,
+          "y_max": 1580.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "6",
+        "confidence": 0.9975211024284363,
+        "bbox_xyxy": {
+          "x_min": 1593.0,
+          "y_min": 1464.0,
+          "x_max": 1659.0,
+          "y_max": 1576.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "3900",
+        "confidence": 0.9988036751747131,
+        "bbox_xyxy": {
+          "x_min": 203.0,
+          "y_min": 1068.0,
+          "x_max": 357.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3900",
+        "confidence": 0.9986441135406494,
+        "bbox_xyxy": {
+          "x_min": 1087.0,
+          "y_min": 1066.0,
+          "x_max": 1240.0,
+          "y_max": 1145.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "46800",
+        "confidence": 0.997559666633606,
+        "bbox_xyxy": {
+          "x_min": 633.0,
+          "y_min": 1253.0,
+          "x_max": 817.0,
+          "y_max": 1328.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "80",
+        "confidence": 0.9856911897659302,
+        "bbox_xyxy": {
+          "x_min": 1578.0,
+          "y_min": 1470.0,
+          "x_max": 1636.0,
+          "y_max": 1570.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "一层梁结构改造加固平面图",
+        "confidence": 0.965395450592041,
+        "bbox_xyxy": {
+          "x_min": 56.0,
+          "y_min": 1826.0,
+          "x_max": 1385.0,
+          "y_max": 1917.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "3900",
+        "confidence": 0.9997753500938416,
+        "bbox_xyxy": {
+          "x_min": 187.0,
+          "y_min": 1068.0,
+          "x_max": 340.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3900",
+        "confidence": 0.9997535943984985,
+        "bbox_xyxy": {
+          "x_min": 1068.0,
+          "y_min": 1068.0,
+          "x_max": 1222.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "9",
+        "confidence": 0.9997801184654236,
+        "bbox_xyxy": {
+          "x_min": 666.0,
+          "y_min": 1464.0,
+          "x_max": 738.0,
+          "y_max": 1582.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "10",
+        "confidence": 0.9988599419593811,
+        "bbox_xyxy": {
+          "x_min": 1524.0,
+          "y_min": 1459.0,
+          "x_max": 1653.0,
+          "y_max": 1584.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "rOCTJ",
+        "confidence": 0.38479775190353394,
+        "bbox_xyxy": {
+          "x_min": 1817.0,
+          "y_min": 2.0,
+          "x_max": 1981.0,
+          "y_max": 29.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "220; 3",
+        "confidence": 0.9382746815681458,
+        "bbox_xyxy": {
+          "x_min": 1795.0,
+          "y_min": 45.0,
+          "x_max": 1990.0,
+          "y_max": 132.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "K-JKL1",
+        "confidence": 0.9977301955223083,
+        "bbox_xyxy": {
+          "x_min": 1777.0,
+          "y_min": 685.0,
+          "x_max": 1972.0,
+          "y_max": 754.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "1500x500",
+        "confidence": 0.953681468963623,
+        "bbox_xyxy": {
+          "x_min": 1765.0,
+          "y_min": 772.0,
+          "x_max": 1987.0,
+          "y_max": 845.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "3900",
+        "confidence": 0.9996309876441956,
+        "bbox_xyxy": {
+          "x_min": 166.0,
+          "y_min": 1068.0,
+          "x_max": 317.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "3900",
+        "confidence": 0.9997352361679077,
+        "bbox_xyxy": {
+          "x_min": 1051.0,
+          "y_min": 1068.0,
+          "x_max": 1205.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "39",
+        "confidence": 0.9911344051361084,
+        "bbox_xyxy": {
+          "x_min": 1933.0,
+          "y_min": 1070.0,
+          "x_max": 1990.0,
+          "y_max": 1145.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "11",
+        "confidence": 0.9997857213020325,
+        "bbox_xyxy": {
+          "x_min": 629.0,
+          "y_min": 1456.0,
+          "x_max": 731.0,
+          "y_max": 1586.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "12",
+        "confidence": 0.9992618560791016,
+        "bbox_xyxy": {
+          "x_min": 1506.0,
+          "y_min": 1457.0,
+          "x_max": 1632.0,
+          "y_max": 1586.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "YOGIJUZI",
+        "confidence": 0.5216690897941589,
+        "bbox_xyxy": {
+          "x_min": 27.0,
+          "y_min": 2.0,
+          "x_max": 288.0,
+          "y_max": 29.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "K-JKL2",
+        "confidence": 0.9827671051025391,
+        "bbox_xyxy": {
+          "x_min": 759.0,
+          "y_min": 16.0,
+          "x_max": 850.0,
+          "y_max": 200.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "500x60",
+        "confidence": 0.9164853096008301,
+        "bbox_xyxy": {
+          "x_min": 847.0,
+          "y_min": 20.0,
+          "x_max": 932.0,
+          "y_max": 206.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "220; 3?20",
+        "confidence": 0.9727590084075928,
+        "bbox_xyxy": {
+          "x_min": 17.0,
+          "y_min": 56.0,
+          "x_max": 295.0,
+          "y_max": 123.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "A",
+        "confidence": 0.9984769225120544,
+        "bbox_xyxy": {
+          "x_min": 1564.0,
+          "y_min": 556.0,
+          "x_max": 1624.0,
+          "y_max": 645.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "<-JKL1 (1) 250x350",
+        "confidence": 0.9581278562545776,
+        "bbox_xyxy": {
+          "x_min": 6.0,
+          "y_min": 687.0,
+          "x_max": 475.0,
+          "y_max": 749.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "500x500 (250/0-0/130)",
+        "confidence": 0.9781209826469421,
+        "bbox_xyxy": {
+          "x_min": 2.0,
+          "y_min": 770.0,
+          "x_max": 614.0,
+          "y_max": 856.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "3900",
+        "confidence": 0.99971604347229,
+        "bbox_xyxy": {
+          "x_min": 147.0,
+          "y_min": 1070.0,
+          "x_max": 301.0,
+          "y_max": 1147.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "13",
+        "confidence": 0.9997009038925171,
+        "bbox_xyxy": {
+          "x_min": 601.0,
+          "y_min": 1457.0,
+          "x_max": 726.0,
+          "y_max": 1584.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "说明：",
+        "confidence": 0.9974448084831238,
+        "bbox_xyxy": {
+          "x_min": 253.0,
+          "y_min": 774.0,
+          "x_max": 361.0,
+          "y_max": 876.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "1、平面图中K 一 JKL*表示增大截面加固梁; T— JKL*表示粘贴碳纤维布加",
+        "confidence": 0.9373830556869507,
+        "bbox_xyxy": {
+          "x_min": 247.0,
+          "y_min": 918.0,
+          "x_max": 1976.0,
+          "y_max": 1010.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "2、除特殊说明外，新增及加固梁纵向钢筋与原结构均采取化学植筋连接，当纵筋需",
+        "confidence": 0.9792872071266174,
+        "bbox_xyxy": {
+          "x_min": 251.0,
+          "y_min": 1056.0,
+          "x_max": 1970.0,
+          "y_max": 1141.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3、梁结构加固平面表示方法详见《建筑结构加固施工图设计表示方法及深度图样》",
+        "confidence": 0.991886556148529,
+        "bbox_xyxy": {
+          "x_min": 251.0,
+          "y_min": 1189.0,
+          "x_max": 1974.0,
+          "y_max": 1276.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "一层梁结构改造加固平面图",
+        "confidence": 0.9971218109130859,
+        "bbox_xyxy": {
+          "x_min": 47.0,
+          "y_min": 96.0,
+          "x_max": 1390.0,
+          "y_max": 238.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "1:100",
+        "confidence": 0.9795913696289062,
+        "bbox_xyxy": {
+          "x_min": 1520.0,
+          "y_min": 196.0,
+          "x_max": 1802.0,
+          "y_max": 300.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "仟维布加固梁；N—L*表示新增结构梁；图中未注明结构构件均为既有结构。",
+        "confidence": 0.9536444544792175,
+        "bbox_xyxy": {
+          "x_min": 14.0,
+          "y_min": 916.0,
+          "x_max": 1591.0,
+          "y_max": 1010.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "当纵筋需通长设置时遇既有结构梁应贯穿（贯穿孔内应采用植筋胶灌注密实）。",
+        "confidence": 0.9952018857002258,
+        "bbox_xyxy": {
+          "x_min": 10.0,
+          "y_min": 1039.0,
+          "x_max": 1589.0,
+          "y_max": 1151.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "度图样》O7SG111—1~2 及梁加固图例、相关节点大样图。",
+        "confidence": 0.9466586112976074,
+        "bbox_xyxy": {
+          "x_min": 23.0,
+          "y_min": 1193.0,
+          "x_max": 1371.0,
+          "y_max": 1274.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "2",
+        "confidence": 0.3047412633895874,
+        "bbox_xyxy": {
+          "x_min": 1365.0,
+          "y_min": 1301.0,
+          "x_max": 1448.0,
+          "y_max": 1395.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "30",
+        "confidence": 0.8034404516220093,
+        "bbox_xyxy": {
+          "x_min": 1213.0,
+          "y_min": 1351.0,
+          "x_max": 1305.0,
+          "y_max": 1478.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "梁顶加固纵筋，端支座处与原结构采取",
+        "confidence": 0.9511831998825073,
+        "bbox_xyxy": {
+          "x_min": 666.0,
+          "y_min": 924.0,
+          "x_max": 1172.0,
+          "y_max": 1000.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "化学植筋连接或铺入柱增大截面中",
+        "confidence": 0.9499520063400269,
+        "bbox_xyxy": {
+          "x_min": 670.0,
+          "y_min": 1018.0,
+          "x_max": 1107.0,
+          "y_max": 1089.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "加固箍篇，两端与既有结构植筋连接、有效",
+        "confidence": 0.9126258492469788,
+        "bbox_xyxy": {
+          "x_min": 740.0,
+          "y_min": 1384.0,
+          "x_max": 1296.0,
+          "y_max": 1449.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "P",
+        "confidence": 0.44886514544487,
+        "bbox_xyxy": {
+          "x_min": 727.0,
+          "y_min": 1467.0,
+          "x_max": 971.0,
+          "y_max": 1554.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "梁底加固纵筋，端支座处与原结构采取",
+        "confidence": 0.9877947568893433,
+        "bbox_xyxy": {
+          "x_min": 736.0,
+          "y_min": 1747.0,
+          "x_max": 1236.0,
+          "y_max": 1811.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "化学植筋连接或铺入柱增大截面中",
+        "confidence": 0.9255945086479187,
+        "bbox_xyxy": {
+          "x_min": 734.0,
+          "y_min": 1830.0,
+          "x_max": 1182.0,
+          "y_max": 1915.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "250",
+        "confidence": 0.9888615012168884,
+        "bbox_xyxy": {
+          "x_min": 282.0,
+          "y_min": 1890.0,
+          "x_max": 394.0,
+          "y_max": 1931.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "250",
+        "confidence": 0.9949790835380554,
+        "bbox_xyxy": {
+          "x_min": 505.0,
+          "y_min": 1886.0,
+          "x_max": 623.0,
+          "y_max": 1931.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "梁顶加固纵筋，端支座处与原结构采项",
+        "confidence": 0.8856954574584961,
+        "bbox_xyxy": {
+          "x_min": 724.0,
+          "y_min": 1066.0,
+          "x_max": 1224.0,
+          "y_max": 1141.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "化学植筋连接或铺入柱增大截而中",
+        "confidence": 0.9544927477836609,
+        "bbox_xyxy": {
+          "x_min": 728.0,
+          "y_min": 1155.0,
+          "x_max": 1166.0,
+          "y_max": 1235.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "009",
+        "confidence": 0.9991826415061951,
+        "bbox_xyxy": {
+          "x_min": 523.0,
+          "y_min": 1566.0,
+          "x_max": 601.0,
+          "y_max": 1684.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "形拉结钢筋，植筋,",
+        "confidence": 0.905807375907898,
+        "bbox_xyxy": {
+          "x_min": 1696.0,
+          "y_min": 1584.0,
+          "x_max": 1964.0,
+          "y_max": 1651.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "加固箍篇，两端与既有",
+        "confidence": 0.8779091835021973,
+        "bbox_xyxy": {
+          "x_min": 1688.0,
+          "y_min": 1709.0,
+          "x_max": 1985.0,
+          "y_max": 1789.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "P",
+        "confidence": 0.43894144892692566,
+        "bbox_xyxy": {
+          "x_min": 1684.0,
+          "y_min": 1803.0,
+          "x_max": 1923.0,
+          "y_max": 1884.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "加固腰筋，端支座处与原结构",
+        "confidence": 0.9873358011245728,
+        "bbox_xyxy": {
+          "x_min": 41.0,
+          "y_min": 1068.0,
+          "x_max": 423.0,
+          "y_max": 1141.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "采取化学植筋连接",
+        "confidence": 0.974097728729248,
+        "bbox_xyxy": {
+          "x_min": 33.0,
+          "y_min": 1155.0,
+          "x_max": 282.0,
+          "y_max": 1237.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "1",
+        "confidence": 0.9649794697761536,
+        "bbox_xyxy": {
+          "x_min": 326.0,
+          "y_min": 1397.0,
+          "x_max": 373.0,
+          "y_max": 1422.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "钢筋、植筋、有效植筋深度≥1 5d",
+        "confidence": 0.9205546379089355,
+        "bbox_xyxy": {
+          "x_min": 12.0,
+          "y_min": 1586.0,
+          "x_max": 481.0,
+          "y_max": 1651.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "00",
+        "confidence": 0.7642775774002075,
+        "bbox_xyxy": {
+          "x_min": 1087.0,
+          "y_min": 1603.0,
+          "x_max": 1170.0,
+          "y_max": 1724.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "高。两端与既有结构植筋连接、 有效",
+        "confidence": 0.8966307044029236,
+        "bbox_xyxy": {
+          "x_min": 6.0,
+          "y_min": 1711.0,
+          "x_max": 467.0,
+          "y_max": 1786.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "PSk",
+        "confidence": 0.7013931274414062,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1803.0,
+          "x_max": 139.0,
+          "y_max": 1884.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "h",
+        "confidence": 0.48682329058647156,
+        "bbox_xyxy": {
+          "x_min": 1242.0,
+          "y_min": 1799.0,
+          "x_max": 1288.0,
+          "y_max": 1849.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "梁顶加固纵筋,，端支座处与原结构采取",
+        "confidence": 0.9169024229049683,
+        "bbox_xyxy": {
+          "x_min": 199.0,
+          "y_min": 1180.0,
+          "x_max": 699.0,
+          "y_max": 1245.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "化学植筋连接或铺入柱增大截而中",
+        "confidence": 0.9310352802276611,
+        "bbox_xyxy": {
+          "x_min": 193.0,
+          "y_min": 1257.0,
+          "x_max": 643.0,
+          "y_max": 1347.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "中一",
+        "confidence": 0.8945314884185791,
+        "bbox_xyxy": {
+          "x_min": 948.0,
+          "y_min": 1597.0,
+          "x_max": 1230.0,
+          "y_max": 1745.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "加固箍篇， 两端与既有结构植筋连接， 有效",
+        "confidence": 0.8781208992004395,
+        "bbox_xyxy": {
+          "x_min": 267.0,
+          "y_min": 1628.0,
+          "x_max": 834.0,
+          "y_max": 1705.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "植筋深度≥15d",
+        "confidence": 0.9370119571685791,
+        "bbox_xyxy": {
+          "x_min": 259.0,
+          "y_min": 1720.0,
+          "x_max": 500.0,
+          "y_max": 1801.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "E",
+        "confidence": 0.998885452747345,
+        "bbox_xyxy": {
+          "x_min": 1425.0,
+          "y_min": 21.0,
+          "x_max": 1510.0,
+          "y_max": 117.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "F",
+        "confidence": 0.9996030926704407,
+        "bbox_xyxy": {
+          "x_min": 1441.0,
+          "y_min": 1832.0,
+          "x_max": 1524.0,
+          "y_max": 1930.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "小屋而层",
+        "confidence": 0.9598026275634766,
+        "bbox_xyxy": {
+          "x_min": 1460.0,
+          "y_min": 937.0,
+          "x_max": 1595.0,
+          "y_max": 1031.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "33.170",
+        "confidence": 0.9998712539672852,
+        "bbox_xyxy": {
+          "x_min": 1667.0,
+          "y_min": 951.0,
+          "x_max": 1854.0,
+          "y_max": 1028.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "屋而层",
+        "confidence": 0.9703686833381653,
+        "bbox_xyxy": {
+          "x_min": 1475.0,
+          "y_min": 1076.0,
+          "x_max": 1582.0,
+          "y_max": 1166.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "28.770",
+        "confidence": 0.9999484419822693,
+        "bbox_xyxy": {
+          "x_min": 1659.0,
+          "y_min": 1089.0,
+          "x_max": 1852.0,
+          "y_max": 1166.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "4",
+        "confidence": 0.9955515265464783,
+        "bbox_xyxy": {
+          "x_min": 1950.0,
+          "y_min": 1093.0,
+          "x_max": 1989.0,
+          "y_max": 1162.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "8",
+        "confidence": 0.9981087446212769,
+        "bbox_xyxy": {
+          "x_min": 1506.0,
+          "y_min": 1220.0,
+          "x_max": 1547.0,
+          "y_max": 1297.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "25.470",
+        "confidence": 0.9999375343322754,
+        "bbox_xyxy": {
+          "x_min": 1656.0,
+          "y_min": 1219.0,
+          "x_max": 1853.0,
+          "y_max": 1302.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "3",
+        "confidence": 0.5636635422706604,
+        "bbox_xyxy": {
+          "x_min": 1945.0,
+          "y_min": 1223.0,
+          "x_max": 1990.0,
+          "y_max": 1298.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "7",
+        "confidence": 0.9994495511054993,
+        "bbox_xyxy": {
+          "x_min": 1508.0,
+          "y_min": 1355.0,
+          "x_max": 1547.0,
+          "y_max": 1432.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 9,
+        "text": "22.170",
+        "confidence": 0.9999439120292664,
+        "bbox_xyxy": {
+          "x_min": 1665.0,
+          "y_min": 1357.0,
+          "x_max": 1853.0,
+          "y_max": 1437.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 10,
+        "text": "3",
+        "confidence": 0.9442107081413269,
+        "bbox_xyxy": {
+          "x_min": 1945.0,
+          "y_min": 1358.0,
+          "x_max": 1990.0,
+          "y_max": 1436.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 11,
+        "text": "6",
+        "confidence": 0.9978565573692322,
+        "bbox_xyxy": {
+          "x_min": 1508.0,
+          "y_min": 1489.0,
+          "x_max": 1547.0,
+          "y_max": 1568.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "18.870",
+        "confidence": 0.9998562335968018,
+        "bbox_xyxy": {
+          "x_min": 1662.0,
+          "y_min": 1490.0,
+          "x_max": 1853.0,
+          "y_max": 1575.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 13,
+        "text": "3",
+        "confidence": 0.9451237916946411,
+        "bbox_xyxy": {
+          "x_min": 1950.0,
+          "y_min": 1497.0,
+          "x_max": 1987.0,
+          "y_max": 1570.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 14,
+        "text": "5",
+        "confidence": 0.9991281628608704,
+        "bbox_xyxy": {
+          "x_min": 1508.0,
+          "y_min": 1626.0,
+          "x_max": 1547.0,
+          "y_max": 1705.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 15,
+        "text": "15.570",
+        "confidence": 0.9998419284820557,
+        "bbox_xyxy": {
+          "x_min": 1663.0,
+          "y_min": 1627.0,
+          "x_max": 1851.0,
+          "y_max": 1712.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 16,
+        "text": "3",
+        "confidence": 0.7099538445472717,
+        "bbox_xyxy": {
+          "x_min": 1946.0,
+          "y_min": 1631.0,
+          "x_max": 1990.0,
+          "y_max": 1709.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 17,
+        "text": "4",
+        "confidence": 0.9993813037872314,
+        "bbox_xyxy": {
+          "x_min": 1506.0,
+          "y_min": 1763.0,
+          "x_max": 1547.0,
+          "y_max": 1838.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 18,
+        "text": "11.670",
+        "confidence": 0.978526771068573,
+        "bbox_xyxy": {
+          "x_min": 1672.0,
+          "y_min": 1768.0,
+          "x_max": 1850.0,
+          "y_max": 1845.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 19,
+        "text": "7J",
+        "confidence": 0.644417941570282,
+        "bbox_xyxy": {
+          "x_min": 1954.0,
+          "y_min": 1772.0,
+          "x_max": 1985.0,
+          "y_max": 1834.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "70",
+        "confidence": 0.9993997812271118,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 949.0,
+          "x_max": 66.0,
+          "y_max": 1041.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "4.400",
+        "confidence": 0.9434835314750671,
+        "bbox_xyxy": {
+          "x_min": 160.0,
+          "y_min": 1087.0,
+          "x_max": 319.0,
+          "y_max": 1172.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "C20",
+        "confidence": 0.9952953457832336,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 1081.0,
+          "x_max": 543.0,
+          "y_max": 1170.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "C20",
+        "confidence": 0.9941131472587585,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 1078.0,
+          "x_max": 772.0,
+          "y_max": 1174.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "70",
+        "confidence": 0.9983389377593994,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1084.0,
+          "x_max": 67.0,
+          "y_max": 1177.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "3.300",
+        "confidence": 0.9996694326400757,
+        "bbox_xyxy": {
+          "x_min": 162.0,
+          "y_min": 1222.0,
+          "x_max": 319.0,
+          "y_max": 1307.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "C20",
+        "confidence": 0.9965993762016296,
+        "bbox_xyxy": {
+          "x_min": 429.0,
+          "y_min": 1214.0,
+          "x_max": 545.0,
+          "y_max": 1310.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "C20",
+        "confidence": 0.9948534369468689,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 1214.0,
+          "x_max": 774.0,
+          "y_max": 1310.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "70",
+        "confidence": 0.8297461271286011,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1221.0,
+          "x_max": 67.0,
+          "y_max": 1313.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 9,
+        "text": "70",
+        "confidence": 0.9993826150894165,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1359.0,
+          "x_max": 66.0,
+          "y_max": 1449.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 10,
+        "text": "3.300",
+        "confidence": 0.9995312690734863,
+        "bbox_xyxy": {
+          "x_min": 162.0,
+          "y_min": 1359.0,
+          "x_max": 319.0,
+          "y_max": 1445.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 11,
+        "text": "C20",
+        "confidence": 0.9946596026420593,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 1353.0,
+          "x_max": 543.0,
+          "y_max": 1443.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "C20",
+        "confidence": 0.9945996403694153,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 1351.0,
+          "x_max": 772.0,
+          "y_max": 1447.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 13,
+        "text": "3.300",
+        "confidence": 0.9994031190872192,
+        "bbox_xyxy": {
+          "x_min": 160.0,
+          "y_min": 1495.0,
+          "x_max": 317.0,
+          "y_max": 1580.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 14,
+        "text": "C20",
+        "confidence": 0.9952953457832336,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 1489.0,
+          "x_max": 543.0,
+          "y_max": 1578.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 15,
+        "text": "C20",
+        "confidence": 0.9941131472587585,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 1486.0,
+          "x_max": 772.0,
+          "y_max": 1582.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 16,
+        "text": "70",
+        "confidence": 0.999173641204834,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1494.0,
+          "x_max": 67.0,
+          "y_max": 1583.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 17,
+        "text": "70",
+        "confidence": 0.999343752861023,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1630.0,
+          "x_max": 66.0,
+          "y_max": 1720.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 18,
+        "text": "C20",
+        "confidence": 0.9965993762016296,
+        "bbox_xyxy": {
+          "x_min": 429.0,
+          "y_min": 1622.0,
+          "x_max": 545.0,
+          "y_max": 1718.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 19,
+        "text": "C20",
+        "confidence": 0.9941131472587585,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 1622.0,
+          "x_max": 772.0,
+          "y_max": 1718.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 20,
+        "text": "3.300",
+        "confidence": 0.9989117383956909,
+        "bbox_xyxy": {
+          "x_min": 164.0,
+          "y_min": 1634.0,
+          "x_max": 315.0,
+          "y_max": 1713.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 21,
+        "text": "3.900",
+        "confidence": 0.9993951916694641,
+        "bbox_xyxy": {
+          "x_min": 164.0,
+          "y_min": 1768.0,
+          "x_max": 315.0,
+          "y_max": 1847.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 22,
+        "text": "C30",
+        "confidence": 0.9935291409492493,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 1759.0,
+          "x_max": 543.0,
+          "y_max": 1845.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 23,
+        "text": "C30",
+        "confidence": 0.9941589832305908,
+        "bbox_xyxy": {
+          "x_min": 657.0,
+          "y_min": 1759.0,
+          "x_max": 769.0,
+          "y_max": 1847.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 24,
+        "text": "70",
+        "confidence": 0.9991797804832458,
+        "bbox_xyxy": {
+          "x_min": 2.0,
+          "y_min": 1770.0,
+          "x_max": 64.0,
+          "y_max": 1851.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 25,
+        "text": "CNn",
+        "confidence": 0.44709911942481995,
+        "bbox_xyxy": {
+          "x_min": 440.0,
+          "y_min": 1899.0,
+          "x_max": 537.0,
+          "y_max": 1931.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 26,
+        "text": "C3D",
+        "confidence": 0.532997190952301,
+        "bbox_xyxy": {
+          "x_min": 666.0,
+          "y_min": 1899.0,
+          "x_max": 763.0,
+          "y_max": 1931.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 27,
+        "text": "OO",
+        "confidence": 0.3397815227508545,
+        "bbox_xyxy": {
+          "x_min": 205.0,
+          "y_min": 1909.0,
+          "x_max": 305.0,
+          "y_max": 1931.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "梁底加固纵筋，端支座处与原结构采取",
+        "confidence": 0.9853060245513916,
+        "bbox_xyxy": {
+          "x_min": 736.0,
+          "y_min": 19.0,
+          "x_max": 1236.0,
+          "y_max": 83.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "化学植筋连接或铺入柱增大截面中",
+        "confidence": 0.9770848751068115,
+        "bbox_xyxy": {
+          "x_min": 734.0,
+          "y_min": 108.0,
+          "x_max": 1178.0,
+          "y_max": 179.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "250",
+        "confidence": 0.9999011158943176,
+        "bbox_xyxy": {
+          "x_min": 276.0,
+          "y_min": 160.0,
+          "x_max": 400.0,
+          "y_max": 242.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "250",
+        "confidence": 0.9998977780342102,
+        "bbox_xyxy": {
+          "x_min": 504.0,
+          "y_min": 162.0,
+          "x_max": 624.0,
+          "y_max": 237.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "注：梁底纵筋较平面图配筋增设1 根",
+        "confidence": 0.954663872718811,
+        "bbox_xyxy": {
+          "x_min": 724.0,
+          "y_min": 200.0,
+          "x_max": 1203.0,
+          "y_max": 269.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "500",
+        "confidence": 0.9997520446777344,
+        "bbox_xyxy": {
+          "x_min": 390.0,
+          "y_min": 296.0,
+          "x_max": 512.0,
+          "y_max": 377.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "K-JKL1",
+        "confidence": 0.9993125796318054,
+        "bbox_xyxy": {
+          "x_min": 284.0,
+          "y_min": 493.0,
+          "x_max": 601.0,
+          "y_max": 625.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "P",
+        "confidence": 0.4463721811771393,
+        "bbox_xyxy": {
+          "x_min": 1684.0,
+          "y_min": 75.0,
+          "x_max": 1923.0,
+          "y_max": 156.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "梁底加固纵筋，端支座",
+        "confidence": 0.9579061269760132,
+        "bbox_xyxy": {
+          "x_min": 1684.0,
+          "y_min": 291.0,
+          "x_max": 1985.0,
+          "y_max": 364.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "化学植筋连接或铺入柱",
+        "confidence": 0.9794002771377563,
+        "bbox_xyxy": {
+          "x_min": 1684.0,
+          "y_min": 381.0,
+          "x_max": 1987.0,
+          "y_max": 460.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "250",
+        "confidence": 0.9999248385429382,
+        "bbox_xyxy": {
+          "x_min": 1230.0,
+          "y_min": 418.0,
+          "x_max": 1350.0,
+          "y_max": 493.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "250",
+        "confidence": 0.9998982548713684,
+        "bbox_xyxy": {
+          "x_min": 1454.0,
+          "y_min": 418.0,
+          "x_max": 1578.0,
+          "y_max": 493.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "500",
+        "confidence": 0.9998118281364441,
+        "bbox_xyxy": {
+          "x_min": 1346.0,
+          "y_min": 554.0,
+          "x_max": 1464.0,
+          "y_max": 633.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "K-JKL2",
+        "confidence": 0.9996848106384277,
+        "bbox_xyxy": {
+          "x_min": 1238.0,
+          "y_min": 743.0,
+          "x_max": 1562.0,
+          "y_max": 885.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "端与既有结构相所连接, 有发",
+        "confidence": 0.7102441191673279,
+        "bbox_xyxy": {
+          "x_min": 68.0,
+          "y_min": 8.0,
+          "x_max": 456.0,
+          "y_max": 52.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "PSK",
+        "confidence": 0.5905044674873352,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 81.0,
+          "x_max": 135.0,
+          "y_max": 154.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "纵筋，端支座处与原结构采取",
+        "confidence": 0.9749976396560669,
+        "bbox_xyxy": {
+          "x_min": 12.0,
+          "y_min": 296.0,
+          "x_max": 402.0,
+          "y_max": 360.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "连接或铺入柱增大截面中",
+        "confidence": 0.9250726103782654,
+        "bbox_xyxy": {
+          "x_min": 8.0,
+          "y_min": 374.0,
+          "x_max": 347.0,
+          "y_max": 465.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "250",
+        "confidence": 0.9998720288276672,
+        "bbox_xyxy": {
+          "x_min": 1589.0,
+          "y_min": 410.0,
+          "x_max": 1715.0,
+          "y_max": 491.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "250",
+        "confidence": 0.9998860955238342,
+        "bbox_xyxy": {
+          "x_min": 1819.0,
+          "y_min": 410.0,
+          "x_max": 1943.0,
+          "y_max": 491.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "500",
+        "confidence": 0.9998369216918945,
+        "bbox_xyxy": {
+          "x_min": 1707.0,
+          "y_min": 548.0,
+          "x_max": 1829.0,
+          "y_max": 629.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "K-JKL1/K-JK",
+        "confidence": 0.9990392327308655,
+        "bbox_xyxy": {
+          "x_min": 1429.0,
+          "y_min": 749.0,
+          "x_max": 1979.0,
+          "y_max": 866.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "OCK",
+        "confidence": 0.7691799998283386,
+        "bbox_xyxy": {
+          "x_min": 272.0,
+          "y_min": 8.0,
+          "x_max": 485.0,
+          "y_max": 60.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "梁底加固纵筋，端支座处与原结构采取",
+        "confidence": 0.9483957886695862,
+        "bbox_xyxy": {
+          "x_min": 263.0,
+          "y_min": 262.0,
+          "x_max": 768.0,
+          "y_max": 337.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "化学植筋连接或铺入柱增大截面中",
+        "confidence": 0.9631824493408203,
+        "bbox_xyxy": {
+          "x_min": 265.0,
+          "y_min": 356.0,
+          "x_max": 709.0,
+          "y_max": 427.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "250",
+        "confidence": 0.9998977780342102,
+        "bbox_xyxy": {
+          "x_min": 31.0,
+          "y_min": 410.0,
+          "x_max": 156.0,
+          "y_max": 491.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "注:梁底纵筋较平面图配筋增设1 根",
+        "confidence": 0.9314610958099365,
+        "bbox_xyxy": {
+          "x_min": 257.0,
+          "y_min": 452.0,
+          "x_max": 734.0,
+          "y_max": 516.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "0",
+        "confidence": 0.7688024640083313,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 554.0,
+          "x_max": 37.0,
+          "y_max": 620.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "K-JKL2",
+        "confidence": 0.9995136260986328,
+        "bbox_xyxy": {
+          "x_min": 1.0,
+          "y_min": 741.0,
+          "x_max": 318.0,
+          "y_max": 875.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "VO",
+        "confidence": 0.7847907543182373,
+        "bbox_xyxy": {
+          "x_min": 937.0,
+          "y_min": 1214.0,
+          "x_max": 1016.0,
+          "y_max": 1293.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "2024.05.29",
+        "confidence": 0.9995405077934265,
+        "bbox_xyxy": {
+          "x_min": 1153.0,
+          "y_min": 1213.0,
+          "x_max": 1481.0,
+          "y_max": 1291.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "供审图",
+        "confidence": 0.9857578873634338,
+        "bbox_xyxy": {
+          "x_min": 1649.0,
+          "y_min": 1210.0,
+          "x_max": 1769.0,
+          "y_max": 1307.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "版次",
+        "confidence": 0.9996716976165771,
+        "bbox_xyxy": {
+          "x_min": 906.0,
+          "y_min": 1359.0,
+          "x_max": 1066.0,
+          "y_max": 1439.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "日期",
+        "confidence": 0.9859679937362671,
+        "bbox_xyxy": {
+          "x_min": 1202.0,
+          "y_min": 1355.0,
+          "x_max": 1432.0,
+          "y_max": 1445.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "REV.",
+        "confidence": 0.9985398054122925,
+        "bbox_xyxy": {
+          "x_min": 923.0,
+          "y_min": 1447.0,
+          "x_max": 1045.0,
+          "y_max": 1509.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "DATE",
+        "confidence": 0.9992207288742065,
+        "bbox_xyxy": {
+          "x_min": 1246.0,
+          "y_min": 1449.0,
+          "x_max": 1367.0,
+          "y_max": 1514.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "本图纸为上海市安装工程集团有限公",
+        "confidence": 0.9937959313392639,
+        "bbox_xyxy": {
+          "x_min": 968.0,
+          "y_min": 1582.0,
+          "x_max": 1983.0,
+          "y_max": 1651.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "THIS DRAWING IS  THE PROPER",
+        "confidence": 0.9675043821334839,
+        "bbox_xyxy": {
+          "x_min": 969.0,
+          "y_min": 1686.0,
+          "x_max": 1976.0,
+          "y_max": 1736.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "DUPLICATION TO ANY THIRD PARTY",
+        "confidence": 0.9809296131134033,
+        "bbox_xyxy": {
+          "x_min": 971.0,
+          "y_min": 1776.0,
+          "x_max": 1972.0,
+          "y_max": 1817.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "顾恺颖",
+        "confidence": 0.9950008988380432,
+        "bbox_xyxy": {
+          "x_min": 1626.0,
+          "y_min": 1205.0,
+          "x_max": 1835.0,
+          "y_max": 1305.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "说明",
+        "confidence": 0.9959505796432495,
+        "bbox_xyxy": {
+          "x_min": 309.0,
+          "y_min": 1362.0,
+          "x_max": 597.0,
+          "y_max": 1449.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "制图",
+        "confidence": 0.9994625449180603,
+        "bbox_xyxy": {
+          "x_min": 1209.0,
+          "y_min": 1364.0,
+          "x_max": 1433.0,
+          "y_max": 1439.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "设  计",
+        "confidence": 0.7727707624435425,
+        "bbox_xyxy": {
+          "x_min": 1618.0,
+          "y_min": 1364.0,
+          "x_max": 1846.0,
+          "y_max": 1437.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "DESCRIPTION",
+        "confidence": 0.9944763779640198,
+        "bbox_xyxy": {
+          "x_min": 303.0,
+          "y_min": 1453.0,
+          "x_max": 593.0,
+          "y_max": 1509.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "DRWN",
+        "confidence": 0.9990003705024719,
+        "bbox_xyxy": {
+          "x_min": 1253.0,
+          "y_min": 1451.0,
+          "x_max": 1394.0,
+          "y_max": 1514.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "DSGD",
+        "confidence": 0.999855637550354,
+        "bbox_xyxy": {
+          "x_min": 1670.0,
+          "y_min": 1449.0,
+          "x_max": 1800.0,
+          "y_max": 1511.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "有限公司（SIEG）财产，未经本公司许可不得转让或复制给第三方",
+        "confidence": 0.9960169196128845,
+        "bbox_xyxy": {
+          "x_min": 8.0,
+          "y_min": 1586.0,
+          "x_max": 1966.0,
+          "y_max": 1649.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "ROPERTY OF SHANGHAI INSTALLATION ENGINEERING GROUP CO.,LTD.",
+        "confidence": 0.9793927073478699,
+        "bbox_xyxy": {
+          "x_min": 4.0,
+          "y_min": 1684.0,
+          "x_max": 1947.0,
+          "y_max": 1743.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "PARTY IS NOT PERMITTED.",
+        "confidence": 0.96214759349823,
+        "bbox_xyxy": {
+          "x_min": 15.0,
+          "y_min": 1774.0,
+          "x_max": 769.0,
+          "y_max": 1822.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "F",
+        "confidence": 0.9991219639778137,
+        "bbox_xyxy": {
+          "x_min": 1437.0,
+          "y_min": 104.0,
+          "x_max": 1526.0,
+          "y_max": 208.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "领",
+        "confidence": 0.7827010154724121,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1208.0,
+          "x_max": 48.0,
+          "y_max": 1303.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "高峰",
+        "confidence": 0.97893887758255,
+        "bbox_xyxy": {
+          "x_min": 276.0,
+          "y_min": 1199.0,
+          "x_max": 425.0,
+          "y_max": 1310.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "李建芳",
+        "confidence": 0.9991238713264465,
+        "bbox_xyxy": {
+          "x_min": 651.0,
+          "y_min": 1201.0,
+          "x_max": 865.0,
+          "y_max": 1310.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "计",
+        "confidence": 0.9999774694442749,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1362.0,
+          "x_max": 58.0,
+          "y_max": 1443.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "校核",
+        "confidence": 0.9797376394271851,
+        "bbox_xyxy": {
+          "x_min": 243.0,
+          "y_min": 1359.0,
+          "x_max": 475.0,
+          "y_max": 1443.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "审核",
+        "confidence": 0.99973064661026,
+        "bbox_xyxy": {
+          "x_min": 639.0,
+          "y_min": 1359.0,
+          "x_max": 871.0,
+          "y_max": 1443.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "审定",
+        "confidence": 0.9994747638702393,
+        "bbox_xyxy": {
+          "x_min": 1043.0,
+          "y_min": 1359.0,
+          "x_max": 1278.0,
+          "y_max": 1445.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "CHKD",
+        "confidence": 0.998059093952179,
+        "bbox_xyxy": {
+          "x_min": 297.0,
+          "y_min": 1449.0,
+          "x_max": 433.0,
+          "y_max": 1518.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "REWD",
+        "confidence": 0.9986434578895569,
+        "bbox_xyxy": {
+          "x_min": 689.0,
+          "y_min": 1453.0,
+          "x_max": 825.0,
+          "y_max": 1516.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 10,
+        "text": "APPD",
+        "confidence": 0.9987715482711792,
+        "bbox_xyxy": {
+          "x_min": 1091.0,
+          "y_min": 1449.0,
+          "x_max": 1228.0,
+          "y_max": 1518.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 11,
+        "text": "第三方。",
+        "confidence": 0.9991883635520935,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1578.0,
+          "x_max": 230.0,
+          "y_max": 1659.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 12,
+        "text": ".,LTD.",
+        "confidence": 0.962857723236084,
+        "bbox_xyxy": {
+          "x_min": 2.0,
+          "y_min": 1686.0,
+          "x_max": 166.0,
+          "y_max": 1747.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 13,
+        "text": "UNAUTHORIZED",
+        "confidence": 0.9973272681236267,
+        "bbox_xyxy": {
+          "x_min": 251.0,
+          "y_min": 1690.0,
+          "x_max": 686.0,
+          "y_max": 1734.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 14,
+        "text": "DISCLOSURE OR",
+        "confidence": 0.970630407333374,
+        "bbox_xyxy": {
+          "x_min": 749.0,
+          "y_min": 1686.0,
+          "x_max": 1251.0,
+          "y_max": 1743.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 0,
+        "text": "4",
+        "confidence": 0.9997254014015198,
+        "bbox_xyxy": {
+          "x_min": 1508.0,
+          "y_min": 35.0,
+          "x_max": 1547.0,
+          "y_max": 108.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "11.670",
+        "confidence": 0.9926000237464905,
+        "bbox_xyxy": {
+          "x_min": 1670.0,
+          "y_min": 35.0,
+          "x_max": 1854.0,
+          "y_max": 119.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "3",
+        "confidence": 0.8628572821617126,
+        "bbox_xyxy": {
+          "x_min": 1950.0,
+          "y_min": 44.0,
+          "x_max": 1987.0,
+          "y_max": 117.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3",
+        "confidence": 0.965332567691803,
+        "bbox_xyxy": {
+          "x_min": 1508.0,
+          "y_min": 171.0,
+          "x_max": 1547.0,
+          "y_max": 250.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "7.770",
+        "confidence": 0.9998572468757629,
+        "bbox_xyxy": {
+          "x_min": 1692.0,
+          "y_min": 175.0,
+          "x_max": 1852.0,
+          "y_max": 254.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "3",
+        "confidence": 0.8463409543037415,
+        "bbox_xyxy": {
+          "x_min": 1952.0,
+          "y_min": 183.0,
+          "x_max": 1987.0,
+          "y_max": 252.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "2",
+        "confidence": 0.9979549646377563,
+        "bbox_xyxy": {
+          "x_min": 1504.0,
+          "y_min": 304.0,
+          "x_max": 1549.0,
+          "y_max": 389.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "3.870",
+        "confidence": 0.999923825263977,
+        "bbox_xyxy": {
+          "x_min": 1692.0,
+          "y_min": 308.0,
+          "x_max": 1854.0,
+          "y_max": 393.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "3",
+        "confidence": 0.5688455104827881,
+        "bbox_xyxy": {
+          "x_min": 1947.0,
+          "y_min": 313.0,
+          "x_max": 1990.0,
+          "y_max": 388.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 9,
+        "text": "1",
+        "confidence": 0.996580183506012,
+        "bbox_xyxy": {
+          "x_min": 1506.0,
+          "y_min": 443.0,
+          "x_max": 1553.0,
+          "y_max": 518.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 10,
+        "text": "-0.030",
+        "confidence": 0.999288022518158,
+        "bbox_xyxy": {
+          "x_min": 1644.0,
+          "y_min": 440.0,
+          "x_max": 1855.0,
+          "y_max": 532.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 11,
+        "text": "3",
+        "confidence": 0.9809048175811768,
+        "bbox_xyxy": {
+          "x_min": 1950.0,
+          "y_min": 452.0,
+          "x_max": 1989.0,
+          "y_max": 520.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "半地下室",
+        "confidence": 0.9993302822113037,
+        "bbox_xyxy": {
+          "x_min": 1456.0,
+          "y_min": 573.0,
+          "x_max": 1599.0,
+          "y_max": 660.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 13,
+        "text": "-2.930",
+        "confidence": 0.9986753463745117,
+        "bbox_xyxy": {
+          "x_min": 1645.0,
+          "y_min": 583.0,
+          "x_max": 1850.0,
+          "y_max": 660.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 14,
+        "text": "2",
+        "confidence": 0.9978283047676086,
+        "bbox_xyxy": {
+          "x_min": 1945.0,
+          "y_min": 582.0,
+          "x_max": 1990.0,
+          "y_max": 657.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 15,
+        "text": "标高",
+        "confidence": 0.9999336004257202,
+        "bbox_xyxy": {
+          "x_min": 1713.0,
+          "y_min": 729.0,
+          "x_max": 1796.0,
+          "y_max": 816.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 16,
+        "text": "层号",
+        "confidence": 0.9706441760063171,
+        "bbox_xyxy": {
+          "x_min": 1485.0,
+          "y_min": 770.0,
+          "x_max": 1566.0,
+          "y_max": 864.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 17,
+        "text": "(W)",
+        "confidence": 0.8095833659172058,
+        "bbox_xyxy": {
+          "x_min": 1717.0,
+          "y_min": 824.0,
+          "x_max": 1806.0,
+          "y_max": 912.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 18,
+        "text": "5号楼楼",
+        "confidence": 0.9980059862136841,
+        "bbox_xyxy": {
+          "x_min": 1717.0,
+          "y_min": 1037.0,
+          "x_max": 1990.0,
+          "y_max": 1158.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 19,
+        "text": "1",
+        "confidence": 0.9988422989845276,
+        "bbox_xyxy": {
+          "x_min": 1800.0,
+          "y_min": 1501.0,
+          "x_max": 1881.0,
+          "y_max": 1624.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 20,
+        "text": "A1 (横) -2019",
+        "confidence": 0.9329000115394592,
+        "bbox_xyxy": {
+          "x_min": 411.0,
+          "y_min": 1609.0,
+          "x_max": 664.0,
+          "y_max": 1659.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "C30",
+        "confidence": 0.9959311485290527,
+        "bbox_xyxy": {
+          "x_min": 429.0,
+          "y_min": 29.0,
+          "x_max": 545.0,
+          "y_max": 125.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "C30",
+        "confidence": 0.9951063990592957,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 29.0,
+          "x_max": 772.0,
+          "y_max": 127.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "70",
+        "confidence": 0.9983009099960327,
+        "bbox_xyxy": {
+          "x_min": 4.0,
+          "y_min": 42.0,
+          "x_max": 62.0,
+          "y_max": 127.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 3,
+        "text": "3.900",
+        "confidence": 0.9997895956039429,
+        "bbox_xyxy": {
+          "x_min": 158.0,
+          "y_min": 40.0,
+          "x_max": 317.0,
+          "y_max": 127.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 4,
+        "text": "3.900",
+        "confidence": 0.999750018119812,
+        "bbox_xyxy": {
+          "x_min": 158.0,
+          "y_min": 175.0,
+          "x_max": 317.0,
+          "y_max": 262.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "C30",
+        "confidence": 0.9923277497291565,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 169.0,
+          "x_max": 541.0,
+          "y_max": 260.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "C30",
+        "confidence": 0.9929025769233704,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 167.0,
+          "x_max": 772.0,
+          "y_max": 262.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "70",
+        "confidence": 0.9982895851135254,
+        "bbox_xyxy": {
+          "x_min": 4.0,
+          "y_min": 177.0,
+          "x_max": 62.0,
+          "y_max": 262.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 8,
+        "text": "C30",
+        "confidence": 0.994974672794342,
+        "bbox_xyxy": {
+          "x_min": 429.0,
+          "y_min": 302.0,
+          "x_max": 545.0,
+          "y_max": 400.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 9,
+        "text": "C30",
+        "confidence": 0.9935154914855957,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 302.0,
+          "x_max": 772.0,
+          "y_max": 398.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 10,
+        "text": "0",
+        "confidence": 0.9423378705978394,
+        "bbox_xyxy": {
+          "x_min": 4.0,
+          "y_min": 312.0,
+          "x_max": 62.0,
+          "y_max": 400.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 11,
+        "text": "3.900",
+        "confidence": 0.9823643565177917,
+        "bbox_xyxy": {
+          "x_min": 158.0,
+          "y_min": 312.0,
+          "x_max": 317.0,
+          "y_max": 400.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "C30",
+        "confidence": 0.994418203830719,
+        "bbox_xyxy": {
+          "x_min": 429.0,
+          "y_min": 437.0,
+          "x_max": 545.0,
+          "y_max": 535.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 13,
+        "text": "C30",
+        "confidence": 0.9941864013671875,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 437.0,
+          "x_max": 772.0,
+          "y_max": 535.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 14,
+        "text": "30",
+        "confidence": 0.9975788593292236,
+        "bbox_xyxy": {
+          "x_min": 2.0,
+          "y_min": 448.0,
+          "x_max": 62.0,
+          "y_max": 537.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 15,
+        "text": "3.900",
+        "confidence": 0.9997926950454712,
+        "bbox_xyxy": {
+          "x_min": 158.0,
+          "y_min": 448.0,
+          "x_max": 319.0,
+          "y_max": 533.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 16,
+        "text": "2.900",
+        "confidence": 0.9999414682388306,
+        "bbox_xyxy": {
+          "x_min": 160.0,
+          "y_min": 583.0,
+          "x_max": 319.0,
+          "y_max": 670.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 17,
+        "text": "C30",
+        "confidence": 0.9936473965644836,
+        "bbox_xyxy": {
+          "x_min": 431.0,
+          "y_min": 577.0,
+          "x_max": 543.0,
+          "y_max": 666.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 18,
+        "text": "C30",
+        "confidence": 0.9929025769233704,
+        "bbox_xyxy": {
+          "x_min": 655.0,
+          "y_min": 575.0,
+          "x_max": 772.0,
+          "y_max": 670.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 19,
+        "text": "30",
+        "confidence": 0.9981188774108887,
+        "bbox_xyxy": {
+          "x_min": 2.0,
+          "y_min": 585.0,
+          "x_max": 62.0,
+          "y_max": 668.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 20,
+        "text": "柱墙",
+        "confidence": 0.993253231048584,
+        "bbox_xyxy": {
+          "x_min": 423.0,
+          "y_min": 710.0,
+          "x_max": 558.0,
+          "y_max": 804.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 21,
+        "text": "、板",
+        "confidence": 0.9445979595184326,
+        "bbox_xyxy": {
+          "x_min": 643.0,
+          "y_min": 710.0,
+          "x_max": 778.0,
+          "y_max": 804.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 22,
+        "text": "层高",
+        "confidence": 0.999698281288147,
+        "bbox_xyxy": {
+          "x_min": 197.0,
+          "y_min": 729.0,
+          "x_max": 282.0,
+          "y_max": 818.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 23,
+        "text": "(W)",
+        "confidence": 0.9023218154907227,
+        "bbox_xyxy": {
+          "x_min": 199.0,
+          "y_min": 824.0,
+          "x_max": 297.0,
+          "y_max": 924.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 24,
+        "text": "实测砼强度等级",
+        "confidence": 0.9605799317359924,
+        "bbox_xyxy": {
+          "x_min": 483.0,
+          "y_min": 845.0,
+          "x_max": 713.0,
+          "y_max": 937.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 25,
+        "text": "号楼楼层标高表",
+        "confidence": 0.9601268768310547,
+        "bbox_xyxy": {
+          "x_min": 10.0,
+          "y_min": 1047.0,
+          "x_max": 527.0,
+          "y_max": 1149.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 26,
+        "text": "1",
+        "confidence": 0.9967604279518127,
+        "bbox_xyxy": {
+          "x_min": 19.0,
+          "y_min": 1503.0,
+          "x_max": 91.0,
+          "y_max": 1628.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 27,
+        "text": "2",
+        "confidence": 0.9998421669006348,
+        "bbox_xyxy": {
+          "x_min": 1842.0,
+          "y_min": 1501.0,
+          "x_max": 1927.0,
+          "y_max": 1626.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "2",
+        "confidence": 0.9969220757484436,
+        "bbox_xyxy": {
+          "x_min": 52.0,
+          "y_min": 1497.0,
+          "x_max": 143.0,
+          "y_max": 1636.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "3",
+        "confidence": 0.9984619617462158,
+        "bbox_xyxy": {
+          "x_min": 1840.0,
+          "y_min": 1499.0,
+          "x_max": 1929.0,
+          "y_max": 1636.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "3",
+        "confidence": 0.9970218539237976,
+        "bbox_xyxy": {
+          "x_min": 52.0,
+          "y_min": 1497.0,
+          "x_max": 141.0,
+          "y_max": 1638.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "4",
+        "confidence": 0.9998010993003845,
+        "bbox_xyxy": {
+          "x_min": 1885.0,
+          "y_min": 1499.0,
+          "x_max": 1976.0,
+          "y_max": 1626.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "4",
+        "confidence": 0.9956613183021545,
+        "bbox_xyxy": {
+          "x_min": 100.0,
+          "y_min": 1497.0,
+          "x_max": 195.0,
+          "y_max": 1641.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 1,
+        "text": "5",
+        "confidence": 0.9819658398628235,
+        "bbox_xyxy": {
+          "x_min": 1914.0,
+          "y_min": 1489.0,
+          "x_max": 1990.0,
+          "y_max": 1611.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "个人执业专用：",
+        "confidence": 0.981901228427887,
+        "bbox_xyxy": {
+          "x_min": 1603.0,
+          "y_min": 185.0,
+          "x_max": 1981.0,
+          "y_max": 250.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "REGISTERED ENGINE",
+        "confidence": 0.9934258460998535,
+        "bbox_xyxy": {
+          "x_min": 1421.0,
+          "y_min": 264.0,
+          "x_max": 1979.0,
+          "y_max": 314.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "专业负责人",
+        "confidence": 0.999853789806366,
+        "bbox_xyxy": {
+          "x_min": 1062.0,
+          "y_min": 1272.0,
+          "x_max": 1363.0,
+          "y_max": 1339.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "李建芳",
+        "confidence": 0.9669561386108398,
+        "bbox_xyxy": {
+          "x_min": 1470.0,
+          "y_min": 1263.0,
+          "x_max": 1836.0,
+          "y_max": 1414.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "2",
+        "confidence": 0.9998992681503296,
+        "bbox_xyxy": {
+          "x_min": 1941.0,
+          "y_min": 1270.0,
+          "x_max": 1985.0,
+          "y_max": 1328.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 5,
+        "text": "DISP. LEAD",
+        "confidence": 0.998465895652771,
+        "bbox_xyxy": {
+          "x_min": 1091.0,
+          "y_min": 1353.0,
+          "x_max": 1336.0,
+          "y_max": 1403.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "6",
+        "confidence": 0.9997544884681702,
+        "bbox_xyxy": {
+          "x_min": 170.0,
+          "y_min": 1501.0,
+          "x_max": 247.0,
+          "y_max": 1609.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "业专用章",
+        "confidence": 0.9999422430992126,
+        "bbox_xyxy": {
+          "x_min": 4.0,
+          "y_min": 181.0,
+          "x_max": 245.0,
+          "y_max": 254.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "单位出图专用章",
+        "confidence": 0.9995784759521484,
+        "bbox_xyxy": {
+          "x_min": 1522.0,
+          "y_min": 183.0,
+          "x_max": 1943.0,
+          "y_max": 248.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "ENGINEER SEAL",
+        "confidence": 0.9789698719978333,
+        "bbox_xyxy": {
+          "x_min": 8.0,
+          "y_min": 266.0,
+          "x_max": 425.0,
+          "y_max": 316.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "COMPANY SEAL",
+        "confidence": 0.9750931262969971,
+        "bbox_xyxy": {
+          "x_min": 1522.0,
+          "y_min": 262.0,
+          "x_max": 1945.0,
+          "y_max": 319.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "ml",
+        "confidence": 0.5005471110343933,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 1270.0,
+          "x_max": 48.0,
+          "y_max": 1387.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "2024年05月29田",
+        "confidence": 0.9561030864715576,
+        "bbox_xyxy": {
+          "x_min": 153.0,
+          "y_min": 1266.0,
+          "x_max": 778.0,
+          "y_max": 1337.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 6,
+        "text": "药雪飞",
+        "confidence": 0.6824279427528381,
+        "bbox_xyxy": {
+          "x_min": 1595.0,
+          "y_min": 1264.0,
+          "x_max": 1970.0,
+          "y_max": 1405.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "项目经理 (负责人)",
+        "confidence": 0.9557973146438599,
+        "bbox_xyxy": {
+          "x_min": 884.0,
+          "y_min": 1276.0,
+          "x_max": 1358.0,
+          "y_max": 1341.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "MONTH",
+        "confidence": 0.9968768954277039,
+        "bbox_xyxy": {
+          "x_min": 442.0,
+          "y_min": 1349.0,
+          "x_max": 655.0,
+          "y_max": 1401.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "DAY",
+        "confidence": 0.9987149238586426,
+        "bbox_xyxy": {
+          "x_min": 699.0,
+          "y_min": 1349.0,
+          "x_max": 798.0,
+          "y_max": 1405.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 10,
+        "text": "PM",
+        "confidence": 0.9963067770004272,
+        "bbox_xyxy": {
+          "x_min": 1054.0,
+          "y_min": 1341.0,
+          "x_max": 1143.0,
+          "y_max": 1409.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 11,
+        "text": "YEAR ",
+        "confidence": 0.9052678346633911,
+        "bbox_xyxy": {
+          "x_min": 340.0,
+          "y_min": 1351.0,
+          "x_max": 456.0,
+          "y_max": 1405.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 12,
+        "text": "7",
+        "confidence": 0.9999359846115112,
+        "bbox_xyxy": {
+          "x_min": 185.0,
+          "y_min": 1495.0,
+          "x_max": 255.0,
+          "y_max": 1591.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "DUPLICATION TO ANY THIRD PARTY",
+        "confidence": 0.97255939245224,
+        "bbox_xyxy": {
+          "x_min": 969.0,
+          "y_min": 46.0,
+          "x_max": 1972.0,
+          "y_max": 94.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "专用章",
+        "confidence": 0.9981043338775635,
+        "bbox_xyxy": {
+          "x_min": 0.0,
+          "y_min": 175.0,
+          "x_max": 162.0,
+          "y_max": 252.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "上海市安装二",
+        "confidence": 0.9325879216194153,
+        "bbox_xyxy": {
+          "x_min": 1232.0,
+          "y_min": 235.0,
+          "x_max": 1985.0,
+          "y_max": 379.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "SEAL",
+        "confidence": 0.9984938502311707,
+        "bbox_xyxy": {
+          "x_min": 21.0,
+          "y_min": 262.0,
+          "x_max": 164.0,
+          "y_max": 325.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "SHANGHAIINSTALLATIC",
+        "confidence": 0.9706790447235107,
+        "bbox_xyxy": {
+          "x_min": 1222.0,
+          "y_min": 404.0,
+          "x_max": 1983.0,
+          "y_max": 460.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "SCG ",
+        "confidence": 0.9497387409210205,
+        "bbox_xyxy": {
+          "x_min": 1121.0,
+          "y_min": 409.0,
+          "x_max": 1248.0,
+          "y_max": 465.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "制图",
+        "confidence": 0.9992618560791016,
+        "bbox_xyxy": {
+          "x_min": 925.0,
+          "y_min": 541.0,
+          "x_max": 1145.0,
+          "y_max": 616.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "DRWN",
+        "confidence": 0.9991762042045593,
+        "bbox_xyxy": {
+          "x_min": 966.0,
+          "y_min": 631.0,
+          "x_max": 1105.0,
+          "y_max": 691.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "设   计",
+        "confidence": 0.8195381164550781,
+        "bbox_xyxy": {
+          "x_min": 927.0,
+          "y_min": 724.0,
+          "x_max": 1151.0,
+          "y_max": 799.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "顾恺颖",
+        "confidence": 0.8978974223136902,
+        "bbox_xyxy": {
+          "x_min": 1284.0,
+          "y_min": 737.0,
+          "x_max": 1638.0,
+          "y_max": 856.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 10,
+        "text": "DSGD",
+        "confidence": 0.999830424785614,
+        "bbox_xyxy": {
+          "x_min": 975.0,
+          "y_min": 804.0,
+          "x_max": 1110.0,
+          "y_max": 864.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 11,
+        "text": "校核",
+        "confidence": 0.9889047145843506,
+        "bbox_xyxy": {
+          "x_min": 925.0,
+          "y_min": 904.0,
+          "x_max": 1157.0,
+          "y_max": 985.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 12,
+        "text": "高啥",
+        "confidence": 0.4979623258113861,
+        "bbox_xyxy": {
+          "x_min": 1311.0,
+          "y_min": 894.0,
+          "x_max": 1607.0,
+          "y_max": 1045.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 13,
+        "text": "CHKD",
+        "confidence": 0.998605489730835,
+        "bbox_xyxy": {
+          "x_min": 981.0,
+          "y_min": 987.0,
+          "x_max": 1114.0,
+          "y_max": 1049.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 14,
+        "text": "审核",
+        "confidence": 0.9997003674507141,
+        "bbox_xyxy": {
+          "x_min": 927.0,
+          "y_min": 1085.0,
+          "x_max": 1159.0,
+          "y_max": 1168.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 15,
+        "text": "李建芳",
+        "confidence": 0.9757542610168457,
+        "bbox_xyxy": {
+          "x_min": 1260.0,
+          "y_min": 1082.0,
+          "x_max": 1623.0,
+          "y_max": 1233.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 16,
+        "text": "图卡",
+        "confidence": 0.828654408454895,
+        "bbox_xyxy": {
+          "x_min": 1857.0,
+          "y_min": 1082.0,
+          "x_max": 1990.0,
+          "y_max": 1167.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 17,
+        "text": "REWD",
+        "confidence": 0.9986084699630737,
+        "bbox_xyxy": {
+          "x_min": 977.0,
+          "y_min": 1172.0,
+          "x_max": 1107.0,
+          "y_max": 1232.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 18,
+        "text": "DWG N",
+        "confidence": 0.9730693697929382,
+        "bbox_xyxy": {
+          "x_min": 1854.0,
+          "y_min": 1174.0,
+          "x_max": 1990.0,
+          "y_max": 1237.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 19,
+        "text": "2024",
+        "confidence": 0.9999485611915588,
+        "bbox_xyxy": {
+          "x_min": 180.0,
+          "y_min": 1272.0,
+          "x_max": 336.0,
+          "y_max": 1332.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 20,
+        "text": "年05月29",
+        "confidence": 0.9994756579399109,
+        "bbox_xyxy": {
+          "x_min": 311.0,
+          "y_min": 1266.0,
+          "x_max": 805.0,
+          "y_max": 1337.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 21,
+        "text": "比例",
+        "confidence": 0.9783254861831665,
+        "bbox_xyxy": {
+          "x_min": 1855.0,
+          "y_min": 1256.0,
+          "x_max": 1990.0,
+          "y_max": 1345.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 22,
+        "text": "审 定",
+        "confidence": 0.9208357930183411,
+        "bbox_xyxy": {
+          "x_min": 925.0,
+          "y_min": 1274.0,
+          "x_max": 1151.0,
+          "y_max": 1349.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 23,
+        "text": "YEAR",
+        "confidence": 0.9910368919372559,
+        "bbox_xyxy": {
+          "x_min": 380.0,
+          "y_min": 1353.0,
+          "x_max": 485.0,
+          "y_max": 1401.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 24,
+        "text": "MONTH",
+        "confidence": 0.9899202585220337,
+        "bbox_xyxy": {
+          "x_min": 532.0,
+          "y_min": 1349.0,
+          "x_max": 693.0,
+          "y_max": 1404.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 25,
+        "text": "DAY",
+        "confidence": 0.998371422290802,
+        "bbox_xyxy": {
+          "x_min": 742.0,
+          "y_min": 1349.0,
+          "x_max": 834.0,
+          "y_max": 1405.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 26,
+        "text": "APPD",
+        "confidence": 0.997828483581543,
+        "bbox_xyxy": {
+          "x_min": 971.0,
+          "y_min": 1345.0,
+          "x_max": 1101.0,
+          "y_max": 1405.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 27,
+        "text": "SCAL",
+        "confidence": 0.9955834150314331,
+        "bbox_xyxy": {
+          "x_min": 1869.0,
+          "y_min": 1347.0,
+          "x_max": 1989.0,
+          "y_max": 1409.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 28,
+        "text": "8",
+        "confidence": 0.9999538660049438,
+        "bbox_xyxy": {
+          "x_min": 199.0,
+          "y_min": 1493.0,
+          "x_max": 278.0,
+          "y_max": 1611.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "PARTY IS NOT PERMITTED.",
+        "confidence": 0.9637673497200012,
+        "bbox_xyxy": {
+          "x_min": 12.0,
+          "y_min": 46.0,
+          "x_max": 767.0,
+          "y_max": 94.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "用户",
+        "confidence": 0.9986987709999084,
+        "bbox_xyxy": {
+          "x_min": 1400.0,
+          "y_min": 179.0,
+          "x_max": 1626.0,
+          "y_max": 262.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 2,
+        "text": "上海市安装",
+        "confidence": 0.9948625564575195,
+        "bbox_xyxy": {
+          "x_min": 1738.0,
+          "y_min": 200.0,
+          "x_max": 1990.0,
+          "y_max": 298.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "装工程集团有限公司",
+        "confidence": 0.9977546334266663,
+        "bbox_xyxy": {
+          "x_min": 12.0,
+          "y_min": 237.0,
+          "x_max": 1253.0,
+          "y_max": 379.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "CLIENT",
+        "confidence": 0.9957758784294128,
+        "bbox_xyxy": {
+          "x_min": 1417.0,
+          "y_min": 266.0,
+          "x_max": 1611.0,
+          "y_max": 325.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "项目名称",
+        "confidence": 0.9996309280395508,
+        "bbox_xyxy": {
+          "x_min": 1397.0,
+          "y_min": 364.0,
+          "x_max": 1645.0,
+          "y_max": 440.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "曲阳路930",
+        "confidence": 0.9983449578285217,
+        "bbox_xyxy": {
+          "x_min": 1731.0,
+          "y_min": 376.0,
+          "x_max": 1990.0,
+          "y_max": 486.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 7,
+        "text": "LATION ENGINEERING GROUP CO., LTD.",
+        "confidence": 0.9673174619674683,
+        "bbox_xyxy": {
+          "x_min": 8.0,
+          "y_min": 402.0,
+          "x_max": 1253.0,
+          "y_max": 464.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "PROJECT",
+        "confidence": 0.994928777217865,
+        "bbox_xyxy": {
+          "x_min": 1414.0,
+          "y_min": 448.0,
+          "x_max": 1618.0,
+          "y_max": 500.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "一层梁结构改造加固平面图",
+        "confidence": 0.9964645504951477,
+        "bbox_xyxy": {
+          "x_min": 713.0,
+          "y_min": 756.0,
+          "x_max": 1514.0,
+          "y_max": 835.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 10,
+        "text": "图号",
+        "confidence": 0.999965488910675,
+        "bbox_xyxy": {
+          "x_min": 77.0,
+          "y_min": 1089.0,
+          "x_max": 239.0,
+          "y_max": 1166.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 11,
+        "text": "24015-5-X00-ST01-29VC",
+        "confidence": 0.9982461333274841,
+        "bbox_xyxy": {
+          "x_min": 937.0,
+          "y_min": 1124.0,
+          "x_max": 1634.0,
+          "y_max": 1189.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "DWG NO.",
+        "confidence": 0.9982802271842957,
+        "bbox_xyxy": {
+          "x_min": 66.0,
+          "y_min": 1176.0,
+          "x_max": 255.0,
+          "y_max": 1235.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 13,
+        "text": "比例",
+        "confidence": 0.9998035430908203,
+        "bbox_xyxy": {
+          "x_min": 75.0,
+          "y_min": 1268.0,
+          "x_max": 228.0,
+          "y_max": 1339.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 14,
+        "text": "专业",
+        "confidence": 0.9999682307243347,
+        "bbox_xyxy": {
+          "x_min": 991.0,
+          "y_min": 1264.0,
+          "x_max": 1147.0,
+          "y_max": 1343.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 15,
+        "text": "1:100",
+        "confidence": 0.9993562698364258,
+        "bbox_xyxy": {
+          "x_min": 516.0,
+          "y_min": 1293.0,
+          "x_max": 697.0,
+          "y_max": 1380.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 16,
+        "text": "结构",
+        "confidence": 0.9991030693054199,
+        "bbox_xyxy": {
+          "x_min": 1493.0,
+          "y_min": 1285.0,
+          "x_max": 1645.0,
+          "y_max": 1393.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 17,
+        "text": "SCALE",
+        "confidence": 0.9990361332893372,
+        "bbox_xyxy": {
+          "x_min": 81.0,
+          "y_min": 1347.0,
+          "x_max": 230.0,
+          "y_max": 1407.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 18,
+        "text": "DISP.",
+        "confidence": 0.998224139213562,
+        "bbox_xyxy": {
+          "x_min": 1012.0,
+          "y_min": 1347.0,
+          "x_max": 1141.0,
+          "y_max": 1409.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 19,
+        "text": "9",
+        "confidence": 0.9999362230300903,
+        "bbox_xyxy": {
+          "x_min": 228.0,
+          "y_min": 1495.0,
+          "x_max": 305.0,
+          "y_max": 1603.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 0,
+        "text": "海市安装工程集团有限公司",
+        "confidence": 0.9794189929962158,
+        "bbox_xyxy": {
+          "x_min": 15.0,
+          "y_min": 210.0,
+          "x_max": 689.0,
+          "y_max": 289.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 1,
+        "text": "阳路930号5号和6号楼实施装修及外立面修项目",
+        "confidence": 0.9993404746055603,
+        "bbox_xyxy": {
+          "x_min": 14.0,
+          "y_min": 389.0,
+          "x_max": 1242.0,
+          "y_max": 479.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 2,
+        "text": "G",
+        "confidence": 0.9996957778930664,
+        "bbox_xyxy": {
+          "x_min": 1462.0,
+          "y_min": 471.0,
+          "x_max": 1551.0,
+          "y_max": 577.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 3,
+        "text": "设计阶段",
+        "confidence": 0.9998774528503418,
+        "bbox_xyxy": {
+          "x_min": 510.0,
+          "y_min": 543.0,
+          "x_max": 757.0,
+          "y_max": 616.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 4,
+        "text": "施工图",
+        "confidence": 0.9999386668205261,
+        "bbox_xyxy": {
+          "x_min": 974.0,
+          "y_min": 557.0,
+          "x_max": 1191.0,
+          "y_max": 671.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 5,
+        "text": "PHASE",
+        "confidence": 0.9985325932502747,
+        "bbox_xyxy": {
+          "x_min": 562.0,
+          "y_min": 625.0,
+          "x_max": 718.0,
+          "y_max": 685.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 6,
+        "text": "装置",
+        "confidence": 0.9996323585510254,
+        "bbox_xyxy": {
+          "x_min": 539.0,
+          "y_min": 722.0,
+          "x_max": 735.0,
+          "y_max": 804.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 7,
+        "text": "PLANT",
+        "confidence": 0.9977444410324097,
+        "bbox_xyxy": {
+          "x_min": 564.0,
+          "y_min": 808.0,
+          "x_max": 716.0,
+          "y_max": 870.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 8,
+        "text": "分区",
+        "confidence": 0.9996170997619629,
+        "bbox_xyxy": {
+          "x_min": 539.0,
+          "y_min": 908.0,
+          "x_max": 732.0,
+          "y_max": 991.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 9,
+        "text": "UNIT",
+        "confidence": 0.9935588836669922,
+        "bbox_xyxy": {
+          "x_min": 585.0,
+          "y_min": 987.0,
+          "x_max": 701.0,
+          "y_max": 1051.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 10,
+        "text": "第29张",
+        "confidence": 0.9856476783752441,
+        "bbox_xyxy": {
+          "x_min": 521.0,
+          "y_min": 1087.0,
+          "x_max": 828.0,
+          "y_max": 1160.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 11,
+        "text": "共48张",
+        "confidence": 0.9962205290794373,
+        "bbox_xyxy": {
+          "x_min": 985.0,
+          "y_min": 1087.0,
+          "x_max": 1307.0,
+          "y_max": 1160.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 12,
+        "text": "OF",
+        "confidence": 0.9971046447753906,
+        "bbox_xyxy": {
+          "x_min": 884.0,
+          "y_min": 1166.0,
+          "x_max": 956.0,
+          "y_max": 1235.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 13,
+        "text": "合同号",
+        "confidence": 0.999903678894043,
+        "bbox_xyxy": {
+          "x_min": 191.0,
+          "y_min": 1264.0,
+          "x_max": 384.0,
+          "y_max": 1339.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": true,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 14,
+        "text": "JT24-002E",
+        "confidence": 0.99663245677948,
+        "bbox_xyxy": {
+          "x_min": 742.0,
+          "y_min": 1297.0,
+          "x_max": 1049.0,
+          "y_max": 1384.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": true
+        }
+      },
+      {
+        "id": 15,
+        "text": "CONT.NO.",
+        "confidence": 0.9946627020835876,
+        "bbox_xyxy": {
+          "x_min": 190.0,
+          "y_min": 1349.0,
+          "x_max": 397.0,
+          "y_max": 1414.0
+        },
+        "type_analysis": {
+          "is_numeric": false,
+          "is_alphanumeric": false,
+          "contains_letters": true,
+          "contains_digits": false
+        }
+      },
+      {
+        "id": 16,
+        "text": "10",
+        "confidence": 0.9998707175254822,
+        "bbox_xyxy": {
+          "x_min": 305.0,
+          "y_min": 1489.0,
+          "x_max": 460.0,
+          "y_max": 1609.0
+        },
+        "type_analysis": {
+          "is_numeric": true,
+          "is_alphanumeric": true,
+          "contains_letters": false,
+          "contains_digits": true
+        }
+      }
+    ],
+    "all_text": "1\n日期 DATE\n姓名 NAME\n专业 SPECI.\n2\n1\n2\n3\n3\n4\n4\n5\n5\n6\n10\nA\n专\n日期 DATE\n姓名 NAME\n专业 SPECI.\nD\n600\nC\n000\n2\n1\n3900\nK-JKL1 (1) 250x350\n500x500 (0/250-0/150)\n0\n000\n3\n4\n3900\n3900\n5\n6\n3900\n3900\nM7\n0\n46800\n3900\n3900\n9\n10\n3900\n3900\n11\n12\n3900\n3900\n39\n13\n3900\nD\n100.\n250/0-0/0)\n250x500\n00\n5000\nB\n12600\n5000\n500x600 (0/250-0/0)\n<-JKL2 (1)250x600\nQO00\n320;3?20\n10@100\n2Φ12\nN-L2(\n80\n18@15\n2\n218; 2\n2875\nN-L1 (1\n18@150\n2020; 3\nK-JKL3(1)250x5\n500x500 250/0-\n5000\n3Φ20; 3?20\n0000000\nB\n12600\nN-L2 (1)200x300\n18@150 (2)\n218; 2?18\n500x600 (250/0-0/0)\n2875\n）(\n(-JKL2 (1)250x600\n7000\nN-L1 (1) 250x400\n18@150 (2)\n220; 3?20\nUKL\n210@1\n0\nK-JKL1 (1) 250x350\n500x500 (250/0-0/150)\n10@100\n3Φ20; 320\n3900\n?\n3900\n3900\n3\n4\n3900\n3900\n5\n6\n3900\n3900\n46800\n80\n一层梁结构改造加固平面图\n3900\n3900\n9\n10\nrOCTJ\n220; 3\nK-JKL1\n1500x500\n3900\n3900\n39\n11\n12\nYOGIJUZI\nK-JKL2\n500x60\n220; 3?20\nA\n<-JKL1 (1) 250x350\n500x500 (250/0-0/130)\n3900\n13\n说明：\n1、平面图中K 一 JKL*表示增大截面加固梁; T— JKL*表示粘贴碳纤维布加\n2、除特殊说明外，新增及加固梁纵向钢筋与原结构均采取化学植筋连接，当纵筋需\n3、梁结构加固平面表示方法详见《建筑结构加固施工图设计表示方法及深度图样》\n一层梁结构改造加固平面图\n1:100\n仟维布加固梁；N—L*表示新增结构梁；图中未注明结构构件均为既有结构。\n当纵筋需通长设置时遇既有结构梁应贯穿（贯穿孔内应采用植筋胶灌注密实）。\n度图样》O7SG111—1~2 及梁加固图例、相关节点大样图。\n2\n30\n梁顶加固纵筋，端支座处与原结构采取\n化学植筋连接或铺入柱增大截面中\n加固箍篇，两端与既有结构植筋连接、有效\nP\n梁底加固纵筋，端支座处与原结构采取\n化学植筋连接或铺入柱增大截面中\n250\n250\n梁顶加固纵筋，端支座处与原结构采项\n化学植筋连接或铺入柱增大截而中\n009\n形拉结钢筋，植筋,\n加固箍篇，两端与既有\nP\n加固腰筋，端支座处与原结构\n采取化学植筋连接\n1\n钢筋、植筋、有效植筋深度≥1 5d\n00\n高。两端与既有结构植筋连接、 有效\nPSk\nh\n梁顶加固纵筋,，端支座处与原结构采取\n化学植筋连接或铺入柱增大截而中\n中一\n加固箍篇， 两端与既有结构植筋连接， 有效\n植筋深度≥15d\nE\nF\n小屋而层\n33.170\n屋而层\n28.770\n4\n8\n25.470\n3\n7\n22.170\n3\n6\n18.870\n3\n5\n15.570\n3\n4\n11.670\n7J\n70\n4.400\nC20\nC20\n70\n3.300\nC20\nC20\n70\n70\n3.300\nC20\nC20\n3.300\nC20\nC20\n70\n70\nC20\nC20\n3.300\n3.900\nC30\nC30\n70\nCNn\nC3D\nOO\n梁底加固纵筋，端支座处与原结构采取\n化学植筋连接或铺入柱增大截面中\n250\n250\n注：梁底纵筋较平面图配筋增设1 根\n500\nK-JKL1\nP\n梁底加固纵筋，端支座\n化学植筋连接或铺入柱\n250\n250\n500\nK-JKL2\n端与既有结构相所连接, 有发\nPSK\n纵筋，端支座处与原结构采取\n连接或铺入柱增大截面中\n250\n250\n500\nK-JKL1/K-JK\nOCK\n梁底加固纵筋，端支座处与原结构采取\n化学植筋连接或铺入柱增大截面中\n250\n注:梁底纵筋较平面图配筋增设1 根\n0\nK-JKL2\nVO\n2024.05.29\n供审图\n版次\n日期\nREV.\nDATE\n本图纸为上海市安装工程集团有限公\nTHIS DRAWING IS  THE PROPER\nDUPLICATION TO ANY THIRD PARTY\n顾恺颖\n说明\n制图\n设  计\nDESCRIPTION\nDRWN\nDSGD\n有限公司（SIEG）财产，未经本公司许可不得转让或复制给第三方\nROPERTY OF SHANGHAI INSTALLATION ENGINEERING GROUP CO.,LTD.\nPARTY IS NOT PERMITTED.\nF\n领\n高峰\n李建芳\n计\n校核\n审核\n审定\nCHKD\nREWD\nAPPD\n第三方。\n.,LTD.\nUNAUTHORIZED\nDISCLOSURE OR\n4\n11.670\n3\n3\n7.770\n3\n2\n3.870\n3\n1\n-0.030\n3\n半地下室\n-2.930\n2\n标高\n层号\n(W)\n5号楼楼\n1\nA1 (横) -2019\nC30\nC30\n70\n3.900\n3.900\nC30\nC30\n70\nC30\nC30\n0\n3.900\nC30\nC30\n30\n3.900\n2.900\nC30\nC30\n30\n柱墙\n、板\n层高\n(W)\n实测砼强度等级\n号楼楼层标高表\n1\n2\n2\n3\n3\n4\n4\n5\n个人执业专用：\nREGISTERED ENGINE\n专业负责人\n李建芳\n2\nDISP. LEAD\n6\n业专用章\n单位出图专用章\nENGINEER SEAL\nCOMPANY SEAL\nml\n2024年05月29田\n药雪飞\n项目经理 (负责人)\nMONTH\nDAY\nPM\nYEAR \n7\nDUPLICATION TO ANY THIRD PARTY\n专用章\n上海市安装二\nSEAL\nSHANGHAIINSTALLATIC\nSCG \n制图\nDRWN\n设   计\n顾恺颖\nDSGD\n校核\n高啥\nCHKD\n审核\n李建芳\n图卡\nREWD\nDWG N\n2024\n年05月29\n比例\n审 定\nYEAR\nMONTH\nDAY\nAPPD\nSCAL\n8\nPARTY IS NOT PERMITTED.\n用户\n上海市安装\n装工程集团有限公司\nCLIENT\n项目名称\n曲阳路930\nLATION ENGINEERING GROUP CO., LTD.\nPROJECT\n一层梁结构改造加固平面图\n图号\n24015-5-X00-ST01-29VC\nDWG NO.\n比例\n专业\n1:100\n结构\nSCALE\nDISP.\n9\n海市安装工程集团有限公司\n阳路930号5号和6号楼实施装修及外立面修项目\nG\n设计阶段\n施工图\nPHASE\n装置\nPLANT\n分区\nUNIT\n第29张\n共48张\nOF\n合同号\nJT24-002E\nCONT.NO.\n10",
+    "statistics": {
+      "total_regions": 434,
+      "total_slices_processed": 88,
+      "avg_confidence": 0.942931406852287,
+      "processing_time": 0
+    },
+    "processing_summary": {
+      "shared_slice_used": true,
+      "slicing_enabled": true,
+      "individual_results": [
+        {
+          "image": "temp_page_b68c3421-f87d-41c2-b8c4-24dec5e94f7c_0.png",
+          "success": true,
+          "method": "shared_slice_ocr",
+          "regions": 434
+        }
+      ]
+    }
+  },
+  "coordinate_restoration": {
+    "enabled": true,
+    "total_slices_processed": 88,
+    "coordinate_adjustment_method": "slice_offset_restoration"
+  },
+  "storage_info": {
+    "individual_slice_storage": {
+      "total_saved_files": 0,
+      "storage_details": []
+    },
+    "merged_result_timestamp": "2025-06-21T10:47:25+0800"
+  }
+}

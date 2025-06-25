@@ -1,0 +1,233 @@
+.upload-task-status {
+  margin-bottom: 16px;
+  height: 100%;
+}
+
+.upload-task-status .ant-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-task-status .ant-card-head {
+  min-height: 40px;
+  flex-shrink: 0;
+}
+
+.upload-task-status .ant-card-head-title {
+  padding: 8px 0;
+}
+
+.upload-task-status .ant-card-extra {
+  padding: 8px 0;
+}
+
+.upload-task-status .ant-card-body {
+  padding: 12px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.task-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.task-item:hover {
+  border-color: #d9d9d9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.task-item.task-processing {
+  border-color: #722ed1;
+  background-color: #f9f0ff;
+  animation: processing-pulse 2s infinite;
+}
+
+.task-item.task-success {
+  border-color: #52c41a;
+  background-color: #f6ffed;
+}
+
+.task-item.task-error {
+  border-color: #ff4d4f;
+  background-color: #fff2f0;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.task-info .ant-typography {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-progress {
+  margin-bottom: 4px;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-message {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.45);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-progress-text {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  min-height: 200px;
+  color: #999;
+}
+
+/* 滚动条样式 */
+.upload-task-status ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.upload-task-status ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.upload-task-status ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.upload-task-status ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 动画效果 */
+.task-item {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes processing-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(114, 46, 209, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(114, 46, 209, 0.1);
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .task-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .task-info {
+    width: 100%;
+  }
+  
+  .connection-status {
+    gap: 4px;
+  }
+  
+  .connection-status span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .upload-task-status {
+    margin-top: 16px;
+  }
+  
+  .upload-task-status .ant-card-body {
+    padding: 8px;
+  }
+  
+  .task-item {
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .task-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .task-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .upload-task-status .ant-card-body {
+    padding: 8px;
+  }
+  
+  .task-item {
+    padding: 8px;
+  }
+  
+  .connection-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+} 

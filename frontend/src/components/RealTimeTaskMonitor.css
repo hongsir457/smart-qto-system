@@ -1,0 +1,241 @@
+/* RealTimeTaskMonitor.css */
+.real-time-task-monitor {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.monitor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.monitor-header h3 {
+  margin: 0;
+  color: #262626;
+  font-weight: 600;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+}
+
+.task-card {
+  transition: all 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.task-title .ant-badge {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.task-details {
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.task-stage {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.task-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-progress .ant-progress {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #666;
+  min-width: 30px;
+  text-align: right;
+}
+
+.task-message {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #bfbfbf;
+}
+
+.task-meta span {
+  flex: 1;
+}
+
+.task-meta span:last-child {
+  text-align: right;
+}
+
+.task-list {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.task-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.task-detail-content {
+  padding: 16px 0;
+}
+
+.task-detail-content strong {
+  color: #262626;
+  margin-right: 8px;
+}
+
+.task-detail-content pre {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .real-time-task-monitor {
+    padding: 8px;
+  }
+  
+  .monitor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .task-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .task-actions {
+    align-self: flex-end;
+  }
+  
+  .task-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .task-meta span:last-child {
+    text-align: left;
+  }
+}
+
+/* 动画效果 */
+.task-card .ant-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.task-card:hover .ant-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.ant-progress-line {
+  transition: all 0.3s ease;
+}
+
+.ant-statistic-content {
+  transition: all 0.3s ease;
+}
+
+/* 状态指示器样式 */
+.ant-badge-status-dot {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 连接状态样式 */
+.connection-status .ant-badge-status-processing .ant-badge-status-dot {
+  animation: ant-badge-processing 1.2s infinite ease-in-out;
+}
+
+@keyframes ant-badge-processing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+} 

@@ -1,0 +1,319 @@
+{
+  "id": 3,
+  "filename": "test_dual_track_drawing.dwg",
+  "status": "completed",
+  "created_at": "2025-06-22T07:45:14.972379",
+  "updated_at": "2025-06-22T07:45:14.972379",
+  "progress": 100,
+  "file_size": null,
+  "file_type": "dwg",
+  "file_path": "/test/path/test_dual_track_drawing.dwg",
+  "processing_result": null,
+  "error_message": null,
+  "ocr_results": null,
+  "recognition_results": {
+    "ocr_recognition_display": {
+      "drawing_basic_info": {
+        "drawing_title": "二层柱结构配筋图",
+        "drawing_number": "S-02",
+        "scale": "1:100",
+        "project_name": "某住宅小区A栋",
+        "drawing_type": "结构施工图"
+      },
+      "component_overview": {
+        "component_ids": [
+          "KZ1",
+          "KZ2",
+          "KZ3",
+          "KZ4",
+          "KL1",
+          "KL2"
+        ],
+        "component_types": [
+          "框架柱",
+          "框架梁"
+        ],
+        "material_grades": [
+          "C30",
+          "HRB400"
+        ],
+        "axis_lines": [
+          "A",
+          "B",
+          "C",
+          "1",
+          "2",
+          "3"
+        ],
+        "summary": {
+          "total_components": 6,
+          "main_structure_type": "钢筋混凝土框架结构",
+          "complexity_level": "中等"
+        }
+      },
+      "ocr_source_info": {
+        "total_slices": 24,
+        "ocr_text_count": 156,
+        "analysis_method": "PaddleOCR + GPT-4o"
+      }
+    },
+    "quantity_list_display": {
+      "success": true,
+      "components": [
+        {
+          "key": "KZ1",
+          "component_id": "KZ1",
+          "component_type": "框架柱",
+          "dimensions": "400×400",
+          "material": "C30",
+          "quantity": 4,
+          "unit": "根",
+          "volume": 2.304,
+          "rebar_weight": 85.2
+        },
+        {
+          "key": "KZ2",
+          "component_id": "KZ2",
+          "component_type": "框架柱",
+          "dimensions": "500×500",
+          "material": "C30",
+          "quantity": 2,
+          "unit": "根",
+          "volume": 1.8,
+          "rebar_weight": 72.5
+        },
+        {
+          "key": "KL1",
+          "component_id": "KL1",
+          "component_type": "框架梁",
+          "dimensions": "300×600",
+          "material": "C30",
+          "quantity": 6,
+          "unit": "根",
+          "volume": 3.24,
+          "rebar_weight": 169.8
+        }
+      ],
+      "summary": {
+        "total_components": 9,
+        "component_types": 3,
+        "total_volume": "7.344 m³",
+        "total_area": "23.76 m²",
+        "total_concrete_volume": 7.344,
+        "total_rebar_weight": 327.5,
+        "total_formwork_area": 23.76,
+        "component_breakdown": {
+          "框架柱": {
+            "count": 6,
+            "volume": 4.104,
+            "area": 12.8
+          },
+          "框架梁": {
+            "count": 6,
+            "volume": 3.24,
+            "area": 10.96
+          }
+        },
+        "analysis_source": "Vision分析 + GPT-4o"
+      },
+      "table_columns": [
+        {
+          "title": "构件编号",
+          "dataIndex": "component_id",
+          "key": "component_id"
+        },
+        {
+          "title": "构件类型",
+          "dataIndex": "component_type",
+          "key": "component_type"
+        },
+        {
+          "title": "尺寸规格",
+          "dataIndex": "dimensions",
+          "key": "dimensions"
+        },
+        {
+          "title": "材料",
+          "dataIndex": "material",
+          "key": "material"
+        },
+        {
+          "title": "数量",
+          "dataIndex": "quantity",
+          "key": "quantity"
+        },
+        {
+          "title": "单位",
+          "dataIndex": "unit",
+          "key": "unit"
+        },
+        {
+          "title": "体积(m³)",
+          "dataIndex": "volume",
+          "key": "volume"
+        },
+        {
+          "title": "钢筋重量(kg)",
+          "dataIndex": "rebar_weight",
+          "key": "rebar_weight"
+        }
+      ]
+    },
+    "analysis_metadata": {
+      "analysis_method": "dual_track_analysis",
+      "analysis_timestamp": "2025-06-22T07:45:14.971836",
+      "model_used": "GPT-4o",
+      "processing_time": 45.8,
+      "success": true
+    }
+  },
+  "ocr_recognition_display": {
+    "drawing_basic_info": {
+      "drawing_title": "二层柱结构配筋图",
+      "drawing_number": "S-02",
+      "scale": "1:100",
+      "project_name": "某住宅小区A栋",
+      "drawing_type": "结构施工图"
+    },
+    "component_overview": {
+      "component_ids": [
+        "KZ1",
+        "KZ2",
+        "KZ3",
+        "KZ4",
+        "KL1",
+        "KL2"
+      ],
+      "component_types": [
+        "框架柱",
+        "框架梁"
+      ],
+      "material_grades": [
+        "C30",
+        "HRB400"
+      ],
+      "axis_lines": [
+        "A",
+        "B",
+        "C",
+        "1",
+        "2",
+        "3"
+      ],
+      "summary": {
+        "total_components": 6,
+        "main_structure_type": "钢筋混凝土框架结构",
+        "complexity_level": "中等"
+      }
+    },
+    "ocr_source_info": {
+      "total_slices": 24,
+      "ocr_text_count": 156,
+      "analysis_method": "PaddleOCR + GPT-4o"
+    }
+  },
+  "quantity_list_display": {
+    "success": true,
+    "components": [
+      {
+        "key": "KZ1",
+        "component_id": "KZ1",
+        "component_type": "框架柱",
+        "dimensions": "400×400",
+        "material": "C30",
+        "quantity": 4,
+        "unit": "根",
+        "volume": 2.304,
+        "rebar_weight": 85.2
+      },
+      {
+        "key": "KZ2",
+        "component_id": "KZ2",
+        "component_type": "框架柱",
+        "dimensions": "500×500",
+        "material": "C30",
+        "quantity": 2,
+        "unit": "根",
+        "volume": 1.8,
+        "rebar_weight": 72.5
+      },
+      {
+        "key": "KL1",
+        "component_id": "KL1",
+        "component_type": "框架梁",
+        "dimensions": "300×600",
+        "material": "C30",
+        "quantity": 6,
+        "unit": "根",
+        "volume": 3.24,
+        "rebar_weight": 169.8
+      }
+    ],
+    "summary": {
+      "total_components": 9,
+      "component_types": 3,
+      "total_volume": "7.344 m³",
+      "total_area": "23.76 m²",
+      "total_concrete_volume": 7.344,
+      "total_rebar_weight": 327.5,
+      "total_formwork_area": 23.76,
+      "component_breakdown": {
+        "框架柱": {
+          "count": 6,
+          "volume": 4.104,
+          "area": 12.8
+        },
+        "框架梁": {
+          "count": 6,
+          "volume": 3.24,
+          "area": 10.96
+        }
+      },
+      "analysis_source": "Vision分析 + GPT-4o"
+    },
+    "table_columns": [
+      {
+        "title": "构件编号",
+        "dataIndex": "component_id",
+        "key": "component_id"
+      },
+      {
+        "title": "构件类型",
+        "dataIndex": "component_type",
+        "key": "component_type"
+      },
+      {
+        "title": "尺寸规格",
+        "dataIndex": "dimensions",
+        "key": "dimensions"
+      },
+      {
+        "title": "材料",
+        "dataIndex": "material",
+        "key": "material"
+      },
+      {
+        "title": "数量",
+        "dataIndex": "quantity",
+        "key": "quantity"
+      },
+      {
+        "title": "单位",
+        "dataIndex": "unit",
+        "key": "unit"
+      },
+      {
+        "title": "体积(m³)",
+        "dataIndex": "volume",
+        "key": "volume"
+      },
+      {
+        "title": "钢筋重量(kg)",
+        "dataIndex": "rebar_weight",
+        "key": "rebar_weight"
+      }
+    ]
+  },
+  "components_count": 3,
+  "task_id": null
+}

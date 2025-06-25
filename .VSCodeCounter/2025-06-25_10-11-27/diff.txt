@@ -1,0 +1,56 @@
+Date : 2025-06-25 10:11:27
+Directory : c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend
+Total : 19 files,  -1859 codes, -306 comments, -699 blanks, all -2864 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Markdown |          6 |        902 |          0 |        277 |      1,179 |
+| Python   |         13 |     -2,761 |       -306 |       -976 |     -4,043 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                      |         19 |     -1,859 |       -306 |       -699 |     -2,864 |
+| . (Files)                                                                                                              |          8 |      1,324 |         54 |        386 |      1,764 |
+| app                                                                                                                    |         11 |     -3,183 |       -360 |     -1,085 |     -4,628 |
+| app\api                                                                                                                |          1 |         -1 |          0 |          1 |          0 |
+| app\api\v1                                                                                                             |          1 |         -1 |          0 |          1 |          0 |
+| app\api\v1\drawings                                                                                                    |          1 |         -1 |          0 |          1 |          0 |
+| app\services                                                                                                           |          8 |     -2,855 |       -348 |       -612 |     -3,815 |
+| app\services (Files)                                                                                                   |          6 |     -2,855 |       -348 |       -610 |     -3,813 |
+| app\services\dwg_processing                                                                                            |          2 |          0 |          0 |         -2 |         -2 |
+| app\services\dwg_processing\converters                                                                                 |          1 |          0 |          0 |         -1 |         -1 |
+| app\services\dwg_processing\detectors                                                                                  |          1 |          0 |          0 |         -1 |         -1 |
+| app\tasks                                                                                                              |          1 |          2 |          1 |          1 |          4 |
+| app\utils                                                                                                              |          1 |       -329 |        -13 |       -475 |       -817 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                               | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\Step_2_5_和Vision流程问题修复完成报告.md                           | Markdown |        176 |          0 |         56 |        232 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\Vision分析失败问题修复完成报告.md                                   | Markdown |        109 |          0 |         40 |        149 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\Vision分析流程问题分析报告.md                                     | Markdown |        180 |          0 |         50 |        230 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\ai_analyzer_refactoring_plan.md                         | Markdown |        113 |          0 |         32 |        145 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\api\v1\drawings\upload.py                           | Python   |         -1 |          0 |          1 |          0 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\dwg_processing\converters\__init__.py      | Python   |          0 |          0 |         -1 |         -1 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\dwg_processing\detectors\frame_detector.py | Python   |          0 |          0 |         -1 |         -1 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\dwg_processor_legacy.py                    | Python   |     -2,503 |       -326 |       -501 |     -3,330 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\enhanced_grid_slice_analyzer.py            | Python   |        -23 |          2 |         -6 |        -27 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\enhanced_slice_models.py                   | Python   |         24 |          0 |          2 |         26 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\ocr_enhancement.py                         | Python   |         27 |          1 |          3 |         31 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\test_enhanced_vision_components.py         | Python   |       -391 |        -26 |       -109 |       -526 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\services\utils.py                                   | Python   |         11 |          1 |          1 |         13 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\tasks\drawing_tasks.py                              | Python   |          2 |          1 |          1 |          4 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\app\utils\analysis_optimizations_backup.py              | Python   |       -329 |        -13 |       -475 |       -817 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\cleanup_report.md                                       | Markdown |        156 |          0 |         56 |        212 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\cleanup_strategy.py                                     | Python   |        300 |         42 |         74 |        416 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\enhanced_grid_slice_analyzer_refactoring_plan.md        | Markdown |        168 |          0 |         43 |        211 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\backend\test_vision_analysis_fix.py                             | Python   |        122 |         12 |         35 |        169 |
+| Total                                                                                                                  |          |     -1,859 |       -306 |       -699 |     -2,864 |
++------------------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

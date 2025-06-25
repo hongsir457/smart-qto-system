@@ -1,0 +1,63 @@
+# 📌 Project: 智能工程量自动分析系统
+# 📍 目标：构建一个能够自动识别施工图纸并计算工程量的 AI 微服务系统
+
+name: smart-qto-system
+language: Python
+frameworks:
+  - FastAPI
+  - Celery
+  - SQLAlchemy
+  - React
+ai_assistants:
+  - ChatGPT / GPT-4o for multi-modal OCR + reasoning
+  - PaddleOCR for traditional OCR fallback
+  - YOLOv8 for object/component detection
+tasks:
+  - 图纸上传、图框提取、按图号排序切片为图像
+  - OCR识别（AI与传统双通路）
+  - 构件识别（使用YOLOv8）
+  - 两阶段分析（结构化识别 + 视觉验证）
+  - 工程量提取与规则计算
+  - 汇总导出清单和计算书
+
+rules:
+  - 必须遵循国家标准《房屋建筑制图统一标准》（GB/T 50001）进行图框识别
+  - 不允许在非异步流程中调用耗时 AI 服务
+  - 图像和文本识别必须通过 ChatGPT 多模态分析进行结构化提取
+  - 所有工程量分析均需可追溯（需生成计算书）
+  - 分析任务必须通过 Celery worker 异步执行，不得阻塞 API 响应
+  - 禁止绕过统一 API 网关直接访问服务层逻辑
+  - 严禁将文件内容写入数据库，仅保存元信息
+  - Redis 用于任务进度追踪与缓存，不作持久化存储
+  - 所有构件分类与工程量单位必须符合《工程量计算规范》
+  - Playground 用于提示词调试，最终需以接口方式调用
+
+naming_conventions:
+  - 服务模块必须使用 Service 结尾，例如：`drawing_service.py`
+  - 所有 Celery worker 文件存放于 `app/tasks/`
+  - 规则引擎与解析器应放置于 `app/services/quantity/` 目录下
+  - 多模态分析器命名为 `chatgpt_quantity_analyzer.py`
+  - 文件上传使用 `POST /api/v1/drawings/upload`，不允许重命名路由
+
+dont:
+  - 不要尝试手动提取构件参数（应由 AI 模型完成）
+  - 不要将图像保存为 base64 形式存数据库
+  - 不要使用 Flask、Django，系统已定为 FastAPI 框架
+  - 不要在主线程中执行 OCR 或 AI 分析，必须异步
+  - 不要让 AI 推理时依赖图纸格式固定，应考虑变体和异常情况
+
+do:
+  - 所有识别结果（文本、构件、计算量）都需结构化存储（JSON）
+  - 必须记录每次分析的日志、耗时、模型响应数据用于审计
+  - 支持多轮分析提示词策略（先结构再验证）
+  - 多图框图纸需按图号顺序输出单图 PNG 并打日志
+  - 每次前端发起操作，后端应提供实时日志进度（WebSocket）
+
+ci_cd:
+  - 使用 shell 脚本自动部署 Redis、Celery、Worker
+  - 支持启动：`start_redis.bat`, `start_celery.bat`
+  - 所有依赖记录在 `requirements.txt`
+
+notes:
+  - 可选后期扩展接口：BIM 模型、计划进度、施工模拟等
+  - 将 AI 分析器独立为插件，便于切换 LLM 提供商（OpenAI, Claude, etc）

@@ -1,0 +1,652 @@
+{
+  "success": true,
+  "task_id": "test_four_objectives",
+  "merge_method": "enhanced_paddleocr_four_objectives",
+  "format_version": "2.0_four_objectives",
+  "text_regions": [
+    {
+      "text": "A",
+      "bbox": [
+        50,
+        10,
+        70,
+        30
+      ],
+      "confidence": 0.98,
+      "text_type": "axis",
+      "reading_order": 0,
+      "slice_source": {
+        "slice_index": 0,
+        "slice_id": "slice_0_0",
+        "original_bbox": [
+          50,
+          10,
+          70,
+          30
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            0
+          ],
+          "original_bbox": [
+            50,
+            10,
+            70,
+            30
+          ],
+          "global_bbox": [
+            50,
+            10,
+            70,
+            30
+          ]
+        }
+      },
+      "region_id": "region_0_2",
+      "is_edge_protected": true
+    },
+    {
+      "text": "B",
+      "bbox": [
+        430,
+        10,
+        450,
+        30
+      ],
+      "confidence": 0.97,
+      "text_type": "axis",
+      "reading_order": 1,
+      "slice_source": {
+        "slice_index": 1,
+        "slice_id": "slice_1_0",
+        "original_bbox": [
+          80,
+          10,
+          100,
+          30
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            0
+          ],
+          "original_bbox": [
+            80,
+            10,
+            100,
+            30
+          ],
+          "global_bbox": [
+            430,
+            10,
+            450,
+            30
+          ]
+        }
+      },
+      "region_id": "region_1_3",
+      "is_edge_protected": true
+    },
+    {
+      "text": "200×300",
+      "bbox": [
+        100,
+        50,
+        180,
+        70
+      ],
+      "confidence": 0.92,
+      "text_type": "dimension",
+      "reading_order": 2,
+      "slice_source": {
+        "slice_index": 0,
+        "slice_id": "slice_0_0",
+        "original_bbox": [
+          100,
+          50,
+          180,
+          70
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            0
+          ],
+          "original_bbox": [
+            100,
+            50,
+            180,
+            70
+          ],
+          "global_bbox": [
+            100,
+            50,
+            180,
+            70
+          ]
+        }
+      },
+      "region_id": "region_0_1",
+      "is_edge_protected": false
+    },
+    {
+      "text": "C30",
+      "bbox": [
+        550,
+        100,
+        590,
+        120
+      ],
+      "confidence": 0.94,
+      "text_type": "component_id",
+      "reading_order": 3,
+      "slice_source": {
+        "slice_index": 1,
+        "slice_id": "slice_1_0",
+        "original_bbox": [
+          200,
+          100,
+          240,
+          120
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            0
+          ],
+          "original_bbox": [
+            200,
+            100,
+            240,
+            120
+          ],
+          "global_bbox": [
+            550,
+            100,
+            590,
+            120
+          ]
+        }
+      },
+      "region_id": "region_1_2",
+      "is_edge_protected": false
+    },
+    {
+      "text": "KL2",
+      "bbox": [
+        500,
+        200,
+        540,
+        220
+      ],
+      "confidence": 0.96,
+      "text_type": "component_id",
+      "reading_order": 4,
+      "slice_source": {
+        "slice_index": 1,
+        "slice_id": "slice_1_0",
+        "original_bbox": [
+          150,
+          200,
+          190,
+          220
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            0
+          ],
+          "original_bbox": [
+            150,
+            200,
+            190,
+            220
+          ],
+          "global_bbox": [
+            500,
+            200,
+            540,
+            220
+          ]
+        }
+      },
+      "region_id": "region_1_1",
+      "is_edge_protected": false
+    },
+    {
+      "text": "KL1",
+      "bbox": [
+        350,
+        280,
+        390,
+        300
+      ],
+      "confidence": 0.95,
+      "text_type": "component_id",
+      "reading_order": 5,
+      "slice_source": {
+        "slice_index": 0,
+        "slice_id": "slice_0_0",
+        "original_bbox": [
+          350,
+          280,
+          390,
+          300
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            0
+          ],
+          "original_bbox": [
+            350,
+            280,
+            390,
+            300
+          ],
+          "global_bbox": [
+            350,
+            280,
+            390,
+            300
+          ]
+        }
+      },
+      "region_id": "region_0_0",
+      "is_edge_protected": true
+    },
+    {
+      "text": "施工图",
+      "bbox": [
+        10,
+        350,
+        80,
+        380
+      ],
+      "confidence": 0.88,
+      "text_type": "unknown",
+      "reading_order": 6,
+      "slice_source": {
+        "slice_index": 0,
+        "slice_id": "slice_0_0",
+        "original_bbox": [
+          10,
+          350,
+          80,
+          380
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            0
+          ],
+          "original_bbox": [
+            10,
+            350,
+            80,
+            380
+          ],
+          "global_bbox": [
+            10,
+            350,
+            80,
+            380
+          ]
+        }
+      },
+      "region_id": "region_0_3",
+      "is_edge_protected": true
+    },
+    {
+      "text": "1",
+      "bbox": [
+        650,
+        360,
+        670,
+        380
+      ],
+      "confidence": 0.98,
+      "text_type": "axis",
+      "reading_order": 7,
+      "slice_source": {
+        "slice_index": 3,
+        "slice_id": "slice_1_1",
+        "original_bbox": [
+          300,
+          10,
+          320,
+          30
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            350
+          ],
+          "original_bbox": [
+            300,
+            10,
+            320,
+            30
+          ],
+          "global_bbox": [
+            650,
+            360,
+            670,
+            380
+          ]
+        }
+      },
+      "region_id": "region_3_2",
+      "is_edge_protected": true
+    },
+    {
+      "text": "Z1",
+      "bbox": [
+        120,
+        500,
+        160,
+        520
+      ],
+      "confidence": 0.91,
+      "text_type": "component_id",
+      "reading_order": 8,
+      "slice_source": {
+        "slice_index": 2,
+        "slice_id": "slice_0_1",
+        "original_bbox": [
+          120,
+          150,
+          160,
+          170
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            350
+          ],
+          "original_bbox": [
+            120,
+            150,
+            160,
+            170
+          ],
+          "global_bbox": [
+            120,
+            500,
+            160,
+            520
+          ]
+        }
+      },
+      "region_id": "region_2_1",
+      "is_edge_protected": false
+    },
+    {
+      "text": "Z2",
+      "bbox": [
+        400,
+        500,
+        440,
+        520
+      ],
+      "confidence": 0.93,
+      "text_type": "component_id",
+      "reading_order": 9,
+      "slice_source": {
+        "slice_index": 3,
+        "slice_id": "slice_1_1",
+        "original_bbox": [
+          50,
+          150,
+          90,
+          170
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            350
+          ],
+          "original_bbox": [
+            50,
+            150,
+            90,
+            170
+          ],
+          "global_bbox": [
+            400,
+            500,
+            440,
+            520
+          ]
+        }
+      },
+      "region_id": "region_3_0",
+      "is_edge_protected": false
+    },
+    {
+      "text": "1500mm",
+      "bbox": [
+        200,
+        550,
+        280,
+        570
+      ],
+      "confidence": 0.89,
+      "text_type": "dimension",
+      "reading_order": 10,
+      "slice_source": {
+        "slice_index": 2,
+        "slice_id": "slice_0_1",
+        "original_bbox": [
+          200,
+          200,
+          280,
+          220
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            350
+          ],
+          "original_bbox": [
+            200,
+            200,
+            280,
+            220
+          ],
+          "global_bbox": [
+            200,
+            550,
+            280,
+            570
+          ]
+        }
+      },
+      "region_id": "region_2_2",
+      "is_edge_protected": false
+    },
+    {
+      "text": "±0.000",
+      "bbox": [
+        500,
+        600,
+        570,
+        620
+      ],
+      "confidence": 0.9,
+      "text_type": "unknown",
+      "reading_order": 11,
+      "slice_source": {
+        "slice_index": 3,
+        "slice_id": "slice_1_1",
+        "original_bbox": [
+          150,
+          250,
+          220,
+          270
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            350
+          ],
+          "original_bbox": [
+            150,
+            250,
+            220,
+            270
+          ],
+          "global_bbox": [
+            500,
+            600,
+            570,
+            620
+          ]
+        }
+      },
+      "region_id": "region_3_1",
+      "is_edge_protected": false
+    },
+    {
+      "text": "HRB400",
+      "bbox": [
+        300,
+        650,
+        380,
+        670
+      ],
+      "confidence": 0.87,
+      "text_type": "component_id",
+      "reading_order": 12,
+      "slice_source": {
+        "slice_index": 2,
+        "slice_id": "slice_0_1",
+        "original_bbox": [
+          300,
+          300,
+          380,
+          320
+        ],
+        "coordinate_transform": {
+          "offset": [
+            0,
+            350
+          ],
+          "original_bbox": [
+            300,
+            300,
+            380,
+            320
+          ],
+          "global_bbox": [
+            300,
+            650,
+            380,
+            670
+          ]
+        }
+      },
+      "region_id": "region_2_3",
+      "is_edge_protected": true
+    },
+    {
+      "text": "备注：钢筋保护层厚度",
+      "bbox": [
+        370,
+        700,
+        550,
+        730
+      ],
+      "confidence": 0.82,
+      "text_type": "unknown",
+      "reading_order": 13,
+      "slice_source": {
+        "slice_index": 3,
+        "slice_id": "slice_1_1",
+        "original_bbox": [
+          20,
+          350,
+          200,
+          380
+        ],
+        "coordinate_transform": {
+          "offset": [
+            350,
+            350
+          ],
+          "original_bbox": [
+            20,
+            350,
+            200,
+            380
+          ],
+          "global_bbox": [
+            370,
+            700,
+            550,
+            730
+          ]
+        }
+      },
+      "region_id": "region_3_3",
+      "is_edge_protected": true
+    }
+  ],
+  "full_text_content": "A\nB\n200×300\nC30\nKL2\nKL1\n施工图\n1\nZ1\nZ2\n1500mm\n±0.000\nHRB400\n备注：钢筋保护层厚度",
+  "total_text_regions": 14,
+  "four_objectives_achievement": {
+    "objective1_content_preservation": {
+      "achieved": true,
+      "edge_text_protected": 9,
+      "total_preserved": 14,
+      "description": "成功保留所有文本内容，特别保护边缘文本"
+    },
+    "objective2_no_duplication": {
+      "achieved": true,
+      "duplicates_removed": 2,
+      "deduplication_rate": 0.125,
+      "description": "智能去重，消除重叠区域的重复文本"
+    },
+    "objective3_correct_ordering": {
+      "achieved": true,
+      "sorting_method": "top_to_bottom_left_to_right",
+      "ordered_regions": 14,
+      "description": "按图纸阅读顺序正确排列文本"
+    },
+    "objective4_coordinate_restoration": {
+      "achieved": true,
+      "restored_coordinates": 16,
+      "restoration_rate": 1.0,
+      "description": "精确还原全图坐标系统"
+    }
+  },
+  "detailed_statistics": {
+    "total_input_regions": 16,
+    "edge_preserved_regions": 9,
+    "duplicate_removed_count": 2,
+    "final_regions_count": 14,
+    "coordinate_restored_count": 16,
+    "processing_time": 0.0062274932861328125
+  },
+  "text_type_distribution": {
+    "axis": 3,
+    "dimension": 2,
+    "component_id": 6,
+    "unknown": 3
+  },
+  "original_image_info": {
+    "width": 750,
+    "height": 750,
+    "format": "png",
+    "channels": 3
+  },
+  "quality_metrics": {
+    "average_confidence": 0.9214285714285715,
+    "total_characters": 54,
+    "processing_efficiency": 2248.0955589586524,
+    "objectives_success_rate": 1.0
+  },
+  "timestamp": 1750660256.3008425,
+  "processing_summary": "✅ 四大目标全部达成！输入16个区域，保护9个边缘文本，去重2个重复项，输出14个有序区域，耗时0.01秒"
+}

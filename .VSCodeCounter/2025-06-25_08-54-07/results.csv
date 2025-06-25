@@ -1,0 +1,67 @@
+"filename", "language", "JSON with Comments", "JavaScript", "TypeScript", "CSS", "TypeScript JSX", "JSON", "Markdown", "XML", "comment", "blank", "total"
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\components\TaskProgressMonitor.tsx", "TypeScript JSX", 0, 0, 0, 0, 285, 0, 0, 0, 6, 22, 313
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\debug_instructions.md", "Markdown", 0, 0, 0, 0, 0, 0, 53, 0, 0, 18, 71
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\next-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 5, 2, 7
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\next.config.js", "JavaScript", 0, 26, 0, 0, 0, 0, 0, 0, 3, 3, 32
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\package-lock.json", "JSON", 0, 0, 0, 0, 0, 7808, 0, 0, 0, 1, 7809
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\package.json", "JSON", 0, 0, 0, 0, 0, 68, 0, 0, 0, 1, 69
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\postcss.config.js", "JavaScript", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 6
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\public\apple-touch-icon.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 12
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\public\favicon.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 17, 7, 5, 29
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\App.tsx", "TypeScript JSX", 0, 0, 0, 0, 29, 0, 0, 0, 0, 3, 32
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingDetail.tsx", "TypeScript JSX", 0, 0, 0, 0, 115, 0, 0, 0, 9, 12, 136
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingInfo.tsx", "TypeScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 0, 3, 50
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingList.tsx", "TypeScript JSX", 0, 0, 0, 0, 166, 0, 0, 0, 0, 13, 179
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingUpload.tsx", "TypeScript JSX", 0, 0, 0, 0, 108, 0, 0, 0, 0, 13, 121
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\EnhancedAnalysis.tsx", "TypeScript JSX", 0, 0, 0, 0, 359, 0, 0, 0, 6, 27, 392
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\ErrorBoundary.tsx", "TypeScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 2, 9, 58
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 120, 0, 0, 0, 3, 10, 133
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Navigation.tsx", "TypeScript JSX", 0, 0, 0, 0, 65, 0, 0, 0, 0, 6, 71
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\OCRResultDisplay.tsx", "TypeScript JSX", 0, 0, 0, 0, 616, 0, 0, 0, 24, 36, 676
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Playground.module.css", "CSS", 0, 0, 0, 47, 0, 0, 0, 0, 0, 7, 54
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Playground.tsx", "TypeScript JSX", 0, 0, 0, 0, 523, 0, 0, 0, 13, 60, 596
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\ProgressWebSocket.tsx", "TypeScript JSX", 0, 0, 0, 0, 191, 0, 0, 0, 7, 28, 226
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\QuantityList.tsx", "TypeScript JSX", 0, 0, 0, 0, 267, 0, 0, 0, 11, 22, 300
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeProgress.tsx", "TypeScript JSX", 0, 0, 0, 0, 160, 0, 0, 0, 8, 20, 188
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMessages.css", "CSS", 0, 0, 0, 325, 0, 0, 0, 0, 14, 63, 402
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMessages.tsx", "TypeScript JSX", 0, 0, 0, 0, 941, 0, 0, 0, 73, 98, 1112
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMessagesNvidia.css", "CSS", 0, 0, 0, 301, 0, 0, 0, 0, 13, 55, 369
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMonitor.css", "CSS", 0, 0, 0, 195, 0, 0, 0, 0, 5, 41, 241
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMonitor.tsx", "TypeScript JSX", 0, 0, 0, 0, 586, 0, 0, 0, 37, 64, 687
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\SimpleOCRDisplay.tsx", "TypeScript JSX", 0, 0, 0, 0, 69, 0, 0, 0, 0, 11, 80
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\UploadTaskStatus.css", "CSS", 0, 0, 0, 192, 0, 0, 0, 0, 3, 38, 233
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\UploadTaskStatus.tsx", "TypeScript JSX", 0, 0, 0, 0, 454, 0, 0, 0, 28, 58, 540
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\auth\LoginForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 80, 0, 0, 0, 2, 8, 90
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\drawings\DrawingDetail.tsx", "TypeScript JSX", 0, 0, 0, 0, 469, 0, 0, 0, 19, 44, 532
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\drawings\DrawingList.tsx", "TypeScript JSX", 0, 0, 0, 0, 105, 0, 0, 0, 0, 7, 112
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\drawings\DrawingUpload.tsx", "TypeScript JSX", 0, 0, 0, 0, 194, 0, 0, 0, 7, 20, 221
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useDrawingDetail-fixed.ts", "TypeScript", 0, 0, 261, 0, 0, 0, 0, 0, 28, 42, 331
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useDrawingDetail.ts", "TypeScript", 0, 0, 257, 0, 0, 0, 0, 0, 26, 42, 325
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useOcrProcessing.ts", "TypeScript", 0, 0, 377, 0, 0, 0, 0, 0, 37, 52, 466
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useWebSocketManager.ts", "TypeScript", 0, 0, 179, 0, 0, 0, 0, 0, 18, 35, 232
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingDetail.css", "CSS", 0, 0, 0, 360, 0, 0, 0, 0, 12, 65, 437
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingDetail.tsx", "TypeScript JSX", 0, 0, 0, 0, 321, 0, 0, 0, 26, 41, 388
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingUpload.css", "CSS", 0, 0, 0, 347, 0, 0, 0, 0, 13, 67, 427
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingUpload.tsx", "TypeScript JSX", 0, 0, 0, 0, 319, 0, 0, 0, 18, 21, 358
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\_app.tsx", "TypeScript JSX", 0, 0, 0, 0, 117, 0, 0, 0, 8, 19, 144
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\_document.tsx", "TypeScript JSX", 0, 0, 0, 0, 24, 0, 0, 0, 5, 5, 34
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\drawings\[id].tsx", "TypeScript JSX", 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\drawings\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 53, 0, 0, 0, 2, 10, 65
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\index.tsx", "TypeScript JSX", 0, 0, 0, 0, 26, 0, 0, 0, 3, 4, 33
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\login.tsx", "TypeScript JSX", 0, 0, 0, 0, 71, 0, 0, 0, 7, 10, 88
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\playground.tsx", "TypeScript JSX", 0, 0, 0, 0, 6, 0, 0, 0, 0, 2, 8
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\real-time-task-demo.tsx", "TypeScript JSX", 0, 0, 0, 0, 377, 0, 0, 0, 16, 42, 435
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\register.tsx", "TypeScript JSX", 0, 0, 0, 0, 65, 0, 0, 0, 1, 3, 69
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\task-monitor.tsx", "TypeScript JSX", 0, 0, 0, 0, 210, 0, 0, 0, 1, 15, 226
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\services\api.ts", "TypeScript", 0, 0, 196, 0, 0, 0, 0, 0, 14, 28, 238
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\styles\globals.css", "CSS", 0, 0, 0, 16, 0, 0, 0, 0, 0, 3, 19
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\types\index.ts", "TypeScript", 0, 0, 114, 0, 0, 0, 0, 0, 5, 8, 127
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\WebSocketManager.ts", "TypeScript", 0, 0, 309, 0, 0, 0, 0, 0, 58, 62, 429
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\auth.ts", "TypeScript", 0, 0, 34, 0, 0, 0, 0, 0, 3, 7, 44
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\drawingUtils.ts", "TypeScript", 0, 0, 589, 0, 0, 0, 0, 0, 39, 32, 660
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\request.ts", "TypeScript", 0, 0, 42, 0, 0, 0, 0, 0, 9, 4, 55
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\routeUtils.ts", "TypeScript", 0, 0, 30, 0, 0, 0, 0, 0, 5, 3, 38
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\tailwind.config.js", "JavaScript", 0, 26, 0, 0, 0, 0, 0, 0, 1, 0, 27
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\tsconfig.json", "JSON with Comments", 42, 0, 0, 0, 0, 0, 0, 0, 0, 1, 43
+"c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\tsconfig.tsbuildinfo", "JSON", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"Total", "-", 42, 58, 2388, 1783, 7587, 7877, 53, 29, 660, 1451, 21928

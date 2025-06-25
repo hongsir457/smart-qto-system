@@ -1,0 +1,17 @@
+{
+  "analysis_preferences": {
+    "default_method": "dual_track",
+    "fallback_methods": [
+      "ai_vision",
+      "contextual_slice"
+    ],
+    "force_dual_track": true,
+    "complexity_thresholds": {
+      "dual_track": 0.0,
+      "grid_slice": 8.0,
+      "contextual_slice": 999.0,
+      "ai_vision": 999.0,
+      "traditional_ocr": 999.0
+    }
+  }
+}

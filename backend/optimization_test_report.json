@@ -1,0 +1,17 @@
+{
+  "timestamp": 1750653706.5418277,
+  "total_tests": 9,
+  "passed_tests": 8,
+  "success_rate": 88.88888888888889,
+  "detailed_results": {
+    "统一OCR缓存策略": true,
+    "分析器实例复用": true,
+    "统一坐标转换服务": true,
+    "统一GPT响应解析器": true,
+    "标准化日志记录": true,
+    "配置化批次大小": true,
+    "数据类统一管理": true,
+    "增强网格切片分析器": false,
+    "Vision扫描器优化": true
+  }
+}

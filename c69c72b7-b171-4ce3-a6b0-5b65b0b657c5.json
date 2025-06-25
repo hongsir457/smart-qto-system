@@ -1,0 +1,974 @@
+{
+  "task_id": "5909ff2d-0f1b-473c-b270-a5855cf82456",
+  "original_image_info": {
+    "width": 0,
+    "height": 0,
+    "path": "C:\\Users\\86139\\AppData\\Local\\Temp\\temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0.png"
+  },
+  "total_slices": 1,
+  "successful_slices": 1,
+  "project_info": {
+    "project_name": "无法识别",
+    "drawing_number": "无法识别",
+    "drawing_name": "无法识别",
+    "design_unit": "无法识别",
+    "design_date": "无法识别",
+    "scale": "无法识别"
+  },
+  "merged_components": [
+    {
+      "component_id": "K-JKZ1",
+      "component_type": "框架柱",
+      "quantity": 3,
+      "position": {
+        "位置描述": "图纸右侧区域",
+        "轴线位置": "无法识别",
+        "相对位置": "靠近图纸右侧边缘"
+      },
+      "attributes": {
+        "截面尺寸": "信息不清",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "信息不清",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 1,
+      "source_batches": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ6",
+      "component_type": "框架柱",
+      "quantity": 10,
+      "position": {
+        "位置描述": "图纸下方区域",
+        "轴线位置": "无法识别",
+        "相对位置": "位于图纸底部中心偏右"
+      },
+      "attributes": {
+        "截面尺寸": "350x350",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "350x350",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 1,
+      "source_batches": [
+        1,
+        2,
+        3,
+        9,
+        11
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分区域文字较小或模糊，无法清晰识别",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 1,
+      "source_batches": [
+        1
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "GZ1",
+      "component_type": "框架柱",
+      "quantity": 3,
+      "position": {
+        "位置描述": "图纸左侧区域，分布较为集中",
+        "轴线位置": "无法识别具体轴线",
+        "相对位置": "靠近K-JKZ1编号的构件"
+      },
+      "attributes": {
+        "截面尺寸": "无法识别",
+        "混凝土等级": "无法识别",
+        "主筋": "无法识别",
+        "箍筋": "无法识别"
+      },
+      "dimensions": {
+        "section": "无法识别",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "无法识别"
+      },
+      "reinforcement": {
+        "main_steel": "无法识别",
+        "stirrup": "无法识别",
+        "distribution": ""
+      },
+      "source_batch": 2,
+      "source_batches": [
+        2
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分编号区域文字较小，无法清晰辨认",
+      "component_type": "其他构件",
+      "quantity": 2,
+      "position": {},
+      "attributes": {},
+      "source_batch": 2,
+      "source_batches": [
+        2,
+        6
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ7",
+      "component_type": "框架柱",
+      "quantity": 7,
+      "position": {
+        "位置描述": "位于图纸的左下角",
+        "轴线位置": "轴线G-H之间，靠近轴线6",
+        "相对位置": "与K-JKZ6构件相邻"
+      },
+      "attributes": {
+        "截面尺寸": "350x350, 550x550",
+        "混凝土等级": "C20",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "350x350, 550x550",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "C20"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 3,
+      "source_batches": [
+        3,
+        4,
+        9,
+        11
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ1a",
+      "component_type": "框架柱",
+      "quantity": 2,
+      "position": {
+        "位置描述": "位于图纸的右下角",
+        "轴线位置": "轴线H附近，靠近轴线6",
+        "相对位置": "与K-JKZ2构件相邻"
+      },
+      "attributes": {
+        "截面尺寸": "信息不清",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "信息不清",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 3,
+      "source_batches": [
+        3,
+        5,
+        6
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ2",
+      "component_type": "框架柱",
+      "quantity": 1,
+      "position": {
+        "位置描述": "位于图纸的右下角",
+        "轴线位置": "轴线H附近，靠近轴线6",
+        "相对位置": "与K-JKZ1a构件相邻"
+      },
+      "attributes": {
+        "截面尺寸": "信息不清",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "信息不清",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 3,
+      "source_batches": [
+        3,
+        6
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分编号区域文字模糊，尤其是靠近图纸边缘的部分",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 3,
+      "source_batches": [
+        3
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ3",
+      "component_type": "框架柱",
+      "quantity": 2,
+      "position": {
+        "位置描述": "图纸左上角区域",
+        "轴线位置": "无法识别",
+        "相对位置": "靠近GZ1标注的区域"
+      },
+      "attributes": {
+        "截面尺寸": "500x600",
+        "混凝土等级": "信息不清",
+        "主筋": "3Φ25/角+4Φ25/b+4Φ25/h",
+        "箍筋": "?@200"
+      },
+      "dimensions": {
+        "section": "500x600",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "3Φ25/角+4Φ25/b+4Φ25/h",
+        "stirrup": "?@200",
+        "distribution": ""
+      },
+      "source_batch": 4,
+      "source_batches": [
+        4,
+        6,
+        7
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分区域的编号标注较小，难以辨认",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 4,
+      "source_batches": [
+        4
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "N-GZC1",
+      "component_type": "框架柱",
+      "quantity": 1,
+      "position": {
+        "位置描述": "图纸中心偏右区域",
+        "轴线位置": "无法识别具体轴线交叉点",
+        "相对位置": "位于图纸中心区域，周围有其他构件标注"
+      },
+      "attributes": {
+        "截面尺寸": "250x250",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "250x250",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 5,
+      "source_batches": [
+        5,
+        6
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分区域文字模糊，无法清晰识别构件编号",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 5,
+      "source_batches": [
+        5
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ4",
+      "component_type": "框架柱",
+      "quantity": 2,
+      "position": {
+        "位置描述": "图纸中心偏右区域",
+        "轴线位置": "无法识别",
+        "相对位置": "靠近K-JKZ3"
+      },
+      "attributes": {
+        "截面尺寸": "450x450",
+        "混凝土等级": "信息不清",
+        "主筋": "2Φ22",
+        "箍筋": "Φ8@200"
+      },
+      "dimensions": {
+        "section": "450x450",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "2Φ22",
+        "stirrup": "Φ8@200",
+        "distribution": ""
+      },
+      "source_batch": 6,
+      "source_batches": [
+        6,
+        9,
+        10
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "N-GZC2",
+      "component_type": "框架柱",
+      "quantity": 0,
+      "position": {
+        "位置描述": "图纸右侧区域",
+        "轴线位置": "无法识别",
+        "相对位置": "贯穿K-JKZ2和K-JKZ3"
+      },
+      "attributes": {
+        "截面尺寸": "300x250x18",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "300x250x18",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 6,
+      "source_batches": [
+        6
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ4 (450x450)",
+      "component_type": "框架柱",
+      "quantity": 3,
+      "position": {
+        "位置描述": "位于图纸中心区域，沿水平轴线均匀分布",
+        "轴线位置": "无法识别具体轴线交叉点",
+        "相对位置": "与其他柱构件呈水平排列，间距均匀"
+      },
+      "attributes": {
+        "截面尺寸": "450x450",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "450x450",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 7,
+      "source_batches": [
+        7
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ1 (450x450)",
+      "component_type": "框架柱",
+      "quantity": 1,
+      "position": {
+        "位置描述": "位于图纸右侧区域",
+        "轴线位置": "无法识别具体轴线交叉点",
+        "相对位置": "靠近K-JKZ1a (450x450)"
+      },
+      "attributes": {
+        "截面尺寸": "450x450",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "450x450",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 7,
+      "source_batches": [
+        7
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ1a (450x450)",
+      "component_type": "框架柱",
+      "quantity": 1,
+      "position": {
+        "位置描述": "位于图纸右下角",
+        "轴线位置": "无法识别具体轴线交叉点",
+        "相对位置": "与K-JKZ1 (450x450)相邻"
+      },
+      "attributes": {
+        "截面尺寸": "450x450",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "450x450",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 7,
+      "source_batches": [
+        7
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "N-GZC1 (柱帽)",
+      "component_type": "框架柱",
+      "quantity": 1,
+      "position": {
+        "位置描述": "位于图纸右侧区域，靠近K-JKZ1 (450x450)",
+        "轴线位置": "无法识别具体轴线交叉点",
+        "相对位置": "与K-JKZ1 (450x450)和K-JKZ1a (450x450)相关联"
+      },
+      "attributes": {
+        "截面尺寸": "信息不清",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "信息不清",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 7,
+      "source_batches": [
+        7
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分区域的文字较小或重叠，无法清晰辨认",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 7,
+      "source_batches": [
+        7
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "N-GZC1(1节段)",
+      "component_type": "框架柱",
+      "quantity": 1,
+      "position": {
+        "位置描述": "位于图纸中心偏左区域",
+        "轴线位置": "轴线1与轴线A的交叉点附近",
+        "相对位置": "靠近图纸左侧的柱网区域，与其他柱构件间距较小"
+      },
+      "attributes": {
+        "截面尺寸": "250x250x12x12",
+        "混凝土等级": "信息不清",
+        "主筋": "信息不清",
+        "箍筋": "信息不清"
+      },
+      "dimensions": {
+        "section": "250x250x12x12",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "信息不清"
+      },
+      "reinforcement": {
+        "main_steel": "信息不清",
+        "stirrup": "信息不清",
+        "distribution": ""
+      },
+      "source_batch": 8,
+      "source_batches": [
+        8
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "图纸上部分区域的构件编号未标注或无法清晰识别",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 8,
+      "source_batches": [
+        8
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "K-JKZ5",
+      "component_type": "框架柱",
+      "quantity": 2,
+      "position": {
+        "位置描述": "图纸左侧中部区域",
+        "轴线位置": "无法识别",
+        "相对位置": "与K-JKZ4相邻，位于其右侧"
+      },
+      "attributes": {
+        "截面尺寸": "600x600",
+        "混凝土等级": "C20",
+        "主筋": "8@300",
+        "箍筋": "8@200"
+      },
+      "dimensions": {
+        "section": "600x600",
+        "length": "",
+        "height": ""
+      },
+      "concrete": {
+        "grade": "C20"
+      },
+      "reinforcement": {
+        "main_steel": "8@300",
+        "stirrup": "8@200",
+        "distribution": ""
+      },
+      "source_batch": 9,
+      "source_batches": [
+        9,
+        11
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分编号区域文字模糊，无法完全识别",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 9,
+      "source_batches": [
+        9
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分图纸边缘区域，可能存在其他编号，但无法清晰辨认",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 10,
+      "source_batches": [
+        10
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "component_id": "部分区域的文字标注较小，可能存在未能清晰识别的编号",
+      "component_type": "其他构件",
+      "quantity": 1,
+      "position": {},
+      "attributes": {},
+      "source_batch": 11,
+      "source_batches": [
+        11
+      ],
+      "slice_sources": [
+        {
+          "slice_index": 0,
+          "slice_id": "unified_5909ff2d-0f1b-473c-b270-a5855cf82456_temp_page_82fc014b-55e0-4191-b12b-329d09ddb0f4_0_slice_00_00",
+          "offset": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "component_summary": {
+    "框架柱": {
+      "数量": 40,
+      "种类": 16
+    },
+    "其他构件": {
+      "数量": 11,
+      "种类": 10
+    },
+    "总计": {
+      "构件类型数": 2,
+      "构件总数": 26,
+      "总数量": 51
+    }
+  },
+  "integrated_descriptions": {
+    "drawing_descriptions": "",
+    "construction_requirements": "",
+    "technical_specifications": "",
+    "raw_text_summaries": ""
+  },
+  "total_components": 26,
+  "component_types_distribution": {
+    "框架柱": 40,
+    "其他构件": 11
+  },
+  "merge_metadata": {
+    "merge_strategy": "component_aggregation_and_attribute_fusion",
+    "coordinate_restoration": true,
+    "component_deduplication": true,
+    "attribute_fusion": true,
+    "merge_time": 0.0005698204040527344
+  },
+  "timestamp": 1750455510.8974195,
+  "format_version": "1.0",
+  "generated_by": "ResultMergerService"
+}

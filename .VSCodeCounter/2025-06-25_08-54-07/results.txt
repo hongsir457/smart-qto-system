@@ -1,0 +1,113 @@
+Date : 2025-06-25 08:54:07
+Directory : c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend
+Total : 65 files,  19817 codes, 660 comments, 1451 blanks, all 21928 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |      7,877 |          0 |          2 |      7,879 |
+| TypeScript JSX     |         35 |      7,587 |        342 |        766 |      8,695 |
+| TypeScript         |         12 |      2,388 |        247 |        317 |      2,952 |
+| CSS                |          8 |      1,783 |         60 |        339 |      2,182 |
+| JavaScript         |          3 |         58 |          4 |          3 |         65 |
+| Markdown           |          1 |         53 |          0 |         18 |         71 |
+| JSON with Comments |          1 |         42 |          0 |          1 |         43 |
+| XML                |          2 |         29 |          7 |          5 |         41 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         65 |     19,817 |        660 |      1,451 |     21,928 |
+| . (Files)                                                                                                     |          9 |      8,030 |          9 |         26 |      8,065 |
+| components                                                                                                    |          1 |        285 |          6 |         22 |        313 |
+| public                                                                                                        |          2 |         29 |          7 |          5 |         41 |
+| src                                                                                                           |         53 |     11,473 |        638 |      1,398 |     13,509 |
+| src (Files)                                                                                                   |          1 |         29 |          0 |          3 |         32 |
+| src\components                                                                                                |         26 |      6,742 |        284 |        773 |      7,799 |
+| src\components (Files)                                                                                        |         22 |      5,894 |        256 |        694 |      6,844 |
+| src\components\auth                                                                                           |          1 |         80 |          2 |          8 |         90 |
+| src\components\drawings                                                                                       |          3 |        768 |         26 |         71 |        865 |
+| src\hooks                                                                                                     |          4 |      1,074 |        109 |        171 |      1,354 |
+| src\pages                                                                                                     |         14 |      2,298 |        112 |        304 |      2,714 |
+| src\pages (Files)                                                                                             |         12 |      2,243 |        110 |        294 |      2,647 |
+| src\pages\drawings                                                                                            |          2 |         55 |          2 |         10 |         67 |
+| src\services                                                                                                  |          1 |        196 |         14 |         28 |        238 |
+| src\styles                                                                                                    |          1 |         16 |          0 |          3 |         19 |
+| src\types                                                                                                     |          1 |        114 |          5 |          8 |        127 |
+| src\utils                                                                                                     |          5 |      1,004 |        114 |        108 |      1,226 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                      | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\components\TaskProgressMonitor.tsx            | TypeScript JSX     |        285 |          6 |         22 |        313 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\debug_instructions.md                         | Markdown           |         53 |          0 |         18 |         71 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\next-env.d.ts                                 | TypeScript         |          0 |          5 |          2 |          7 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\next.config.js                                | JavaScript         |         26 |          3 |          3 |         32 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\package-lock.json                             | JSON               |      7,808 |          0 |          1 |      7,809 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\package.json                                  | JSON               |         68 |          0 |          1 |         69 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\postcss.config.js                             | JavaScript         |          6 |          0 |          0 |          6 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\public\apple-touch-icon.svg                   | XML                |         12 |          0 |          0 |         12 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\public\favicon.svg                            | XML                |         17 |          7 |          5 |         29 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\App.tsx                                   | TypeScript JSX     |         29 |          0 |          3 |         32 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingDetail.tsx              | TypeScript JSX     |        115 |          9 |         12 |        136 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingInfo.tsx                | TypeScript JSX     |         47 |          0 |          3 |         50 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingList.tsx                | TypeScript JSX     |        166 |          0 |         13 |        179 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\DrawingUpload.tsx              | TypeScript JSX     |        108 |          0 |         13 |        121 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\EnhancedAnalysis.tsx           | TypeScript JSX     |        359 |          6 |         27 |        392 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\ErrorBoundary.tsx              | TypeScript JSX     |         47 |          2 |          9 |         58 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Layout.tsx                     | TypeScript JSX     |        120 |          3 |         10 |        133 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Navigation.tsx                 | TypeScript JSX     |         65 |          0 |          6 |         71 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\OCRResultDisplay.tsx           | TypeScript JSX     |        616 |         24 |         36 |        676 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Playground.module.css          | CSS                |         47 |          0 |          7 |         54 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\Playground.tsx                 | TypeScript JSX     |        523 |         13 |         60 |        596 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\ProgressWebSocket.tsx          | TypeScript JSX     |        191 |          7 |         28 |        226 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\QuantityList.tsx               | TypeScript JSX     |        267 |         11 |         22 |        300 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeProgress.tsx           | TypeScript JSX     |        160 |          8 |         20 |        188 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMessages.css       | CSS                |        325 |         14 |         63 |        402 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMessages.tsx       | TypeScript JSX     |        941 |         73 |         98 |      1,112 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMessagesNvidia.css | CSS                |        301 |         13 |         55 |        369 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMonitor.css        | CSS                |        195 |          5 |         41 |        241 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\RealTimeTaskMonitor.tsx        | TypeScript JSX     |        586 |         37 |         64 |        687 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\SimpleOCRDisplay.tsx           | TypeScript JSX     |         69 |          0 |         11 |         80 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\UploadTaskStatus.css           | CSS                |        192 |          3 |         38 |        233 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\UploadTaskStatus.tsx           | TypeScript JSX     |        454 |         28 |         58 |        540 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\auth\LoginForm.tsx             | TypeScript JSX     |         80 |          2 |          8 |         90 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\drawings\DrawingDetail.tsx     | TypeScript JSX     |        469 |         19 |         44 |        532 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\drawings\DrawingList.tsx       | TypeScript JSX     |        105 |          0 |          7 |        112 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\components\drawings\DrawingUpload.tsx     | TypeScript JSX     |        194 |          7 |         20 |        221 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useDrawingDetail-fixed.ts           | TypeScript         |        261 |         28 |         42 |        331 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useDrawingDetail.ts                 | TypeScript         |        257 |         26 |         42 |        325 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useOcrProcessing.ts                 | TypeScript         |        377 |         37 |         52 |        466 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\hooks\useWebSocketManager.ts              | TypeScript         |        179 |         18 |         35 |        232 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingDetail.css                   | CSS                |        360 |         12 |         65 |        437 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingDetail.tsx                   | TypeScript JSX     |        321 |         26 |         41 |        388 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingUpload.css                   | CSS                |        347 |         13 |         67 |        427 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\DrawingUpload.tsx                   | TypeScript JSX     |        319 |         18 |         21 |        358 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\_app.tsx                            | TypeScript JSX     |        117 |          8 |         19 |        144 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\_document.tsx                       | TypeScript JSX     |         24 |          5 |          5 |         34 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\drawings\[id].tsx                   | TypeScript JSX     |          2 |          0 |          0 |          2 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\drawings\index.tsx                  | TypeScript JSX     |         53 |          2 |         10 |         65 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\index.tsx                           | TypeScript JSX     |         26 |          3 |          4 |         33 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\login.tsx                           | TypeScript JSX     |         71 |          7 |         10 |         88 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\playground.tsx                      | TypeScript JSX     |          6 |          0 |          2 |          8 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\real-time-task-demo.tsx             | TypeScript JSX     |        377 |         16 |         42 |        435 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\register.tsx                        | TypeScript JSX     |         65 |          1 |          3 |         69 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\pages\task-monitor.tsx                    | TypeScript JSX     |        210 |          1 |         15 |        226 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\services\api.ts                           | TypeScript         |        196 |         14 |         28 |        238 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\styles\globals.css                        | CSS                |         16 |          0 |          3 |         19 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\types\index.ts                            | TypeScript         |        114 |          5 |          8 |        127 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\WebSocketManager.ts                 | TypeScript         |        309 |         58 |         62 |        429 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\auth.ts                             | TypeScript         |         34 |          3 |          7 |         44 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\drawingUtils.ts                     | TypeScript         |        589 |         39 |         32 |        660 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\request.ts                          | TypeScript         |         42 |          9 |          4 |         55 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\src\utils\routeUtils.ts                       | TypeScript         |         30 |          5 |          3 |         38 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\tailwind.config.js                            | JavaScript         |         26 |          1 |          0 |         27 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\tsconfig.json                                 | JSON with Comments |         42 |          0 |          1 |         43 |
+| c:\Users\86139\Desktop\appdevelopment\smart-qto-system\frontend\tsconfig.tsbuildinfo                          | JSON               |          1 |          0 |          0 |          1 |
+| Total                                                                                                         |                    |     19,817 |        660 |      1,451 |     21,928 |
++---------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

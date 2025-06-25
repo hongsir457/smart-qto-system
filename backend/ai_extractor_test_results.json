@@ -1,0 +1,358 @@
+{
+  "ai_extractor_result": {
+    "success": true,
+    "method": "AI大模型提取",
+    "components": [
+      {
+        "component_id": "KZ1",
+        "component_type": "柱",
+        "name": "框架柱KZ1",
+        "dimensions": "400×400",
+        "material": "C30",
+        "reinforcement": "",
+        "confidence": 0.9,
+        "source": "AI大模型提取"
+      },
+      {
+        "component_id": "KL1",
+        "component_type": "梁",
+        "name": "框架梁KL1",
+        "dimensions": "300×600",
+        "material": "C30",
+        "reinforcement": "",
+        "confidence": 0.9,
+        "source": "AI大模型提取"
+      },
+      {
+        "component_id": "Q1",
+        "component_type": "墙",
+        "name": "墙体Q1",
+        "dimensions": "200厚",
+        "material": "",
+        "reinforcement": "",
+        "confidence": 0.8,
+        "source": "AI大模型提取"
+      },
+      {
+        "component_id": "B1",
+        "component_type": "板",
+        "name": "楼板B1",
+        "dimensions": "120厚",
+        "material": "",
+        "reinforcement": "",
+        "confidence": 0.8,
+        "source": "AI大模型提取"
+      }
+    ],
+    "total_components": 4,
+    "source_texts": 10,
+    "image_path": "test_image.png",
+    "extraction_time": "2025-06-11T09:31:36.547712",
+    "extraction_id": "c1bd0e51-209b-4520-b7d2-210a8aa71429",
+    "sealos_storage": {
+      "saved": true,
+      "s3_key": "extraction_results/bf10da18-dda7-4444-bb9f-c283b3389a24.json",
+      "s3_url": "https://objectstorageapi.hzh.sealos.run/gkg9z6uk-smaryqto/extraction_results/bf10da18-dda7-4444-bb9f-c283b3389a24.json",
+      "filename": "stage1_extraction_20250611_093136_c1bd0e51-209b-4520-b7d2-210a8aa71429.json",
+      "save_time": "2025-06-11T09:31:36.657696"
+    }
+  },
+  "advanced_ocr_result": {
+    "success": true,
+    "texts": [
+      {
+        "text": "KZ1",
+        "confidence": 0.95,
+        "center": [
+          125,
+          115
+        ],
+        "bbox": [
+          [
+            100,
+            100
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            130
+          ],
+          [
+            100,
+            130
+          ]
+        ]
+      },
+      {
+        "text": "400×400",
+        "confidence": 0.92,
+        "center": [
+          190,
+          115
+        ],
+        "bbox": [
+          [
+            160,
+            100
+          ],
+          [
+            220,
+            100
+          ],
+          [
+            220,
+            130
+          ],
+          [
+            160,
+            130
+          ]
+        ]
+      },
+      {
+        "text": "KL1",
+        "confidence": 0.88,
+        "center": [
+          275,
+          215
+        ],
+        "bbox": [
+          [
+            250,
+            200
+          ],
+          [
+            300,
+            200
+          ],
+          [
+            300,
+            230
+          ],
+          [
+            250,
+            230
+          ]
+        ]
+      },
+      {
+        "text": "300×600",
+        "confidence": 0.9,
+        "center": [
+          340,
+          215
+        ],
+        "bbox": [
+          [
+            310,
+            200
+          ],
+          [
+            370,
+            200
+          ],
+          [
+            370,
+            230
+          ],
+          [
+            310,
+            230
+          ]
+        ]
+      },
+      {
+        "text": "C30",
+        "confidence": 0.93,
+        "center": [
+          420,
+          315
+        ],
+        "bbox": [
+          [
+            400,
+            300
+          ],
+          [
+            440,
+            300
+          ],
+          [
+            440,
+            330
+          ],
+          [
+            400,
+            330
+          ]
+        ]
+      },
+      {
+        "text": "HRB400",
+        "confidence": 0.89,
+        "center": [
+          485,
+          315
+        ],
+        "bbox": [
+          [
+            450,
+            300
+          ],
+          [
+            520,
+            300
+          ],
+          [
+            520,
+            330
+          ],
+          [
+            450,
+            330
+          ]
+        ]
+      },
+      {
+        "text": "Q1",
+        "confidence": 0.87,
+        "center": [
+          100,
+          400
+        ],
+        "bbox": [
+          [
+            80,
+            380
+          ],
+          [
+            120,
+            380
+          ],
+          [
+            120,
+            420
+          ],
+          [
+            80,
+            420
+          ]
+        ]
+      },
+      {
+        "text": "200厚",
+        "confidence": 0.85,
+        "center": [
+          180,
+          400
+        ],
+        "bbox": [
+          [
+            150,
+            380
+          ],
+          [
+            210,
+            380
+          ],
+          [
+            210,
+            420
+          ],
+          [
+            150,
+            420
+          ]
+        ]
+      }
+    ],
+    "component_codes": [
+      {
+        "component_id": "KZ1",
+        "component_type": "柱",
+        "name": "框架柱KZ1",
+        "dimensions": "400×400",
+        "material": "C30",
+        "reinforcement": "",
+        "confidence": 0.9,
+        "source": "AI大模型提取"
+      },
+      {
+        "component_id": "KL1",
+        "component_type": "梁",
+        "name": "框架梁KL1",
+        "dimensions": "300×600",
+        "material": "C30",
+        "reinforcement": "",
+        "confidence": 0.9,
+        "source": "AI大模型提取"
+      },
+      {
+        "component_id": "Q1",
+        "component_type": "墙",
+        "name": "墙体Q1",
+        "dimensions": "200厚",
+        "material": "",
+        "reinforcement": "",
+        "confidence": 0.8,
+        "source": "AI大模型提取"
+      }
+    ],
+    "dimensions": [
+      {
+        "text": "400×400",
+        "matches": [
+          [
+            "400",
+            "400"
+          ]
+        ],
+        "confidence": 0.92
+      },
+      {
+        "text": "300×600",
+        "matches": [
+          [
+            "300",
+            "600"
+          ]
+        ],
+        "confidence": 0.9
+      }
+    ],
+    "materials": [
+      {
+        "text": "C30",
+        "matches": [
+          "30"
+        ],
+        "confidence": 0.93
+      },
+      {
+        "text": "HRB400",
+        "matches": [
+          "400"
+        ],
+        "confidence": 0.89
+      },
+      {
+        "text": "Q1",
+        "matches": [
+          "1"
+        ],
+        "confidence": 0.87
+      }
+    ],
+    "statistics": {
+      "total_texts": 8,
+      "component_count": 3,
+      "dimension_count": 2,
+      "material_count": 3
+    },
+    "extraction_method": "AI大模型提取"
+  },
+  "test_time": "2024-01-01 00:00:00"
+}

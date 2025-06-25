@@ -1,0 +1,36 @@
+{
+  "pipeline_id": "65cad170-7c78-4450-b38b-c6b34cbacfd8",
+  "pipeline_type": "A→C直接处理（完整原始数据）",
+  "pipeline_status": "success",
+  "processing_time": 0.215542,
+  "timestamp": "2025-06-13T11:23:07.332381",
+  "drawing_id": 888,
+  "user_id": 1,
+  "result_a_complete_raw_data": {
+    "description": "PaddleOCR完整原始数据（List[List] - 边框+文本+置信度）",
+    "stage": "A",
+    "data_format": "List[List]完整格式",
+    "s3_url": "https://objectstorageapi.hzh.sealos.run/gkg9z6uk-smaryqto/ocr_results/complete_raw_data/637b1234-ac31-4c0e-a495-368f12f79425.json",
+    "total_detections": 4,
+    "information_loss": "0%",
+    "data_integrity": "100%"
+  },
+  "result_c_human_readable": {
+    "description": "基于完整原始数据生成的人类可读文本",
+    "stage": "C",
+    "content_length": 885,
+    "s3_url": "https://objectstorageapi.hzh.sealos.run/gkg9z6uk-smaryqto/ocr_results/readable_reports/6550dd94-9fa6-4c6b-9ea6-a1c4d6cf4097.json",
+    "source_data": "直接来源于PaddleOCR完整原始数据"
+  },
+  "data_flow_summary": {
+    "type": "complete_raw_data",
+    "total_detections": 4,
+    "stages": [
+      "A: 完整原始数据",
+      "C: 人类可读文本"
+    ],
+    "skipped_stages": [
+      "B: 标准化转换（避免信息丢失）"
+    ]
+  }
+}

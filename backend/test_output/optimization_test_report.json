@@ -1,0 +1,324 @@
+{
+  "test_timestamp": "2025-06-22 21:09:57",
+  "total_time": 6.016501188278198,
+  "success_rate": 0.8,
+  "test_results": {
+    "adaptive_slicing": {
+      "success": false,
+      "error": "图框检测失败"
+    },
+    "unified_ocr": {
+      "success": true,
+      "result": "StandardizedOutput(task_id='test_task', timestamp='2025-06-22 21:09:57', stage='unified_ocr_complete', slice_results=[OCRResult(slice_id='test_slice_1', filename='slice_1.png', coordinates={'x': 0, 'y': 0, 'width': 512, 'height': 512}, raw_text='模拟OCR结果 - slice_1.png', confidence=0.85, processing_time=0.0, ocr_engine='paddleocr', language='zh-CN'), OCRResult(slice_id='test_slice_2', filename='slice_2.png', coordinates={'x': 512, 'y': 0, 'width': 512, 'height': 512}, raw_text='模拟OCR结果 - slice_2.png', confidence=0.85, processing_time=0.0, ocr_engine='paddleocr', language='zh-CN')], cleaned_data=CleanedOCRData(text_blocks=[{'slice_id': 'test_slice_1', 'text': '模拟OCR结果 - slice_1.png', 'coordinates': {'x': 0, 'y': 0, 'width': 512, 'height': 512}, 'confidence': 0.85}, {'slice_id': 'test_slice_2', 'text': '模拟OCR结果 - slice_2.png', 'coordinates': {'x': 512, 'y': 0, 'width': 512, 'height': 512}, 'confidence': 0.85}], component_labels=[], dimensions=[], annotations=[], metadata={'total_slices': 2, 'total_text_length': 43, 'processing_time': 0.0, 'ocr_engines': ['paddleocr']}, confidence_score=0.85, processing_stage='ocr_cleaning'), summary={'drawing_info': {'type': '结构平面图', 'scale': '1:100', 'floor': '标准层'}, 'component_summary': {'total_components': 0, 'component_types': {}, 'key_dimensions': []}, 'quality_assessment': {'text_clarity': '良好', 'completeness': '完整', 'confidence': 0.85}, 'processing_notes': ['OCR识别质量良好', '构件标签清晰', '尺寸信息完整']}, quality_metrics={'overall_quality': 0.64, 'avg_confidence': 0.85, 'text_coverage': 1.0, 'component_density': 0.0, 'processing_efficiency': 1000.0}, processing_metadata={'total_processing_time': 0.0, 'slice_count': 2, 'ocr_engine': 'paddleocr', 'pipeline_version': '1.0'})"
+    },
+    "cross_modal_validation": {
+      "success": true,
+      "validation_report": {
+        "task_id": "test_task",
+        "timestamp": "2025-06-22 21:09:57",
+        "processing_time": 0.0,
+        "alignment_summary": {
+          "matched_pairs": [
+            {
+              "ocr_element": {
+                "slice_id": "slice_1",
+                "text": "C1",
+                "coordinates": {
+                  "x": 100,
+                  "y": 100,
+                  "width": 50,
+                  "height": 50
+                },
+                "confidence": 0.9
+              },
+              "vision_element": {
+                "id": "vision_0",
+                "label": "C1",
+                "bbox": {
+                  "x": 105,
+                  "y": 105,
+                  "width": 45,
+                  "height": 45
+                },
+                "confidence": 0.85,
+                "type": "column"
+              },
+              "match_confidence": 0.9171015151901649,
+              "ocr_index": 0,
+              "vision_index": 0
+            }
+          ],
+          "ocr_only_elements": [],
+          "vision_only_elements": [],
+          "alignment_confidence": 1.0,
+          "spatial_consistency": 1.0
+        },
+        "validation_results": [
+          {
+            "element_id": "slice_1",
+            "ocr_confidence": 0.9,
+            "vision_confidence": 0.85,
+            "consistency_score": 0.9171015151901649,
+            "validation_status": "consistent",
+            "discrepancy_details": {},
+            "recommended_action": "accept"
+          }
+        ],
+        "feedback_loop": {
+          "iteration": 1,
+          "ocr_adjustments": [],
+          "vision_refinements": [],
+          "convergence_score": 1.0,
+          "improvement_metrics": {
+            "consistency_improvement": 0.5,
+            "ocr_adjustments_count": 0,
+            "vision_refinements_count": 0,
+            "convergence_rate": 1.0
+          }
+        },
+        "overall_metrics": {
+          "alignment_confidence": 1.0,
+          "spatial_consistency": 1.0,
+          "convergence_score": 1.0,
+          "total_elements": 2,
+          "matched_pairs": 1,
+          "consistency_rate": 1.0
+        }
+      }
+    },
+    "intelligent_fusion": {
+      "success": true,
+      "fusion_report": {
+        "task_id": "test_task",
+        "timestamp": "2025-06-22 21:09:57",
+        "processing_time": 0.0,
+        "fusion_summary": {
+          "total_candidates": 2,
+          "conflict_groups": 1,
+          "resolved_conflicts": 1,
+          "single_candidates": 0,
+          "fused_components": 1
+        },
+        "fused_components": [
+          {
+            "component_id": "conflict_resolved_conflict_0",
+            "label": "C1",
+            "type": "text_element",
+            "dimensions": {
+              "width": 50,
+              "height": 50,
+              "depth": 0
+            },
+            "position": {
+              "x": 100,
+              "y": 100,
+              "z": 0
+            },
+            "confidence": 0.93,
+            "source_fusion": {
+              "primary_source": "ocr",
+              "fusion_score": 0.9,
+              "confidence_boost": 0.03
+            },
+            "attributes": {
+              "label": "C1",
+              "type": "text_element"
+            },
+            "quality_score": 1.0
+          }
+        ],
+        "quality_metrics": {
+          "overall_quality": 0.9650000000000001,
+          "avg_confidence": 0.93,
+          "avg_quality_score": 1.0,
+          "high_quality_ratio": 1.0,
+          "source_diversity": 0.3333333333333333,
+          "total_components": 1
+        },
+        "conflict_resolutions": [
+          {
+            "conflict_id": "conflict_0",
+            "conflict_type": "attribute_conflict",
+            "candidates": [
+              {
+                "element_id": "slice_1",
+                "source": "ocr",
+                "confidence": 0.9,
+                "attributes": {
+                  "label": "C1",
+                  "type": "text_element"
+                },
+                "spatial_info": {
+                  "x": 100,
+                  "y": 100,
+                  "width": 50,
+                  "height": 50
+                },
+                "fusion_score": 0.9,
+                "conflict_indicators": []
+              },
+              {
+                "element_id": "vision_0",
+                "source": "vision",
+                "confidence": 0.85,
+                "attributes": {
+                  "label": "C1",
+                  "type": "column"
+                },
+                "spatial_info": {
+                  "x": 105,
+                  "y": 105,
+                  "width": 45,
+                  "height": 45
+                },
+                "fusion_score": 0.85,
+                "conflict_indicators": []
+              }
+            ],
+            "resolution_strategy": "attribute_conflict",
+            "selected_candidate": {
+              "element_id": "slice_1",
+              "source": "ocr",
+              "confidence": 0.9,
+              "attributes": {
+                "label": "C1",
+                "type": "text_element"
+              },
+              "spatial_info": {
+                "x": 100,
+                "y": 100,
+                "width": 50,
+                "height": 50
+              },
+              "fusion_score": 0.9,
+              "conflict_indicators": []
+            },
+            "confidence_boost": 0.03,
+            "resolution_reason": "选择属性信息最丰富的候选项"
+          }
+        ]
+      }
+    },
+    "standardized_output": {
+      "success": true,
+      "quantity_list": {
+        "project_info": {
+          "project_name": "优化系统测试项目",
+          "drawing_number": "TEST-001",
+          "scale": "1:100"
+        },
+        "drawing_info": {
+          "task_id": "test_task",
+          "generation_time": "2025-06-22 21:09:57",
+          "total_components": 2
+        },
+        "component_quantities": [
+          {
+            "component_id": "test_column_1",
+            "component_type": "column",
+            "label": "C1",
+            "dimensions": {
+              "length": 0.4,
+              "width": 0.4,
+              "height": 3.0
+            },
+            "quantity": 0.4800000000000001,
+            "unit": "m³",
+            "calculation_details": {
+              "method": "volume",
+              "formula": "length * width * height",
+              "input_dimensions": {
+                "length": 0.4,
+                "width": 0.4,
+                "height": 3.0
+              },
+              "base_volume": 0.4800000000000001,
+              "density_factor": 1.0,
+              "final_volume": 0.4800000000000001
+            },
+            "standard_compliance": true,
+            "notes": [
+              "📋 计算依据: GB50854-2013"
+            ]
+          },
+          {
+            "component_id": "test_beam_1",
+            "component_type": "beam",
+            "label": "L1",
+            "dimensions": {
+              "length": 6.0,
+              "width": 0.3,
+              "height": 0.5
+            },
+            "quantity": 0.8999999999999999,
+            "unit": "m³",
+            "calculation_details": {
+              "method": "volume",
+              "formula": "length * width * height",
+              "input_dimensions": {
+                "length": 6.0,
+                "width": 0.3,
+                "height": 0.5
+              },
+              "base_volume": 0.8999999999999999,
+              "density_factor": 1.0,
+              "final_volume": 0.8999999999999999
+            },
+            "standard_compliance": true,
+            "notes": [
+              "📋 计算依据: GB50854-2013"
+            ]
+          }
+        ],
+        "summary_by_type": {
+          "column": {
+            "count": 1,
+            "total_quantity": 0.4800000000000001,
+            "unit": "m³",
+            "avg_quantity": 0.4800000000000001,
+            "compliant_count": 1,
+            "compliance_rate": 1.0
+          },
+          "beam": {
+            "count": 1,
+            "total_quantity": 0.8999999999999999,
+            "unit": "m³",
+            "avg_quantity": 0.8999999999999999,
+            "compliant_count": 1,
+            "compliance_rate": 1.0
+          }
+        },
+        "total_summary": {
+          "total_components": 2,
+          "compliant_components": 2,
+          "compliance_rate": 1.0,
+          "component_types": 2,
+          "total_quantity_by_unit": {
+            "m³": 1.38
+          }
+        },
+        "compliance_report": {
+          "total_issues": 0,
+          "issues_by_type": {},
+          "recommendations": [
+            "建议对不合规构件进行人工复核",
+            "检查尺寸信息的准确性",
+            "确认计算参数的合理性"
+          ]
+        },
+        "generation_metadata": {
+          "processing_time": 0.0,
+          "calculation_engine": "StandardizedOutputEngine",
+          "version": "1.0"
+        }
+      }
+    }
+  },
+  "optimization_summary": {
+    "adaptive_slicing": "动态切片策略，提升切片适应性",
+    "unified_ocr": "标准化OCR处理流程，提高效率",
+    "cross_modal_validation": "跨模态验证，提升准确性",
+    "intelligent_fusion": "智能融合，解决冲突",
+    "standardized_output": "规范化输出，符合标准"
+  }
+}

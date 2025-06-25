@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除Token - 智能工程量计算系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button {
+            background-color: #1890ff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #40a9ff;
+        }
+        .success {
+            color: #52c41a;
+            margin-top: 20px;
+        }
+        .info {
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔄 清除认证Token</h2>
+        <p class="info">
+            由于数据库已重建，需要清除浏览器中的旧认证信息。<br>
+            点击下方按钮清除，然后重新登录系统。
+        </p>
+        
+        <button onclick="clearToken()">清除Token</button>
+        <button onclick="goToLogin()">前往登录页</button>
+        
+        <div id="message"></div>
+        
+        <hr style="margin: 30px 0;">
+        
+        <h3>📝 测试账户信息</h3>
+        <p><strong>用户名:</strong> testuser</p>
+        <p><strong>密码:</strong> testpass123</p>
+    </div>
+
+    <script>
+        function clearToken() {
+            // 清除localStorage中的token
+            localStorage.removeItem('token');
+            
+            // 清除sessionStorage中的token（如果有）
+            sessionStorage.removeItem('token');
+            
+            // 触发token变化事件
+            window.dispatchEvent(new CustomEvent('tokenChanged'));
+            
+            // 显示成功消息
+            document.getElementById('message').innerHTML = 
+                '<p class="success">✅ Token已清除！现在可以重新登录了。</p>';
+        }
+        
+        function goToLogin() {
+            clearToken();
+            // 跳转到登录页
+            window.location.href = 'http://localhost:3000/login';
+        }
+        
+        // 页面加载时检查当前token状态
+        window.onload = function() {
+            const token = localStorage.getItem('token');
+            if (token) {
+                document.getElementById('message').innerHTML = 
+                    '<p style="color: #faad14;">⚠️ 检测到旧Token，建议清除后重新登录</p>';
+            } else {
+                document.getElementById('message').innerHTML = 
+                    '<p class="success">✅ 当前没有保存的Token</p>';
+            }
+        };
+    </script>
+</body>
+</html> 

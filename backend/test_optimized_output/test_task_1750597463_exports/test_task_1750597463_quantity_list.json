@@ -1,0 +1,89 @@
+{
+  "project_info": {
+    "project_name": "优化系统测试项目",
+    "drawing_number": "TEST-test_task_1750597463",
+    "scale": "1:100",
+    "date": "2025-06-22"
+  },
+  "drawing_info": {
+    "task_id": "test_task_1750597463",
+    "generation_time": "2025-06-22 21:04:23",
+    "total_components": 1
+  },
+  "component_quantities": [
+    {
+      "component_id": "conflict_resolved_conflict_0",
+      "component_type": "column",
+      "label": "C1",
+      "dimensions": {
+        "width": 50,
+        "height": 50,
+        "depth": 0
+      },
+      "quantity": 125000.0,
+      "unit": "m³",
+      "calculation_details": {
+        "method": "volume",
+        "formula": "length * width * height",
+        "input_dimensions": {
+          "length": 50,
+          "width": 50,
+          "height": 50
+        },
+        "base_volume": 125000,
+        "density_factor": 1.0,
+        "final_volume": 125000.0
+      },
+      "standard_compliance": false,
+      "notes": [
+        "⚠️ 该构件可能不符合标准规范，请人工复核",
+        "📝 部分尺寸使用了默认值，建议核实",
+        "📋 计算依据: GB50854-2013"
+      ]
+    }
+  ],
+  "summary_by_type": {
+    "column": {
+      "count": 1,
+      "total_quantity": 125000.0,
+      "unit": "m³",
+      "avg_quantity": 125000.0,
+      "compliant_count": 0,
+      "compliance_rate": 0.0
+    }
+  },
+  "total_summary": {
+    "total_components": 1,
+    "compliant_components": 0,
+    "compliance_rate": 0.0,
+    "component_types": 1,
+    "total_quantity_by_unit": {
+      "m³": 125000.0
+    }
+  },
+  "compliance_report": {
+    "total_issues": 1,
+    "issues_by_type": {
+      "column": [
+        {
+          "component_id": "conflict_resolved_conflict_0",
+          "issues": [
+            "⚠️ 该构件可能不符合标准规范，请人工复核",
+            "📝 部分尺寸使用了默认值，建议核实",
+            "📋 计算依据: GB50854-2013"
+          ]
+        }
+      ]
+    },
+    "recommendations": [
+      "建议对不合规构件进行人工复核",
+      "检查尺寸信息的准确性",
+      "确认计算参数的合理性"
+    ]
+  },
+  "generation_metadata": {
+    "processing_time": 0.0,
+    "calculation_engine": "StandardizedOutputEngine",
+    "version": "1.0"
+  }
+}

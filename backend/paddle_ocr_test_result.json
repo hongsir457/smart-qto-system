@@ -1,0 +1,55 @@
+{
+  "status": "success",
+  "text_regions": [
+    {
+      "text": "KZ1",
+      "confidence": 0.95,
+      "bbox": {
+        "x_min": 100,
+        "y_min": 100,
+        "x_max": 150,
+        "y_max": 130,
+        "center_x": 125,
+        "center_y": 115,
+        "width": 50,
+        "height": 30
+      },
+      "bbox_area": 1500.0,
+      "text_length": 3,
+      "is_number": false,
+      "is_dimension": false,
+      "is_component_code": true
+    },
+    {
+      "text": "400×400",
+      "confidence": 0.92,
+      "bbox": {
+        "x_min": 160,
+        "y_min": 100,
+        "x_max": 220,
+        "y_max": 130,
+        "center_x": 190,
+        "center_y": 115,
+        "width": 60,
+        "height": 30
+      },
+      "bbox_area": 1800.0,
+      "text_length": 7,
+      "is_number": false,
+      "is_dimension": true,
+      "is_component_code": false
+    }
+  ],
+  "total_regions": 2,
+  "all_text": "KZ1\n400×400",
+  "statistics": {
+    "total_count": 2,
+    "numeric_count": 0,
+    "dimension_count": 1,
+    "component_code_count": 1,
+    "avg_confidence": 0.935
+  },
+  "processing_time": 1.5,
+  "mock_mode": true,
+  "engine_status": "PaddleOCR（模拟模式）"
+}

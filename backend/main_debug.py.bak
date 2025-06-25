@@ -1,0 +1,39 @@
+# Simplified main.py for debugging
+from fastapi import FastAPI, WebSocket
+from fastapi.middleware.cors import CORSMiddleware
+from app.api.v1.api import api_router
+from app.api.v1.websockets import router as websocket_router
+from app.core.config import settings
+import json
+import uvicorn
+
+# 1. Create the simplest possible app
+app = FastAPI(
+    title=settings.PROJECT_NAME,
+    openapi_url=f"{settings.API_V1_STR}/openapi.json"
+)
+
+# 设置 CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 在生产环境中应该设置具体的域名
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+print("--- RUNNING IN SIMPLIFIED DEBUG MODE ---")
+print("--- Loading API Router (/api/v1) ---")
+# 2. Add the main API router (包含WebSocket路由)
+app.include_router(api_router, prefix=settings.API_V1_STR)
+
+print("--- Loading Legacy WebSocket Router (/ws) for backward compatibility ---")
+# 3. Add legacy WebSocket router for backward compatibility
+app.include_router(websocket_router, prefix="/ws")
+
+@app.get("/")
+def root():
+    return {"message": "Welcome to Smart QTO System API"}
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000) 
