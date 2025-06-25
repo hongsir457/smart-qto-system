@@ -2,16 +2,20 @@
   "name": "smart-qto-frontend",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "scripts": {
+    "dev": "cross-env NODE_OPTIONS=\"--no-deprecation\" next dev",
+    "build": "cross-env NODE_OPTIONS=\"--no-deprecation\" next build", 
+    "start": "cross-env NODE_OPTIONS=\"--no-deprecation\" next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.15",
@@ -20,6 +24,7 @@
     "antd": "^4.24.16",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.2",
+    "framer-motion": "^12.16.0",
     "jwt-decode": "^4.0.0",
     "konva": "^9.2.3",
     "next": "14.0.3",
@@ -38,6 +43,7 @@
     "@types/jwt-decode": "^2.2.1",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
+    "cross-env": "^7.0.3",
     "eslint": "^8.54.0",
     "eslint-config-next": "14.0.3"
   },

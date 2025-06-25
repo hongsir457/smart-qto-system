@@ -52,15 +52,24 @@ export async function uploadDrawing(file: File) {
 
 // 分页获取图纸
 export async function getDrawings(page = 1, size = 10) {
-    const url = `/api/v1/drawings?page=${page}&size=${size}`;
+    const skip = (page - 1) * size;
+    const url = `/api/v1/drawings/?skip=${skip}&limit=${size}`;
     const res = await authFetch(url);
-    if (!res.ok) throw new Error('获取图纸失败');
-    // 兼容后端直接返回数组
-    const data = await res.json();
-    if (Array.isArray(data)) {
-        return { items: data, total: data.length };
+    
+    if (!res.ok) {
+        if (res.status === 401) {
+            throw new Error('认证失败，请重新登录');
+        }
+        throw new Error('获取图纸失败');
     }
-    return data;
+    
+    const data = await res.json();
+    
+    // 使用后端返回的正确格式：{total: number, drawings: array}
+    return {
+        items: data.drawings || [],
+        total: data.total || 0
+    };
 }
 
 export const getDrawing = async (id: number) => {
@@ -70,17 +79,35 @@ export const getDrawing = async (id: number) => {
 };
 
 export const exportQuantities = async (id: number) => {
-    const response = await api.get(`/drawings/${id}/export`, {
+    const response = await api.get(`/api/v1/drawings/${id}/export/excel`, {
         responseType: 'blob',
     });
     return response.data;
 };
 
-export const deleteDrawing = async (id: number) => {
-    const res = await authFetch(`/api/v1/drawings/${id}`, {
+export const deleteDrawing = async (id: number, force: boolean = false) => {
+    const url = `/api/v1/drawings/${id}${force ? '?force=true' : ''}`;
+    const res = await authFetch(url, {
         method: 'DELETE',
     });
-    if (!res.ok) throw new Error('删除失败');
+    if (!res.ok) {
+        const errorData = await res.json().catch(() => ({ detail: '删除失败' }));
+        // 如果是处理中的图纸，抛出特殊错误供前端处理
+        if (res.status === 400 && errorData.detail && typeof errorData.detail === 'object') {
+            const error = new Error(errorData.detail.message || '删除失败');
+            (error as any).canForceDelete = errorData.detail.can_force_delete;
+            (error as any).status = errorData.detail.status;
+            (error as any).suggestion = errorData.detail.suggestion;
+            (error as any).drawingId = errorData.detail.drawing_id;
+            (error as any).filename = errorData.detail.filename;
+            throw error;
+        }
+        throw new Error(errorData.detail || '删除失败');
+    }
+    // 如果响应状态码是 204 No Content，则成功，直接返回
+    if (res.status === 204) {
+        return { message: '删除成功' };
+    }
     return res.json();
 };
 

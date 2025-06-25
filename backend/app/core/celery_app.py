@@ -16,12 +16,16 @@ worker_name = f"worker_{hostname}_{os.getpid()}"
 default_exchange = Exchange('default', type='direct')
 default_queue = Queue('default', default_exchange, routing_key='default')
 
-# 创建Celery实例
+# 创建中心化的Celery实例
 celery_app = Celery(
-    "smart_qto",
+    "smart_qto_system",
     broker=settings.CELERY_BROKER_URL,
     backend=settings.CELERY_RESULT_BACKEND,
-    include=['app.services.drawing']  # 明确包含任务模块
+    include=[
+        'app.tasks.drawing_tasks',
+        'app.tasks.ocr_tasks', 
+        'app.tasks.analysis_tasks'
+    ]
 )
 
 # 配置Celery
@@ -57,6 +61,10 @@ celery_app.conf.update(
     task_acks_late=True,
     task_reject_on_worker_lost=True,
     
+    # 时区配置
+    timezone='Asia/Shanghai',
+    enable_utc=False,
+    
     # 结果后端配置
     result_backend_transport_options={
         'retry_policy': {
@@ -66,11 +74,22 @@ celery_app.conf.update(
             'interval_step': 0.2,
             'interval_max': 0.5,
         }
+    },
+    
+    # 任务路由配置
+    task_routes={
+        'app.tasks.ocr_tasks.*': {'queue': 'default'},
+        'app.tasks.analysis_tasks.*': {'queue': 'default'},
+        'app.tasks.drawing_tasks.*': {'queue': 'default'}
     }
 )
 
 # 自动发现任务
-celery_app.autodiscover_tasks(['app.services'])
+celery_app.autodiscover_tasks([
+    'app.tasks.ocr_tasks', 
+    'app.tasks.analysis_tasks',
+    'app.tasks.drawing_tasks'
+])
 
 # 任务错误处理
 @signals.task_failure.connect

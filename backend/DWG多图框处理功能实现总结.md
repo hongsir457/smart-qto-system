@@ -296,3 +296,8 @@ DWG多图框处理功能已成功实现，具备以下优势：
 - ✅ **用户友好**: 简单的操作界面
 
 该功能为智能工程量计算系统提供了强大的多图框处理能力，显著提升了用户的工作效率和准确性。 
+
+S3_ENDPOINT=https://objectstorageapi.hzh.sealos.run
+S3_ACCESS_KEY=gkg9z6uk
+S3_SECRET_KEY=z445tvss8vb8rgwz
+S3_BUCKET=gkg9z6uk-smaryqto 

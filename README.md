@@ -1,212 +1,186 @@
-# 智能工程量计算系统 (Smart QTO System)
+# 智能工程量清单系统
 
-一个基于AI的智能工程量计算系统，支持图纸自动识别、量计算和项目管理。
+一个基于AI的工程量清单智能识别和分析系统，支持OCR识别、结构化数据提取和智能分析。
 
-## 作者信息
+## ✨ 核心功能
 
-**开发者**: hongsir457  
-**邮箱**: [oin1914@gmail.com]  
-**GitHub**: [hongsir457](https://github.com/hongsir457)
+- 🔍 **智能OCR识别**: 支持多种文档格式的OCR文字识别
+- 📊 **结构化数据提取**: 将非结构化文档转换为结构化JSON数据
+- 🤖 **AI智能分析**: 基于AI模型的内容理解和分析
+- 📋 **工程量清单生成**: 自动生成标准化工程量清单
+- 🔄 **实时进度跟踪**: WebSocket实时任务状态更新
+- 🗄️ **云存储集成**: 支持S3兼容的云存储
 
-## 功能特性
+## 🚀 快速开始
 
-- 🎯 **智能图纸识别**: 使用AI技术自动识别建筑图纸中的构件
-- 📊 **工程量计算**: 自动计算各种建筑构件的工程量
-- 📋 **项目管理**: 完整的项目生命周期管理
-- 🔐 **用户认证**: 安全的用户登录和权限管理
-- 📱 **响应式界面**: 支持多设备访问的现代化UI
-- 🔄 **实时更新**: WebSocket实现的实时进度推送
-- 📈 **数据分析**: 工程量统计和可视化
+### 1. 环境准备
 
-## 技术栈
-
-### 后端
-- **FastAPI**: 现代化的Python Web框架
-- **SQLAlchemy**: ORM数据库操作
-- **PostgreSQL**: 主数据库
-- **Redis**: 缓存和会话管理
-- **OpenAI API**: AI图纸识别
-- **WebSocket**: 实时通信
-
-### 前端
-- **React**: 用户界面框架
-- **TypeScript**: 类型安全的JavaScript
-- **Ant Design**: UI组件库
-- **Axios**: HTTP客户端
-- **React Router**: 路由管理
-
-## 项目结构
-
-```
-smart-qto-system/
-├── backend/                 # 后端代码
-│   ├── app/
-│   │   ├── api/            # API路由
-│   │   │   └── services/       # 业务逻辑
-│   │   ├── core/           # 核心配置
-│   │   ├── models/         # 数据模型
-│   │   ├── schemas/        # Pydantic模式
-│   │   └── services/       # 业务逻辑
-│   ├── requirements.txt    # Python依赖
-│   └── alembic/           # 数据库迁移
-├── frontend/               # 前端代码
-│   ├── src/
-│   │   ├── components/     # React组件
-│   │   ├── pages/         # 页面组件
-│   │   ├── services/      # API服务
-│   │   └── utils/         # 工具函数
-│   ├── package.json       # Node.js依赖
-│   └── public/           # 静态资源
-└── README.md
-```
-
-## 快速开始
-
-### 环境要求
-
+确保您已安装以下依赖：
 - Python 3.8+
-- Node.js 16+
-- PostgreSQL 12+
-- Redis 6+
+- Redis Server
+- pip (Python包管理器)
 
-### 后端设置
+### 2. 安装依赖
 
-1. 创建虚拟环境并激活：
 ```bash
-cd backend
+# 安装Python依赖
+pip install -r requirements.txt
+
+# 或者使用虚拟环境（推荐）
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate     # Windows
-```
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
 
-2. 安装依赖：
-```bash
 pip install -r requirements.txt
 ```
 
-3. 配置环境变量：
+### 3. 启动服务
+
+使用我们提供的一键启动脚本：
+
 ```bash
-cp .env.example .env
-# 编辑 .env 文件，设置数据库连接等配置
+python start_services.py
 ```
 
-4. 运行数据库迁移：
+这将自动启动：
+- Redis服务
+- Celery Worker
+- FastAPI服务
+
+### 4. 运行测试
+
 ```bash
-alembic upgrade head
+python test_system.py
 ```
 
-5. 启动后端服务：
-```bash
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+## 📖 API 使用说明
+
+### 基础接口
+
+- **健康检查**: `GET /health`
+- **API文档**: `GET /docs` (Swagger UI)
+- **文件上传**: `POST /api/v1/upload`
+- **任务状态**: `GET /api/v1/tasks/{task_id}/status`
+- **任务列表**: `GET /api/v1/tasks`
+
+### WebSocket
+
+实时任务状态更新：
+```ws://localhost:8000/api/v1/ws/task/{task_id}
 ```
 
-### 前端设置
+## 🛠️ 配置说明
 
-1. 安装依赖：
-```bash
-cd frontend
-npm install
+### 环境变量
+
+创建 `.env` 文件来配置系统参数：
+
+```env
+# Redis配置
+REDIS_URL=redis://localhost:6379/0
+
+# Celery配置
+CELERY_BROKER_URL=redis://localhost:6379/1
+CELERY_RESULT_BACKEND=redis://localhost:6379/2
+
+# S3存储配置 (可选)
+S3_ACCESS_KEY=your_access_key
+S3_SECRET_KEY=your_secret_key
+S3_BUCKET_NAME=your_bucket_name
+S3_ENDPOINT_URL=your_endpoint_url
+
+# AI API配置 (可选)
+OPENAI_API_KEY=your_openai_key
+OPENAI_DEFAULT_MODEL=gpt-4o-2024-11-20
+
+# 其他配置
+SECRET_KEY=your_secret_key
+MAX_UPLOAD_SIZE=104857600  # 100MB
 ```
 
-2. 启动开发服务器：
-```bash
-npm start
+## 📁 项目结构
+
+```
+smart-qto-system/
+├── backend/                 # 后端API服务
+│   ├── app/
+│   │   ├── api/            # API路由
+│   │   ├── core/           # 核心配置
+│   │   ├── models/         # 数据模型
+│   │   ├── services/       # 业务服务
+│   │   ├── tasks/          # 异步任务
+│   │   └── utils/          # 工具函数
+│   └── main.py             # 应用入口
+├── uploads/                # 上传文件目录
+├── exports/                # 导出文件目录
+├── start_services.py       # 服务启动脚本
+├── test_system.py          # 系统测试脚本
+└── requirements.txt        # Python依赖
 ```
 
-### 访问应用
+## 🔧 开发指南
 
-- 前端界面: http://localhost:3000
-- 后端API: http://localhost:8000
-- API文档: http://localhost:8000/docs
+### 添加新的任务类型
 
-## 主要功能
+1. 在 `backend/app/tasks/` 目录下创建新的任务文件
+2. 使用 `@celery_app.task` 装饰器定义任务
+3. 在 `backend/app/api/` 中添加相应的API端点
 
-### 1. 用户管理
-- 用户注册和登录
-- 角色和权限管理
-- 用户配置文件
+### 添加新的分析服务
 
-### 2. 项目管理
-- 创建和管理工程项目
-- 项目成员协作
-- 项目进度跟踪
+1. 在 `backend/app/services/` 目录下创建服务类
+2. 实现相应的分析逻辑
+3. 在任务中调用服务
 
-### 3. 图纸处理
-- 上传建筑图纸（支持多种格式）
-- AI自动识别图纸内容
-- 构件标注和编辑
+## 🐛 故障排除
 
-### 4. 工程量计算
-- 自动计算各类构件工程量
-- 支持自定义计算规则
-- 导出计算结果
+### 常见问题
 
-### 5. 数据分析
-- 工程量统计图表
-- 成本分析
-- 进度报告
+1. **Redis连接失败**
+   - 确保Redis服务正在运行
+   - 检查Redis配置和端口
 
-## API 文档
+2. **Celery Worker启动失败**
+   - Windows用户需要使用 `--pool=solo` 参数
+   - 检查Python路径和模块导入
 
-启动后端服务后，可通过以下地址访问API文档：
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+3. **文件上传失败**
+   - 检查文件大小限制
+   - 确保上传目录有写权限
 
-## 开发指南
+### 日志查看
 
-### 代码规范
-- 后端遵循PEP 8规范
-- 前端使用ESLint和Prettier
-- 提交信息遵循Conventional Commits
+- FastAPI日志: 控制台输出
+- Celery日志: Celery Worker控制台
+- Redis日志: Redis服务器日志
 
-### 测试
-```bash
-# 后端测试
-cd backend
-pytest
+## 🤝 贡献指南
 
-# 前端测试
-cd frontend
-npm test
-```
-
-## 部署
-
-### Docker部署
-```bash
-# 构建镜像
-docker-compose build
-
-# 启动服务
-docker-compose up -d
-```
-
-### 手动部署
-请参考各环境的部署文档。
-
-## 贡献指南
-
-1. Fork 项目
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
+1. Fork 本项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启Pull Request
+5. 打开 Pull Request
 
-## 许可证
+## 📄 许可证
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
-## 支持
+## 📞 支持
 
-如有问题或建议，请：
-- 提交 Issue: [GitHub Issues](https://github.com/hongsir457/smart-qto-system/issues)
-- 发送邮件至: [您的邮箱地址]
-- GitHub讨论: [GitHub Discussions](https://github.com/hongsir457/smart-qto-system/discussions)
+如果您遇到问题或有任何疑问，请：
+
+1. 查看文档和FAQ
+2. 提交Issue
+3. 联系开发团队
+
+---
 
 ## 📅 更新日志
 
-### 🚀 v1.0.0 (2025-01-15)
+### 🚀 v1.0.0 (2025-06-01)
 
 #### ✨ 新功能特性
 - 🎯 **智能图纸识别** - AI驱动的建筑构件自动识别系统
@@ -269,7 +243,4 @@ docker-compose up -d
 #### 🙏 致谢
 感谢所有为项目贡献代码、建议和反馈的开发者和用户。特别感谢开源社区提供的优秀框架和工具支持。
 
----
-**发布说明**: 这是智能工程量计算系统的首个正式版本，标志着从概念到产品的重要里程碑。我们将持续改进系统功能，提升用户体验。
-
-**技术支持**: 如遇问题请通过GitHub Issues或邮件联系我们。 
+**技术支持**: 如遇问题请通过GitHub Issues或邮件联系我们。

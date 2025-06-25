@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Upload, Button, message, Card, List, Tag, Table, Select, Pagination, Form, Input, DatePicker, Tabs } from 'antd';
-import { InboxOutlined, FileOutlined } from '@ant-design/icons';
+import { Upload, Button, message, Card, List, Tag, Table, Select, Pagination, Form, Input, DatePicker, Tabs, Row, Col } from 'antd';
+import { InboxOutlined, FileOutlined, CloudUploadOutlined, FileTextOutlined, BarChartOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
 import { uploadDrawing, getDrawings, updateDrawingLabel } from '../services/api';
 import { Drawing } from '../types';
 import { UploadFile, RcFile } from 'antd/es/upload/interface';
+import RealTimeTaskMessages from '../components/RealTimeTaskMessages';
+import './DrawingUpload.css';
 
 const { Dragger } = Upload;
 const { Option } = Select;
@@ -25,16 +27,33 @@ const ProjectUploadPage: React.FC = () => {
 
     const fetchDrawings = async (pageNum = 1, pageSize = PAGE_SIZE) => {
         try {
+            // 检查是否有有效token
+            const token = localStorage.getItem('token');
+            if (!token) {
+                console.log('未登录，跳过获取图纸列表');
+                return;
+            }
+            
             const res = await getDrawings(pageNum, pageSize);
-            setDrawings(res.items || res);
-            setTotal(res.total || (res.length || 0));
-        } catch (error) {
+            setDrawings(res.items || []);
+            setTotal(res.total || 0);
+        } catch (error: any) {
+            // 如果是认证错误，不显示错误消息，让认证系统处理
+            if (error?.message?.includes('401') || error?.message?.includes('认证')) {
+                console.log('认证失败，跳过显示错误');
+                return;
+            }
             message.error('获取图纸列表失败');
         }
     };
 
     useEffect(() => {
-        fetchDrawings(page, PAGE_SIZE);
+        // 延迟执行，确保认证检查完成
+        const timer = setTimeout(() => {
+            fetchDrawings(page, PAGE_SIZE);
+        }, 1000);
+        
+        return () => clearTimeout(timer);
     }, [page]);
 
     // 批量上传
@@ -82,28 +101,63 @@ const ProjectUploadPage: React.FC = () => {
         }
     };
 
-    // Table columns
+    // 任务完成回调
+    const handleTaskComplete = (taskId: string) => {
+        message.success('图纸处理完成');
+        fetchDrawings(page, PAGE_SIZE); // 刷新列表
+    };
+
+    // 任务错误回调
+    const handleTaskError = (taskId: string, error: string) => {
+        message.error(`任务失败: ${error}`);
+        fetchDrawings(page, PAGE_SIZE); // 刷新列表
+    };
+
+    // Table columns - NVIDIA风格
     const columns = [
         {
             title: '文件名',
             dataIndex: 'filename',
             key: 'filename',
+            render: (text: string) => (
+                <span className="nvidia-filename">
+                    <FileTextOutlined style={{ marginRight: 8, color: '#76b900' }} />
+                    {text}
+                </span>
+            ),
         },
         {
             title: '类型',
             dataIndex: 'file_type',
             key: 'file_type',
+            render: (type: string) => (
+                <Tag className="nvidia-tag" color="#76b900">{type}</Tag>
+            ),
         },
         {
             title: '状态',
             dataIndex: 'status',
             key: 'status',
+            render: (status: string) => {
+                const statusConfig = {
+                    'completed': { color: '#76b900', text: '已完成' },
+                    'processing': { color: '#00d4aa', text: '处理中' },
+                    'failed': { color: '#ff6c37', text: '失败' },
+                    'pending': { color: '#ffc107', text: '等待中' }
+                };
+                const config = statusConfig[status as keyof typeof statusConfig] || { color: '#999', text: status };
+                return <Tag color={config.color}>{config.text}</Tag>;
+            },
         },
         {
             title: '上传时间',
             dataIndex: 'created_at',
             key: 'created_at',
-            render: (text: string) => new Date(text).toLocaleString(),
+            render: (text: string) => (
+                <span className="nvidia-timestamp">
+                    {new Date(text).toLocaleString()}
+                </span>
+            ),
         },
         {
             title: '标注',
@@ -113,6 +167,7 @@ const ProjectUploadPage: React.FC = () => {
                 <Select
                     value={label}
                     style={{ width: 100 }}
+                    className="nvidia-select"
                     onChange={val => handleLabelChange(record.id, val)}
                 >
                     <Option value="结构图">结构图</Option>
@@ -125,7 +180,11 @@ const ProjectUploadPage: React.FC = () => {
             title: '操作',
             key: 'action',
             render: (_: any, record: Drawing) => (
-                <Button type="link" onClick={() => router.push(`/drawings/${record.id}`)}>
+                <Button 
+                    type="link" 
+                    className="nvidia-action-btn"
+                    onClick={() => router.push(`/drawings/${record.id}`)}
+                >
                     查看详情
                 </Button>
             ),
@@ -156,66 +215,142 @@ const ProjectUploadPage: React.FC = () => {
     };
 
     return (
-        <div style={{ padding: 24 }}>
-            {/* 项目信息 */}
-            <Card style={{ marginBottom: 16 }}>
-                <Form form={form} layout="inline">
-                    <Form.Item label="工程名称" name="projectName"><Input placeholder="未命名工程" /></Form.Item>
-                    <Form.Item label="工程编号" name="projectCode"><Input placeholder="未知编号" /></Form.Item>
-                    <Form.Item label="建设单位" name="company"><Input placeholder="未知建设单位" /></Form.Item>
-                    <Form.Item label="统计日期" name="date"><DatePicker /></Form.Item>
-                    {/* 其它项目信息... */}
-                </Form>
-            </Card>
-
-            {/* 上传区 */}
-            <Card style={{ marginBottom: 16 }}>
-                <Dragger {...uploadProps}>
-                    <p className="ant-upload-drag-icon"><InboxOutlined /></p>
-                    <p className="ant-upload-text">拖拽或点击上传文件</p>
-                    <p className="ant-upload-hint">仅支持DXF/DWG格式，支持多文件，最大50MB</p>
-                </Dragger>
-                <div style={{ marginTop: 16, textAlign: 'right' }}>
-                    <Button type="primary" style={{ marginRight: 8 }} onClick={handleBatchUpload} loading={loading} disabled={fileList.length === 0}>批量上传</Button>
-                    <Button type="primary" style={{ marginRight: 8 }}
-                        onClick={async () => {
-                            if (fileList.length > 0 && fileList[0].originFileObj) {
-                                await handleUpload(fileList[0].originFileObj as File);
-                                setFileList([]);
-                            }
-                        }}
-                        loading={loading}
-                        disabled={fileList.length === 0}
-                    >上传</Button>
-                    <Button type="primary" style={{ background: '#21ba45', borderColor: '#21ba45', marginRight: 8 }}>导出清单</Button>
-                    <Button>导出计算书</Button>
+        <div className="nvidia-container">
+            {/* 顶部标题栏 */}
+            <div className="nvidia-header">
+                <div className="nvidia-header-content">
+                    <h1 className="nvidia-title">
+                        <span className="nvidia-brand">SMART QTO</span>
+                        <span className="nvidia-subtitle">智能工程量计算系统</span>
+                    </h1>
+                    <div className="nvidia-header-stats">
+                        <div className="nvidia-stat">
+                            <span className="nvidia-stat-value">{drawings.length}</span>
+                            <span className="nvidia-stat-label">图纸总数</span>
+                        </div>
+                        <div className="nvidia-stat">
+                            <span className="nvidia-stat-value">{drawings.filter(d => d.status === 'completed').length}</span>
+                            <span className="nvidia-stat-label">已完成</span>
+                        </div>
+                    </div>
                 </div>
-            </Card>
+            </div>
 
-            {/* 图纸解析结果 */}
-            <Card>
-                <Tabs 
-                    defaultActiveKey="2"
-                    items={[
-                        {
-                            key: '2',
-                            label: '表格视图',
-                            children: (
-                                <>
-                                    <Table columns={columns} dataSource={drawings} rowKey="id" pagination={false} />
-                                    <Pagination
-                                        style={{ marginTop: 16, textAlign: 'right' }}
-                                        current={page}
-                                        pageSize={PAGE_SIZE}
-                                        total={total}
-                                        onChange={p => setPage(p)}
-                                    />
-                                </>
-                            )
-                        }
-                    ]}
-                />
-            </Card>
+            {/* 项目信息卡片 */}
+            <div className="nvidia-project-card">
+                <Form form={form} layout="inline" className="nvidia-form">
+                    <Form.Item label="工程名称" name="projectName">
+                        <Input placeholder="未命名工程" className="nvidia-input" />
+                    </Form.Item>
+                    <Form.Item label="工程编号" name="projectCode">
+                        <Input placeholder="未知编号" className="nvidia-input" />
+                    </Form.Item>
+                    <Form.Item label="建设单位" name="company">
+                        <Input placeholder="未知建设单位" className="nvidia-input" />
+                    </Form.Item>
+                    <Form.Item label="统计日期" name="date">
+                        <DatePicker className="nvidia-input" />
+                    </Form.Item>
+                </Form>
+            </div>
+
+            {/* 主要内容区域 - 左右布局 */}
+            <div className="nvidia-main-content">
+                {/* 左侧面板 */}
+                <div className="nvidia-left-panel">
+                    {/* 文件上传区域 */}
+                    <div className="nvidia-upload-section">
+                        <div className="nvidia-section-header">
+                            <CloudUploadOutlined className="nvidia-section-icon" />
+                            <h2>文件上传</h2>
+                        </div>
+                        <div className="nvidia-upload-area">
+                            <Dragger {...uploadProps} className="nvidia-dragger">
+                                <p className="nvidia-upload-icon">
+                                    <InboxOutlined />
+                                </p>
+                                <p className="nvidia-upload-text">拖拽或点击上传文件</p>
+                                <p className="nvidia-upload-hint">
+                                    支持 PDF/DWG/DXF 格式，多文件上传，最大 50MB
+                                </p>
+                            </Dragger>
+                            <div className="nvidia-upload-actions">
+                                <Button 
+                                    type="primary" 
+                                    className="nvidia-btn nvidia-btn-primary"
+                                    onClick={handleBatchUpload} 
+                                    loading={loading} 
+                                    disabled={fileList.length === 0}
+                                    icon={<CloudUploadOutlined />}
+                                >
+                                    批量上传
+                                </Button>
+                                <Button 
+                                    className="nvidia-btn nvidia-btn-secondary"
+                                    onClick={async () => {
+                                        if (fileList.length > 0 && fileList[0].originFileObj) {
+                                            await handleUpload(fileList[0].originFileObj as File);
+                                            setFileList([]);
+                                        }
+                                    }}
+                                    loading={loading}
+                                    disabled={fileList.length === 0}
+                                    icon={<FileOutlined />}
+                                >
+                                    单文件上传
+                                </Button>
+                                <Button 
+                                    className="nvidia-btn nvidia-btn-success"
+                                    onClick={() => message.info('导出清单功能开发中...')}
+                                    icon={<BarChartOutlined />}
+                                >
+                                    导出清单
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 图纸表格视图 */}
+                    <div className="nvidia-table-section">
+                        <div className="nvidia-section-header">
+                            <FileTextOutlined className="nvidia-section-icon" />
+                            <h2>图纸清单</h2>
+                        </div>
+                        <div className="nvidia-table-container">
+                            <Table 
+                                columns={columns} 
+                                dataSource={drawings} 
+                                rowKey="id" 
+                                pagination={false}
+                                loading={loading}
+                                size="middle"
+                                className="nvidia-table"
+                                showHeader={true}
+                            />
+                            <div className="nvidia-pagination">
+                                <Pagination
+                                    current={page}
+                                    pageSize={PAGE_SIZE}
+                                    total={total}
+                                    onChange={p => setPage(p)}
+                                    showTotal={(total, range) => 
+                                        `${range[0]}-${range[1]} 共 ${total} 条`
+                                    }
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 右侧面板 - 实时任务消息 */}
+                <div className="nvidia-right-panel">
+                    <RealTimeTaskMessages 
+                        maxMessages={8}
+                        onTaskComplete={handleTaskComplete}
+                        onTaskError={handleTaskError}
+                    />
+                </div>
+            </div>
         </div>
     );
 };

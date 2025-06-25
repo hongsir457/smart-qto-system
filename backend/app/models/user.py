@@ -1,5 +1,6 @@
-from sqlalchemy import Boolean, Column, Integer, String
+from sqlalchemy import Boolean, Column, Integer, String, DateTime
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
 from app.database import Base
 
 class User(Base):
@@ -10,6 +11,12 @@ class User(Base):
     username = Column(String, unique=True, index=True)
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
+    full_name = Column(String, nullable=True)
     
-    # 添加与图纸的关系
-    drawings = relationship("Drawing", back_populates="user") 
+    # 时间戳
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)
+    
+    # 与Drawing模型的关系，反向引用为Drawing.owner
+    drawings = relationship("Drawing", back_populates="owner")
+    tasks = relationship("Task", back_populates="user") 

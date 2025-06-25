@@ -1,59 +1,41 @@
-#!/usr/bin/env python3
 import requests
 import json
 
-# API测试配置
-BASE_URL = "http://127.0.0.1:8000"
-API_V1 = f"{BASE_URL}/api/v1"
+# 测试API端点
+api_url = "http://127.0.0.1:8000/api/v1/drawings/1"
 
-# 测试用的JWT token（从日志中获取）
-TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvaW4xOTE0QGdhbWlsLmNvbSIsImV4cCI6MTc0ODE2NTA1Mn0.wmK2TpBgvbm0eBgTTsO2rWKYRSUJqcnoJQeLHr4ToWE"
-
-headers = {
-    "Authorization": f"Bearer {TOKEN}",
-    "Content-Type": "application/json"
-}
-
-def test_drawings_api():
-    print("开始测试图纸API...")
+try:
+    response = requests.get(api_url)
     
-    # 测试1: 不带斜杠的请求
-    print("\n1. 测试不带斜杠的请求:")
-    try:
-        response = requests.get(f"{API_V1}/drawings", headers=headers, params={"page": 1, "size": 10})
-        print(f"状态码: {response.status_code}")
-        if response.status_code == 200:
-            data = response.json()
-            print(f"成功获取数据，图纸数量: {len(data.get('items', []))}")
+    if response.status_code == 200:
+        data = response.json()
+        print("✅ API调用成功")
+        print(f"图纸ID: {data.get('id')}")
+        print(f"文件名: {data.get('filename')}")
+        
+        recognition_results = data.get('recognition_results')
+        if recognition_results:
+            print(f"\n=== OCR识别结果结构 ===")
+            print(f"顶级键: {list(recognition_results.keys())}")
+            
+            # 检查OCR文本
+            ocr_texts = recognition_results.get('ocr_texts', [])
+            print(f"\n原始OCR文本: {len(ocr_texts)} 条")
+            for i, text in enumerate(ocr_texts[:3]):
+                print(f"  {i+1}. {text}")
+            
+            # 检查构件
+            components = recognition_results.get('components', [])
+            print(f"\n构件数据: {len(components)} 个")
+            for i, comp in enumerate(components[:3]):
+                print(f"  {i+1}. {comp.get('component_id')} - {comp.get('component_type')}")
+                
         else:
-            print(f"错误响应: {response.text}")
-    except Exception as e:
-        print(f"请求异常: {e}")
-    
-    # 测试2: 带斜杠的请求
-    print("\n2. 测试带斜杠的请求:")
-    try:
-        response = requests.get(f"{API_V1}/drawings/", headers=headers, params={"page": 1, "size": 10})
-        print(f"状态码: {response.status_code}")
-        if response.status_code == 200:
-            data = response.json()
-            print(f"成功获取数据，图纸数量: {len(data.get('items', []))}")
-        else:
-            print(f"错误响应: {response.text}")
-    except Exception as e:
-        print(f"请求异常: {e}")
-    
-    # 测试3: 测试重定向行为
-    print("\n3. 测试重定向行为:")
-    try:
-        response = requests.get(f"{API_V1}/drawings", headers=headers, params={"page": 1, "size": 10}, allow_redirects=False)
-        print(f"状态码: {response.status_code}")
-        if response.status_code == 307:
-            print(f"重定向到: {response.headers.get('Location', 'N/A')}")
-        elif response.status_code == 200:
-            print("直接返回结果，无重定向")
-    except Exception as e:
-        print(f"请求异常: {e}")
-
-if __name__ == "__main__":
-    test_drawings_api() 
+            print("❌ 没有识别结果")
+            
+    else:
+        print(f"❌ API调用失败: {response.status_code}")
+        print(response.text)
+        
+except Exception as e:
+    print(f"❌ 错误: {e}") 

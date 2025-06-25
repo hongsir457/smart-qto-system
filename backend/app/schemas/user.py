@@ -19,6 +19,9 @@ class User(UserBase):
 class UserUpdate(UserBase):
     password: Optional[str] = None
 
+class UserInDB(User):
+    hashed_password: str
+
 class UserResponse(UserBase):
     id: int
     created_at: datetime

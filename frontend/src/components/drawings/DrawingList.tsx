@@ -22,12 +22,12 @@ export default function DrawingList() {
   const fetchDrawings = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:8000/api/v1/drawings', {
+      const response = await axios.get('http://localhost:8000/api/v1/drawings/', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
       });
-      setDrawings(response.data);
+      setDrawings(response.data.drawings || []);
     } catch (err: any) {
       setError(err.response?.data?.detail || '获取图纸列表失败');
     } finally {

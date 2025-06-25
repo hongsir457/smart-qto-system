@@ -1,43 +1,56 @@
+import logging
+from contextlib import contextmanager
 from sqlalchemy import create_engine, event
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.exc import OperationalError, DisconnectionError
-from sqlalchemy.pool import QueuePool
 from app.core.config import settings
-import logging
+from sqlalchemy.orm import sessionmaker, Session
+from sqlalchemy.exc import SQLAlchemyError, DisconnectionError
+from sqlalchemy.pool import QueuePool
 import time
+import random
 
 # 配置日志
 logger = logging.getLogger(__name__)
 
 # 数据库URL
-SQLALCHEMY_DATABASE_URL = settings.SQLALCHEMY_DATABASE_URI
+SQLALCHEMY_DATABASE_URL = settings.DATABASE_URL
 
-# 创建引擎，优化连接池配置
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,
-    # 连接池配置
-    poolclass=QueuePool,
-    pool_size=10,              # 基础连接池大小
-    max_overflow=20,           # 最大溢出连接数
-    pool_timeout=30,           # 获取连接超时时间
-    pool_recycle=3600,         # 连接回收时间（1小时）
-    pool_pre_ping=True,        # 连接前ping检查
-    
-    # 连接参数
-    connect_args={
-        "sslmode": "prefer",           # SSL模式
-        "connect_timeout": 30,         # 连接超时
-        "application_name": "smart_qto_system",
-        "keepalives_idle": 600,        # TCP keepalive空闲时间
-        "keepalives_interval": 30,     # TCP keepalive间隔
-        "keepalives_count": 3,         # TCP keepalive重试次数
-    },
-    
-    # 引擎选项
-    echo=False,                # 设为True可显示SQL语句
-    future=True                # 启用2.0风格
-)
+# 根据数据库类型设置不同的连接参数
+if SQLALCHEMY_DATABASE_URL.startswith("sqlite"):
+    # SQLite配置
+    engine = create_engine(
+        SQLALCHEMY_DATABASE_URL,
+        poolclass=QueuePool,
+        pool_size=5,
+        max_overflow=10,
+        pool_timeout=30,
+        pool_recycle=3600,
+        pool_pre_ping=True,
+        connect_args={"check_same_thread": False},  # SQLite特有参数
+        echo=False,
+        future=True
+    )
+else:
+    # PostgreSQL配置
+    engine = create_engine(
+        SQLALCHEMY_DATABASE_URL,
+        poolclass=QueuePool,
+        pool_size=10,
+        max_overflow=20,
+        pool_timeout=30,
+        pool_recycle=3600,
+        pool_pre_ping=True,
+        connect_args={
+            "sslmode": "prefer",
+            "connect_timeout": 30,
+            "application_name": "smart_qto_system",
+            "keepalives_idle": 600,
+            "keepalives_interval": 30,
+            "keepalives_count": 3,
+        },
+        echo=False,
+        future=True
+    )
 
 # 添加连接事件监听器
 @event.listens_for(engine, "connect")
@@ -83,7 +96,7 @@ def with_db_retry(max_retries=3, delay=1):
             for attempt in range(max_retries):
                 try:
                     return func(*args, **kwargs)
-                except (OperationalError, DisconnectionError) as e:
+                except (SQLAlchemyError, DisconnectionError) as e:
                     last_exception = e
                     logger.warning(f"数据库操作失败 (尝试 {attempt + 1}/{max_retries}): {e}")
                     if attempt < max_retries - 1:
@@ -129,7 +142,7 @@ class SafeDBSession:
         try:
             self.session.commit()
             return True
-        except (OperationalError, DisconnectionError) as e:
+        except (SQLAlchemyError, DisconnectionError) as e:
             logger.warning(f"提交失败，尝试重连: {e}")
             self.session.rollback()
             # 重新创建会话

@@ -1,11 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import { Button, message, Spin } from 'antd';
+import { Button, message, Spin, Tabs } from 'antd';
 import request from '../utils/request';
+import OCRResultDisplay from './OCRResultDisplay';
 
 const DrawingDetail: React.FC<{ drawingId: number }> = ({ drawingId }) => {
     const [loading, setLoading] = useState(false);
     const [ocrResults, setOcrResults] = useState<any>(null);
+    const [readableOcrResults, setReadableOcrResults] = useState<any>(null);
     const [pollingInterval, setPollingInterval] = useState<NodeJS.Timeout | null>(null);
+
+    // 处理可读化结果
+    const processReadableResults = async (rawResults: any) => {
+        try {
+            // 这里可以调用后端API来获取可读化结果
+            // 或者直接处理rawResults如果它已经包含可读化数据
+            if (rawResults?.readable_result) {
+                setReadableOcrResults(rawResults.readable_result);
+            } else {
+                // 如果没有可读化结果，可以调用后端处理
+                const response = await request.post(`/api/v1/drawings/${drawingId}/ocr/readable`, {
+                    raw_results: rawResults
+                });
+                setReadableOcrResults(response.data);
+            }
+        } catch (error) {
+            console.error('处理可读化结果失败:', error);
+            message.warning('可读化结果处理失败，但原始结果可用');
+        }
+    };
 
     // 开始OCR处理
     const handleOCR = async () => {
@@ -33,6 +55,8 @@ const DrawingDetail: React.FC<{ drawingId: number }> = ({ drawingId }) => {
                 
                 if (status === 'completed') {
                     setOcrResults(results);
+                    // 处理可读化结果
+                    await processReadableResults(results);
                     setLoading(false);
                     clearInterval(interval);
                     message.success('OCR处理完成');
@@ -46,7 +70,7 @@ const DrawingDetail: React.FC<{ drawingId: number }> = ({ drawingId }) => {
                 clearInterval(interval);
                 message.error('获取OCR状态失败');
             }
-        }, 3000); // 每3秒轮询一次
+        }, 5000); // 每5秒轮询一次
         
         setPollingInterval(interval);
     };
@@ -78,18 +102,31 @@ const DrawingDetail: React.FC<{ drawingId: number }> = ({ drawingId }) => {
                 </div>
             )}
             
-            {ocrResults && (
+            {(ocrResults || readableOcrResults) && (
                 <div style={{ marginTop: 16 }}>
-                    <h3>OCR识别结果：</h3>
-                    <pre style={{ 
-                        background: '#f5f5f5', 
-                        padding: 16,
-                        borderRadius: 4,
-                        maxHeight: 400,
-                        overflow: 'auto'
-                    }}>
-                        {JSON.stringify(ocrResults, null, 2)}
-                    </pre>
+                    <Tabs defaultActiveKey="readable" type="card">
+                        <Tabs.TabPane tab="📊 可读化结果" key="readable">
+                            {readableOcrResults ? (
+                                <OCRResultDisplay ocrResult={readableOcrResults} />
+                            ) : (
+                                <div style={{ textAlign: 'center', padding: 20 }}>
+                                    <Spin />
+                                    <p>正在生成可读化结果...</p>
+                                </div>
+                            )}
+                        </Tabs.TabPane>
+                        <Tabs.TabPane tab="🔧 原始数据" key="raw">
+                            <pre style={{ 
+                                background: '#f5f5f5', 
+                                padding: 16,
+                                borderRadius: 4,
+                                maxHeight: 400,
+                                overflow: 'auto'
+                            }}>
+                                {JSON.stringify(ocrResults, null, 2)}
+                            </pre>
+                        </Tabs.TabPane>
+                    </Tabs>
                 </div>
             )}
         </div>

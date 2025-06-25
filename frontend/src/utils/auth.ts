@@ -13,7 +13,7 @@ export const isTokenValid = (token: string | null): boolean => {
     const currentTime = Date.now() / 1000;
     
     // 检查token是否过期（添加5分钟缓冲）
-    return decoded.exp > currentTime - 300;
+    return decoded.exp > currentTime + 300;
   } catch (error) {
     console.error('Token validation error:', error);
     return false;

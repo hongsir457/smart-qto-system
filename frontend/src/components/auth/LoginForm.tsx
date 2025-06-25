@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import { setToken } from '../../utils/auth';
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
@@ -18,8 +19,8 @@ export default function LoginForm() {
         password: password,
       });
 
-      // 保存token
-      localStorage.setItem('token', response.data.access_token);
+      // 保存token并触发事件
+      setToken(response.data.access_token);
       
       // 跳转到首页
       router.push('/');

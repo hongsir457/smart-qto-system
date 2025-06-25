@@ -52,7 +52,7 @@ export default function ProgressWebSocket({
       }
 
       // 建立WebSocket连接
-      const wsUrl = `ws://localhost:8000/api/v1/websocket/ws?token=${encodeURIComponent(token)}`;
+      const wsUrl = `ws://localhost:8000/api/v1/websocket/ws/${taskId}?token=${encodeURIComponent(token)}`;
       const ws = new WebSocket(wsUrl);
 
       ws.onopen = () => {
